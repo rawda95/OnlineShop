@@ -32,7 +32,7 @@ namespace onlineshop
 
             Shop.add(txt_shop_name.Text, txt_shop_locations.Text, txt_shop_desc.Text, path, seller_id);
             lbl_msg.Text = "shop added ";
-            Response.Redirect("~/addvategory.aspx");
+            Response.Redirect("~/addcategory.aspx");
             CleartextBoxes(this);
 
             //foreach (Control c in Parent.Controls)

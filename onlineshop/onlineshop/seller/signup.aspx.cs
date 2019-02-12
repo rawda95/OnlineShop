@@ -70,8 +70,9 @@ namespace onlineshop.seller
                         //adding Seller data to database
                         Seller.add(txt_UserSellerName.Text, txt_FirstName.Text, txt_LastName.Text, txt_emailSignupSeller.Text, path, txt_passSellerSignup.Text);
                         DataTable seller = Seller.getByEmail(txt_emailSignupSeller.Text);
-                        Session["seller_id"] = seller.Rows[0][0].ToString();
-                        Response.Redirect("~/seller/addshop.aspx");
+                        Session["id"] = seller.Rows[0][0].ToString();
+
+                        Response.Redirect("~/seller/addshop.aspx", false);
                     }
 
                     else
@@ -124,7 +125,7 @@ namespace onlineshop.seller
 
         protected void btn_login_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/login.aspx");
+            // Response.Redirect("~/seller/login.aspx");
         }
     }
 
