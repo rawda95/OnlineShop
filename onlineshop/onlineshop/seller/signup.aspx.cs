@@ -47,6 +47,12 @@ namespace onlineshop.seller
                 writer.Close();
             }
         }
+
+
+
+
+
+
         protected void btn_signup_Click(object sender, EventArgs e)
         {
             if (IsValid)
@@ -65,7 +71,7 @@ namespace onlineshop.seller
                         Seller.add(txt_UserSellerName.Text, txt_FirstName.Text, txt_LastName.Text, txt_emailSignupSeller.Text, path, txt_passSellerSignup.Text);
                         DataTable seller = Seller.getByEmail(txt_emailSignupSeller.Text);
                         Session["seller_id"] = seller.Rows[0][0].ToString();
-                        Response.Redirect("~/seller/productList.aspx");
+                        Response.Redirect("~/seller/addshop.aspx");
                     }
 
                     else

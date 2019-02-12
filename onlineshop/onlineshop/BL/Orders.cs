@@ -15,7 +15,7 @@ namespace onlineshop.Bl
         }
         public static DataTable get_customer_orders(int cust_id)
         {
-            SqlCommand cmd = new SqlCommand("select id,order_status , order_date from  [Orders].[Order] where cust_id=@cust_id");
+            SqlCommand cmd = new SqlCommand("select o.id, s.name order_status, order_date from[Orders].[Order] o,[Orders].[Order_Status] s where cust_id = @cust_id and o.order_status = s.id");
             cmd.Parameters.AddWithValue("@cust_id", cust_id);
             return DBLayer.select(cmd);
         }
@@ -26,6 +26,21 @@ namespace onlineshop.Bl
             return DBLayer.select(cmd);
         }
 
+        public static DataTable get_seller_order_state(int seller_id)
+        {
+
+            SqlCommand cmd = new SqlCommand("select * from[Orders].[Order_Status] oo, [Orders].[Order] o where oo.id = o.order_status and o.cust_id = @seller_id");
+            cmd.Parameters.AddWithValue("seller_id", seller_id);
+            return DBLayer.select(cmd);
+        }
+
+        public static DataTable get_order_products(int order_id)
+        {
+            SqlCommand cmd = new SqlCommand("select p.* ,op.Qty from Product.Product p ,[Orders].Order_Products opwhere op.Product_id = p.id and op.order_id =@order_id");
+            cmd.Parameters.AddWithValue("order_id", order_id);
+            return DBLayer.select(cmd);
+
+        }
 
         //dml
         public static int add(int cust_id, DateTime order_date)
