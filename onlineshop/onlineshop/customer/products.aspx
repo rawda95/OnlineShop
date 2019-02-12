@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/seller/Home.Master" AutoEventWireup="true" CodeBehind="promotionlist.aspx.cs" Inherits="onlineshop.seller.promotionlist" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="products.aspx.cs" Inherits="onlineshop.Customer.products" %>
+
 
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
@@ -13,10 +14,6 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
-
-
-
-
     <asp:ScriptManager ID="ScriptManager2" runat="server">
     </asp:ScriptManager>
 
@@ -34,11 +31,6 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
-
-
-
-
 
     <section>
         <div class="container">
@@ -78,6 +70,12 @@
                                        
                                        
                                      
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                        
                                        
                                        
@@ -186,8 +184,4 @@
 
 
 
-
-
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="script" runat="server">
 </asp:Content>

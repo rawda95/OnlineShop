@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Data;
-using System.Data.SqlClient;
-using System.Web.UI.WebControls;
-using onlineshop.Bl;
-using System.Web.Security;
 using System.Net.Mail;
-using onlineshop.BL;
-using onlineshop.Dl;
+using System.Web.Security;
 namespace onlineshop
 {
     public partial class recoverpassword : System.Web.UI.Page
@@ -26,13 +17,13 @@ namespace onlineshop
             if (IsValid)
             {
                 string email = txt_reset.Text;
-                DataTable cust = customer.getByEmail(email);
+                DataTable cust = BL.customer.getByEmail(email);
                 if (cust.Rows.Count > 0)
                 {
                     // put in sp  //future work
                     int id = int.Parse(cust.Rows[0]["id"].ToString());
                     string newPassword = Membership.GeneratePassword(6, 3);
-                    customer.ChangePassword(id, newPassword);
+                    BL.customer.ChangePassword(id, newPassword, "");
 
 
                     //sent mail 

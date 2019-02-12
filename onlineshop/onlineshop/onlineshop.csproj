@@ -69,6 +69,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Customer\Cart.aspx" />
+    <Content Include="Customer\login.aspx" />
+    <Content Include="Customer\products.aspx" />
     <Content Include="gust\index.aspx" />
     <Content Include="seller\addcategory.aspx" />
     <Content Include="seller\addproduct.aspx" />
@@ -1006,12 +1009,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\identity.cs" />
-    <Compile Include="customer\customer.Master.cs">
+    <Compile Include="Customer\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\customer.Master.cs">
       <DependentUpon>customer.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="customer\customer.Master.designer.cs">
+    <Compile Include="Customer\customer.Master.designer.cs">
       <DependentUpon>customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
     </Compile>
     <Compile Include="gust\gust.Master.cs">
       <DependentUpon>gust.Master</DependentUpon>
@@ -1320,7 +1344,7 @@
     <Content Include="adminSite\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="seller\Home.Master" />
     <Content Include="gust\gust.Master" />
-    <Content Include="customer\customer.Master" />
+    <Content Include="Customer\customer.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
