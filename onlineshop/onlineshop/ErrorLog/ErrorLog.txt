@@ -78,3 +78,15 @@ Time : 2/12/2019 7:44:15 AM
 Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\images\product-details\'.
 Source : mscorlib 
 
+Time : 2/12/2019 6:03:08 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/12/2019 6:04:01 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/12/2019 6:04:32 PM
+Input string was not in a correct format.
+Source : mscorlib 
+

@@ -13,6 +13,15 @@ namespace onlineshop.seller {
     public partial class login {
         
         /// <summary>
+        /// signup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton signup;
+        
+        /// <summary>
         /// txt_NameLoginSeller control.
         /// </summary>
         /// <remarks>

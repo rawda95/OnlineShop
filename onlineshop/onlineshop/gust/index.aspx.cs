@@ -7,6 +7,7 @@ namespace onlineshop.gust
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
         protected void btn_Sele_With_Us_Click(object sender, EventArgs e)
         {
@@ -16,6 +17,12 @@ namespace onlineshop.gust
         protected void btn_login_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/seller/login.aspx");
+        }
+
+        protected void lb_signup_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/cusomer/login.aspx");
+
         }
     }
 }

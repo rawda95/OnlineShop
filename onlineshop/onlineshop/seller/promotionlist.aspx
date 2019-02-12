@@ -56,7 +56,7 @@
 
                                         <ItemTemplate>
 
-                                            <div class="panel panel-default col-sm-12 col-4 ">
+                                            <div class="panel panel-de fault col-sm-12 col-4 ">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title">
                                                         <a data-toggle="collapse" data-parent="#accordian" href="#mens">
@@ -78,6 +78,7 @@
                                        
                                        
                                      
+                                       
                                        
                                        
                                        

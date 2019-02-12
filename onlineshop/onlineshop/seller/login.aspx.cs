@@ -127,6 +127,11 @@ namespace onlineshop.seller
             }
 
         }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
