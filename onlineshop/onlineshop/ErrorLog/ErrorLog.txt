@@ -1,0 +1,80 @@
+Time : 2/10/2019 2:40:40 PM
+Input string was not in a correct format.
+Source : mscorlib 
+
+Time : 2/10/2019 2:47:42 PM
+Access to the path 'D:\aaa\onlineshop\onlineshop\images\product-details' is denied.
+Source : mscorlib 
+
+Time : 2/10/2019 2:49:52 PM
+Input string was not in a correct format.
+Source : mscorlib 
+
+Time : 2/10/2019 2:51:00 PM
+Input string was not in a correct format.
+Source : mscorlib 
+
+Time : 2/11/2019 9:34:06 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\agLijth.jpg'.
+Source : mscorlib 
+
+Time : 2/11/2019 9:36:02 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\agLijth.jpg'.
+Source : mscorlib 
+
+Time : 2/11/2019 10:46:07 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\agLijth.jpg'.
+Source : mscorlib 
+
+Time : 2/11/2019 10:50:54 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:02:45 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:14:11 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:40:49 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:43:31 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:49:46 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:51:35 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/11/2019 11:54:45 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/12/2019 12:30:53 AM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\images\product-details\'.
+Source : mscorlib 
+
+Time : 2/12/2019 12:31:00 AM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\images\product-details\'.
+Source : mscorlib 
+
+Time : 2/12/2019 6:32:52 AM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\images\product-details\'.
+Source : mscorlib 
+
+Time : 2/12/2019 7:43:53 AM
+Input string was not in a correct format.
+Source : mscorlib 
+
+Time : 2/12/2019 7:44:15 AM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\images\product-details\'.
+Source : mscorlib 
+
