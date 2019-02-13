@@ -72,6 +72,7 @@
     <Content Include="Customer\Cart.aspx" />
     <Content Include="Customer\login.aspx" />
     <Content Include="Customer\products.aspx" />
+    <Content Include="Customer\signup.aspx" />
     <Content Include="gust\index.aspx" />
     <Content Include="seller\addcategory.aspx" />
     <Content Include="seller\addproduct.aspx" />
@@ -1036,6 +1037,13 @@
     </Compile>
     <Compile Include="Customer\products.aspx.designer.cs">
       <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="gust\gust.Master.cs">
       <DependentUpon>gust.Master</DependentUpon>

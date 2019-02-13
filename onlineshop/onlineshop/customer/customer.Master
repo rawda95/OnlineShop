@@ -79,7 +79,12 @@
                     <!--header-middle-->
                     <div class="container">
                         <div class="row">
-                            <asp:ContentPlaceHolder ID="ph_header" runat="server"></asp:ContentPlaceHolder>
+                            <div class="col-sm-12">
+                                <div class="shop-menu pull-right">
+                                    <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,24 +105,28 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">Home</a></li>
-                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                            <ul role="menu" class="sub-menu">
-                                                <li><a href="shop.html">Products</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="index.html" class="active">
+                                            <asp:LinkButton runat="server" ID="lb_home" OnClick="lb_home_Click">
+                                            Home
+                                            </asp:LinkButton>
+                                        </a></li>
+
+                                        <li><a href="contact-us.html">
+                                            <asp:LinkButton runat="server" ID="contact" OnClick="contact_Click">
+                                            Contact
+                                            </asp:LinkButton>
+                                        </a></li>
+                                        <li><a href="about-us.html">
+                                            <asp:LinkButton runat="server" ID="lb_about" OnClick="lb_about_Click">
+                                            About Us
+                                            </asp:LinkButton>
+
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <asp:ContentPlaceHolder ID="search" runat="server">
-                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="search" runat="server"></asp:ContentPlaceHolder>
                             </div>
                         </div>
                     </div>
@@ -180,10 +189,8 @@
             </section>
             <!--/slider-->
 
-            <%--    place to put center content place holder --%>
-
-            <asp:ContentPlaceHolder ID="Content" runat="server">
-            </asp:ContentPlaceHolder>
+            <%--    place to put content place holder --%>
+            <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
 
             <footer id="footer">
                 <!--Footer-->
@@ -203,6 +210,15 @@
                                    
                                    
                                    
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     </p>
                                 </div>
                             </div>
@@ -211,7 +227,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="../images/home/iframe1.png" alt="" />
+                                                <img src="images/home/iframe1.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -225,7 +241,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="../images/home/iframe2.png" alt="" />
+                                                <img src="images/home/iframe2.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -239,7 +255,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="../images/home/iframe3.png" alt="" />
+                                                <img src="images/home/iframe3.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -253,7 +269,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="../images/home/iframe4.png" alt="" />
+                                                <img src="images/home/iframe4.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -266,7 +282,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="address">
-                                    <img src="../images/home/map.png" alt="" />
+                                    <img src="images/home/map.png" alt="" />
                                     <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
                                 </div>
                             </div>

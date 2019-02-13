@@ -2,7 +2,7 @@
 
 
 
-<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
     <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
         <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
@@ -91,6 +91,11 @@
                                        
                                        
                                        
+                                       
+                                       
+                                       
+                                       
+                                       
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div class="panel panel-default">
@@ -98,7 +103,7 @@
                                                     <h4 class="panel-title">
                                                         <a data-toggle="collapse" data-parent="#accordian" href="#mens">
 
-                                                            <asp:LinkButton ID="link" runat="server" OnClick="link_Click">  all </asp:LinkButton>
+                                                            <asp:LinkButton ID="link" runat="server">  all </asp:LinkButton>
 
                                                         </a>
                                                     </h4>
@@ -151,7 +156,7 @@
                                                         <br />
 
 
-                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>detials</asp:LinkButton>
+                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>Add to cart</asp:LinkButton>
                                                         <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
                                                     </div>
 
@@ -180,7 +185,37 @@
 
 
         </div>
+
     </section>
+
+    <!-- Content script    for master!-->
+    <script type="text/javascript">  
+        $(function () {
+            console.log("aaa");
+            SearchText();
+        });
+        function SearchText() {
+            $("#ContentPlaceHolder1_search").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "divtry.aspx/GetProductName",
+                        data: "{'ProductName':'" + document.getElementById('ContentPlaceHolder1_search').value + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            response(data.d);
+                        },
+                        error: function (result) {
+                            alert("No Match");
+                        }
+                    });
+                }
+            });
+        };
+
+    </script>
+
 
 
 

@@ -1,31 +1,36 @@
-﻿using onlineshop.Bl;
-using System;
-using System.Web.UI;
+﻿using System;
+using System.Web.UI.WebControls;
 
-namespace onlineshop.customer
+namespace onlineshop.Customer
 {
     public partial class Cart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-
-            if (!Page.IsPostBack)
+            if (!IsPostBack)
             {
-                Session["customer_id"] = 2;
+                dlcart.DataSource = onlineshop.BL.cart.get_Cart_Products(1);
+                dlcart.DataBind();
             }
-            Session["customer_id"] = 2;
         }
 
-        protected void btn_submit_Click(object sender, EventArgs e)
+        protected void dlcart_DeleteCommand(object source, DataListCommandEventArgs e)
         {
-            int customer_id = (int)Session["customer_id"];
+            int item = int.Parse(dlcart.DataKeys[(int)e.Item.ItemIndex].ToString());
+            Session["customer_id"] = 1;
+            int cust_id = int.Parse(Session["customer_id"].ToString());
+            onlineshop.BL.cart.remove_product(cust_id, item);
+            dlcart.DataSource = onlineshop.BL.cart.get_Cart_Products(int.Parse(Session["customer_id"].ToString()));
+            dlcart.DataBind();
 
-            Orders.add(customer_id, DateTime.Now);
-            btn_submit.Text = "done";
-            Response.Redirect("~/cart.aspx");
+        }
 
-
+        protected void btn_checkout_Click(object sender, EventArgs e)
+        {
+            Session["customer_id"] = 1;
+            int cust_id = int.Parse(Session["customer_id"].ToString());
+            onlineshop.Bl.Orders.add(cust_id, DateTime.Now);
+            btn_checkout.Text = "done";
         }
     }
 }

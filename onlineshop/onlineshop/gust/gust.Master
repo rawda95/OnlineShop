@@ -41,6 +41,13 @@
             margin-right: -7px;
         }
     </style>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -222,6 +229,12 @@
                                    
                                    
                                    
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     </p>
                                 </div>
                             </div>
@@ -327,13 +340,13 @@
             <!--/Footer-->
 
 
-
-            <script src="../js/jquery.js"></script>
             <script src="../js/bootstrap.min.js"></script>
             <script src="../js/jquery.scrollUp.min.js"></script>
             <script src="../js/price-range.js"></script>
             <script src="../js/jquery.prettyPhoto.js"></script>
             <script src="../js/main.js"></script>
+            <asp:ContentPlaceHolder runat="server" ID="script">
+            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>

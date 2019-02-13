@@ -47,7 +47,7 @@ namespace onlineshop.BL
 
         public static DataTable get_Cart_Products(int customer_id)
         {
-            SqlCommand cmd = new SqlCommand("select product_id , qty from Users.Cart where customer_id=@customer_id ");
+            SqlCommand cmd = new SqlCommand("select  p.*, c.qty,p.price*(c.qty) as total from Users.Cart c, Product.Product p where p.id = c.product_id and c.customer_id = @customer_id");
             cmd.Parameters.AddWithValue("@customer_id", customer_id);
             return DBLayer.select(cmd);
         }

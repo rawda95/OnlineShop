@@ -85,23 +85,7 @@
 
                                             </div>
                                             </div>                                      
-                                       
-                                       
-                                         
-                                       
-                                       
-                                       
-                                       
-                                       
                                      
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                        
                                        
@@ -207,5 +191,37 @@
 
 
 
+
+</asp:Content>
+<asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
+    <!-- Content script    for master!-->
+    <script type="text/javascript">  
+        $(function () {
+            console.log("aaa");
+            SearchText();
+        });
+        function SearchText() {
+
+            $("#search_search").autocomplete({
+
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "gest/index.aspx/GetProductName",
+                        data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            response(data.d);
+                        },
+                        error: function (result) {
+                            alert("No Match");
+                        }
+                    });
+                }
+            });
+        };
+
+    </script>
 
 </asp:Content>
