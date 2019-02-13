@@ -40,6 +40,22 @@
 
 
 
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="col-sm-4" style="display: -webkit-box; top: 10px; left: 29px; height: 221px; width: 427px;">
 
                         <asp:Label ID="lbl_nameSeller" CssClass="controlStyle" runat="server" Text="Name"></asp:Label>

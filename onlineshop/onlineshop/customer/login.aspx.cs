@@ -23,8 +23,8 @@ namespace onlineshop.Customer
 
                     // redircet main
 
-                    //  Response.Redirect("~/seller/productList.aspx");
-                    has_shop_redirecte();
+                    Response.Redirect("~/customer/productList.aspx");
+
                 }
             }
         }
@@ -75,7 +75,7 @@ namespace onlineshop.Customer
                     {
 
                         //keeping user signedin
-                        DataTable did = Seller.get_id(int.Parse(dt.Rows[0][0].ToString()));
+                        DataTable did = BL.customer.get_id(int.Parse(dt.Rows[0][0].ToString()));
                         Session["id"] = did.Rows[0][0];
 
                         //rememberuser
@@ -89,8 +89,7 @@ namespace onlineshop.Customer
                         }
 
 
-                        //Response.Redirect("~/seller/productList.aspx");
-                        has_shop_redirecte();
+                        Response.Redirect("~/customer/productList.aspx");
 
                     }
                     else
@@ -109,23 +108,9 @@ namespace onlineshop.Customer
 
         protected void btn_signup_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/signup.aspx");
+            Response.Redirect("~/customer/signup.aspx");
         }
 
-        private void has_shop_redirecte()
-        {
-            int seller_id = int.Parse(Session["id"].ToString());
-            DataTable temp = Shop.get_Shop_by_owner(seller_id);
-            if (temp.Rows.Count > 0)
-            {
-                Response.Redirect("~/seller/productList.aspx");
 
-            }
-            else
-            {
-                Response.Redirect("~/seller/addshop.aspx");
-            }
-
-        }
     }
 }

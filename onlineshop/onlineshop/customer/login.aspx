@@ -50,6 +50,9 @@
                        
                        
                        
+                       
+                       
+                       
                         </div>
                         <asp:Button runat="server" ID="btn_signup" OnClick="btn_signup_Click" Text="signup" />
 
@@ -73,6 +76,4 @@
         </div>
     </div>
 
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="script" runat="server">
 </asp:Content>
