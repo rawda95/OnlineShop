@@ -90,6 +90,7 @@
                                        
                                        
                                        
+                                       
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div class="panel panel-default">
@@ -164,10 +165,10 @@
                                     </ItemTemplate>
                                     <FooterTemplate>
                                         <div>
-                                            <div class="product-image-wrapper col-12">
+                                            <div class="product-image-wrapper col-8">
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
-                                                        <asp:Button runat="server" ID="btn_add_prodcut" Text=" add product" OnClick="btn_add_prodcut_Click" CssClass="btn btn-defult" />
+                                                        <asp:Button runat="server" ID="btn_add_prodcut" Text="add product" OnClick="btn_add_prodcut_Click" CssClass="btn btn-danger text-center " />
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,6 +197,7 @@
 
 
 </asp:Content>
+
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="script" runat="server">

@@ -103,15 +103,6 @@ namespace onlineshop.seller {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_confirmpassword;
         
         /// <summary>
-        /// CV_confirmpassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CV_confirmpassword;
-        
-        /// <summary>
         /// Txt_AddressSeller control.
         /// </summary>
         /// <remarks>
@@ -146,15 +137,6 @@ namespace onlineshop.seller {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_emailSeller;
-        
-        /// <summary>
-        /// REV_emaiSellerl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_emaiSellerl;
         
         /// <summary>
         /// FU_SellerImg control.
@@ -193,6 +175,15 @@ namespace onlineshop.seller {
         protected global::System.Web.UI.WebControls.Button btn_signupSeller;
         
         /// <summary>
+        /// btn_login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_login;
+        
+        /// <summary>
         /// VS_signupSeller control.
         /// </summary>
         /// <remarks>
@@ -209,14 +200,5 @@ namespace onlineshop.seller {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_SinCheckSeller;
-        
-        /// <summary>
-        /// btn_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login;
     }
 }

@@ -22,6 +22,15 @@ namespace onlineshop {
         protected global::System.Web.UI.WebControls.TextBox txt_category_name;
         
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// btn_add_category control.
         /// </summary>
         /// <remarks>

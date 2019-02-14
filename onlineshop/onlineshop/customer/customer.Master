@@ -1,22 +1,23 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="onlineshop.customer.customer" %>
 
 
+
 <!DOCTYPE html>
 
 <html>
-
 <head runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
+    <title>Home | E-PERFUME</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/prettyPhoto.css" rel="stylesheet">
     <link href="../css/price-range.css" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -51,8 +52,8 @@
                             <div class="col-sm-6">
                                 <div class="contactinfo">
                                     <ul class="nav nav-pills">
-                                        <li><a href="#"><i class="fa fa-phone"></i>+2 95 01 88 821</a></li>
-                                        <li><a href="#"><i class="fa fa-envelope"></i>info@domain.com</a></li>
+                                        <li><a href="#"><i class="fa fa-phone"></i>002 0100 7890 665</a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i>info@ITI.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -80,12 +81,8 @@
                     <!--header-middle-->
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="shop-menu pull-right">
-                                    <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
-
-                                </div>
-                            </div>
+                            <asp:ContentPlaceHolder ID="ph_header" runat="server">
+                            </asp:ContentPlaceHolder>
                         </div>
                     </div>
                 </div>
@@ -106,28 +103,24 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">
-                                            <asp:LinkButton runat="server" ID="lb_home" OnClick="lb_home_Click">
-                                            Home
-                                            </asp:LinkButton>
-                                        </a></li>
-
-                                        <li><a href="contact-us.html">
-                                            <asp:LinkButton runat="server" ID="contact" OnClick="contact_Click">
-                                            Contact
-                                            </asp:LinkButton>
-                                        </a></li>
-                                        <li><a href="about-us.html">
-                                            <asp:LinkButton runat="server" ID="lb_about" OnClick="lb_about_Click">
-                                            About Us
-                                            </asp:LinkButton>
-
-                                        </a></li>
+                                        <li><a href="index.html" class="active">Home</a></li>
+                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                            <ul role="menu" class="sub-menu">
+                                                <li><a href="shop.html">Products</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <asp:ContentPlaceHolder ID="search" runat="server"></asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="search" runat="server">
+                                </asp:ContentPlaceHolder>
                             </div>
                         </div>
                     </div>
@@ -190,8 +183,10 @@
             </section>
             <!--/slider-->
 
-            <%--    place to put content place holder --%>
-            <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+            <%--    place to put center content place holder --%>
+
+            <asp:ContentPlaceHolder ID="cs" runat="server">
+            </asp:ContentPlaceHolder>
 
             <footer id="footer">
                 <!--Footer-->
@@ -212,17 +207,6 @@
                                    
                                    
                                    
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
                                     </p>
                                 </div>
                             </div>
@@ -231,7 +215,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe1.png" alt="" />
+                                                <img src="../images/home/iframe1.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -245,7 +229,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe2.png" alt="" />
+                                                <img src="../images/home/iframe2.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -259,7 +243,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe3.png" alt="" />
+                                                <img src="../images/home/iframe3.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -273,7 +257,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe4.png" alt="" />
+                                                <img src="../images/home/iframe4.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -286,7 +270,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="address">
-                                    <img src="images/home/map.png" alt="" />
+                                    <img src="../images/home/map.png" alt="" />
                                     <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
                                 </div>
                             </div>

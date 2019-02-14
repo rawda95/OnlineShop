@@ -13,6 +13,15 @@ namespace onlineshop.seller {
     public partial class login {
         
         /// <summary>
+        /// lbl_welcome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_welcome;
+        
+        /// <summary>
         /// signup control.
         /// </summary>
         /// <remarks>
@@ -67,15 +76,6 @@ namespace onlineshop.seller {
         protected global::System.Web.UI.WebControls.CheckBox CB_rememberMeSeller;
         
         /// <summary>
-        /// btn_signup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_signup;
-        
-        /// <summary>
         /// btn_LogInSeller control.
         /// </summary>
         /// <remarks>
@@ -92,6 +92,15 @@ namespace onlineshop.seller {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_checkSeller;
+        
+        /// <summary>
+        /// btn_signup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_signup;
         
         /// <summary>
         /// VS_loginSeller control.

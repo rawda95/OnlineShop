@@ -28,6 +28,7 @@
 </asp:Content>
 
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
 
 
@@ -42,7 +43,7 @@
         <ContentTemplate>
 
             <asp:Label ID="error" runat="server"></asp:Label>
-            <asp:TextBox ID="search" class="search" runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="search" class="search_box searchform active" runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged" MaxLength="50" BorderColor="#FFFF99"></asp:TextBox>
 
         </ContentTemplate>
 
@@ -85,7 +86,24 @@
 
                                             </div>
                                             </div>                                      
+                                       
+                                       
+                                         
+                                       
+                                       
+                                       
+                                       
+                                       
                                      
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                        
                                        
                                        
@@ -187,6 +205,8 @@
 
         </div>
     </section>
+
+
 
 
 

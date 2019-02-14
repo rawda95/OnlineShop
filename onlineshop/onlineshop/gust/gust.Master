@@ -5,6 +5,7 @@
 
 
 
+
 <!DOCTYPE html>
 
 <html>
@@ -21,6 +22,8 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -41,13 +44,6 @@
             margin-right: -7px;
         }
     </style>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -136,13 +132,16 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <asp:ContentPlaceHolder ID="search" runat="server"></asp:ContentPlaceHolder>
+                            <div class="col-sm-3  searchform  search_box ">
+                                <asp:ContentPlaceHolder ID="search" runat="server">
+                                </asp:ContentPlaceHolder>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--/header-bottom-->
+                4
+           
             </header>
             <!--/header-->
             <section id="slider">
@@ -160,27 +159,50 @@
 
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <div class="col-sm-12">
-                                            <img src="../images/home/girl1.jpg" class="girl img-responsive" alt="" />
+                                        <div class="col-sm-6">
+                                            <h1><span>E</span>-PERFUME</h1>
+                                            <h2>BEST PRICE EVER</h2>
+                                            <p>we waiting you ... with best collections </p>
+                                            <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="../images/home/001.jpg" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
                                     <div class="item">
+                                        <div class="col-sm-6">
+                                            <h1><span>E</span>-PERFUME</h1>
+                                            <h2>BEST PRICE EVER</h2>
+                                            <p>we waiting you ... with best collections </p>
+                                            <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="../images/home/0002.jpg" class="girl img-responsive" alt="" />
+                                            <img src="images/home/pricing.png" class="pricing" alt="" />
 
-                                        <div class="col-sm-12">
-                                            <img src="../images/home/girl2.jpg" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
 
                                     <div class="item">
-
-                                        <div class="col-sm-12">
-                                            <img src="../images/home/girl3.jpg" class="girl img-responsive" alt="" />
+                                        <div class="col-sm-6">
+                                            <h1><span>E</span>-PERFUME</h1>
+                                            <h2>BEST PRICE EVER</h2>
+                                            <p>we waiting you ... with best collections </p>
+                                            <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="../images/home/003.png" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
                                     <div class="item">
-
-                                        <div class="col-sm-12">
-                                            <img src="../images/home/girl4.jpg" class="girl img-responsive" alt="" />
+                                        <div class="col-sm-6">
+                                            <h1><span>E</span>-PERFUME</h1>
+                                            <h2>BEST PRICE EVER</h2>
+                                            <p>we waiting you ... with best collections </p>
+                                            <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="../images/home/0002.jpg" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
 
@@ -230,14 +252,6 @@
                                    
                                    
                                    
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
                                     </p>
                                 </div>
                             </div>
@@ -246,7 +260,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe1.png" alt="" />
+                                                <img src="/images/home/asd4.jpeg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -260,7 +274,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe2.png" alt="" />
+                                                <img src="/images/home/asd3.jpg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -274,7 +288,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe3.png" alt="" />
+                                                <img src="/images/home/asd2.jpeg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -283,12 +297,11 @@
                                         <p>Best Autumn Perfume</p>
                                     </div>
                                 </div>
-
                                 <div class="col-sm-3">
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="images/home/iframe4.png" alt="" />
+                                                <img src="/images/home/iframe4.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -299,12 +312,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="address">
-                                    <img src="images/home/map.png" alt="" />
-                                    <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -314,7 +322,8 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="single-widget">
-                                    <ul class="nav nav-pills nav-stacked">
+                                    <ul class="nav nav-pills nav-stacked fa-list-ul
+                                        ">
                                         <li><a href="#">Policies</a></li>
                                         <li><a href="#">Terms of Use</a></li>
                                         <li><a href="#">Privecy Policy</a></li>
@@ -334,7 +343,7 @@
                 <div class="footer-bottom">
                     <div class="container">
                         <div class="row">
-                            <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+                            <p class="pull-left">Copyright © 2019  E-PERFUME Inc. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -343,13 +352,13 @@
             <!--/Footer-->
 
 
+
+            <script src="../js/jquery.js"></script>
             <script src="../js/bootstrap.min.js"></script>
             <script src="../js/jquery.scrollUp.min.js"></script>
             <script src="../js/price-range.js"></script>
             <script src="../js/jquery.prettyPhoto.js"></script>
             <script src="../js/main.js"></script>
-            <asp:ContentPlaceHolder runat="server" ID="script">
-            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
