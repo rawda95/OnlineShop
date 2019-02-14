@@ -72,7 +72,10 @@
     <Content Include="Customer\Cart.aspx" />
     <Content Include="Customer\login.aspx" />
     <Content Include="Customer\products.aspx" />
+    <Content Include="Customer\profile.aspx" />
+    <Content Include="Customer\ProfileFinal.aspx" />
     <Content Include="Customer\signup.aspx" />
+    <Content Include="Customer\SignUpCustomer.aspx" />
     <Content Include="gust\index.aspx" />
     <Content Include="seller\addcategory.aspx" />
     <Content Include="seller\addproduct.aspx" />
@@ -1038,12 +1041,33 @@
     <Compile Include="Customer\products.aspx.designer.cs">
       <DependentUpon>products.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Customer\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ProfileFinal.aspx.cs">
+      <DependentUpon>ProfileFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ProfileFinal.aspx.designer.cs">
+      <DependentUpon>ProfileFinal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customer\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Customer\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\SignUpCustomer.aspx.cs">
+      <DependentUpon>SignUpCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\SignUpCustomer.aspx.designer.cs">
+      <DependentUpon>SignUpCustomer.aspx</DependentUpon>
     </Compile>
     <Compile Include="gust\gust.Master.cs">
       <DependentUpon>gust.Master</DependentUpon>
@@ -1211,12 +1235,12 @@
     <Compile Include="seller\productList.aspx.designer.cs">
       <DependentUpon>productList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="seller\Profile.aspx.cs">
-      <DependentUpon>Profile.aspx</DependentUpon>
+    <Compile Include="seller\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="seller\Profile.aspx.designer.cs">
-      <DependentUpon>Profile.aspx</DependentUpon>
+    <Compile Include="seller\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="seller\promotionlist.aspx.cs">
       <DependentUpon>promotionlist.aspx</DependentUpon>
@@ -1237,7 +1261,7 @@
     <Content Include="seller\login.aspx" />
     <Content Include="seller\productDetials.aspx" />
     <Content Include="seller\productList.aspx" />
-    <Content Include="seller\Profile.aspx" />
+    <Content Include="seller\profile.aspx" />
     <Content Include="seller\promotionlist.aspx" />
     <Content Include="seller\signup.aspx" />
     <Content Include="web.config" />

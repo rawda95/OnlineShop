@@ -85,6 +85,7 @@ namespace onlineshop.Customer
 
         protected void dl_product_ItemCommand(object source, DataListCommandEventArgs e)
         {
+            Session["id"] = 1;
             int peoduct_id = int.Parse(dl_product.DataKeys[(int)e.Item.ItemIndex].ToString());
             // Session["cust_id"] = 1;
             int customer_id = int.Parse(Session["id"].ToString());

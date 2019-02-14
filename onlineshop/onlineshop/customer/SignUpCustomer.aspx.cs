@@ -1,11 +1,18 @@
-﻿using onlineshop.BL;
-using System;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-namespace onlineshop.Customer
+using onlineshop.BL;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.IO;
+
+namespace SignUpPage
 {
-    public partial class signup : System.Web.UI.Page
+    public partial class SignUpCustomer : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -64,7 +71,7 @@ namespace onlineshop.Customer
                     {
 
                         //adding customer data to database
-                        BL.customer.add(txt_CustUserName.Text, txt_CustFName.Text, txt_CustLName.Text, txt_CustemailSignup.Text, path, Txt_CustAddress.Text, Txt_CustAddress.Text, txt_CustpassSignup.Text);
+                        customer.add(txt_CustUserName.Text, txt_CustFName.Text, txt_CustLName.Text, txt_CustemailSignup.Text, path, Txt_CustAddress.Text, Txt_CustAddress.Text, txt_CustpassSignup.Text);
                     }
                     else
                     {
@@ -81,7 +88,10 @@ namespace onlineshop.Customer
 
             }
         }
+            
+            
 
+        
 
     }
 }

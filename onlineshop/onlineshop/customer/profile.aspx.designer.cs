@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace onlineshop.seller
-{
-
-
-    public partial class profile
-    {
-
+namespace onlineshop.Customer {
+    
+    
+    public partial class profile {
+        
         /// <summary>
         /// MV_profileFinal control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.MultiView MV_profileFinal;
-
+        
         /// <summary>
         /// MV_ShowProfile control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View MV_ShowProfile;
-
+        
         /// <summary>
         /// IMG_user control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image IMG_user;
-
+        
         /// <summary>
         /// lbl_name control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_name;
-
+        
         /// <summary>
         /// lbl_NameShow control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_NameShow;
-
+        
         /// <summary>
         /// lbl_location control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_location;
-
+        
         /// <summary>
         /// lbl_locationShow control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_locationShow;
-
+        
         /// <summary>
         /// lbl_delivery control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_delivery;
-
+        
         /// <summary>
         /// lbl_delivery_show control.
         /// </summary>
@@ -94,7 +92,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_delivery_show;
-
+        
         /// <summary>
         /// lbl_emil control.
         /// </summary>
@@ -103,7 +101,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_emil;
-
+        
         /// <summary>
         /// lbl_emailShow control.
         /// </summary>
@@ -112,7 +110,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_emailShow;
-
+        
         /// <summary>
         /// btn_edit control.
         /// </summary>
@@ -121,7 +119,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_edit;
-
+        
         /// <summary>
         /// btn_ChangePass control.
         /// </summary>
@@ -130,7 +128,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_ChangePass;
-
+        
         /// <summary>
         /// V_change control.
         /// </summary>
@@ -139,7 +137,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View V_change;
-
+        
         /// <summary>
         /// Img_edit control.
         /// </summary>
@@ -148,7 +146,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Img_edit;
-
+        
         /// <summary>
         /// FU_ImgProfile control.
         /// </summary>
@@ -157,7 +155,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload FU_ImgProfile;
-
+        
         /// <summary>
         /// txt_FNameEdit control.
         /// </summary>
@@ -166,7 +164,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_FNameEdit;
-
+        
         /// <summary>
         /// RF_FName control.
         /// </summary>
@@ -175,7 +173,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_FName;
-
+        
         /// <summary>
         /// txt_LNameEdit control.
         /// </summary>
@@ -184,7 +182,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_LNameEdit;
-
+        
         /// <summary>
         /// FR_LName control.
         /// </summary>
@@ -193,7 +191,43 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator FR_LName;
-
+        
+        /// <summary>
+        /// txt_locationEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_locationEdit;
+        
+        /// <summary>
+        /// RF_Location control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Location;
+        
+        /// <summary>
+        /// txt_deliveryEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_deliveryEdit;
+        
+        /// <summary>
+        /// RF_delivery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_delivery;
+        
         /// <summary>
         /// txt_emailEdit control.
         /// </summary>
@@ -202,7 +236,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_emailEdit;
-
+        
         /// <summary>
         /// RF_emailEdit control.
         /// </summary>
@@ -211,7 +245,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_emailEdit;
-
+        
         /// <summary>
         /// btn_save control.
         /// </summary>
@@ -220,7 +254,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_save;
-
+        
         /// <summary>
         /// lbl_saveCheck control.
         /// </summary>
@@ -229,7 +263,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_saveCheck;
-
+        
         /// <summary>
         /// VS_EditProfile control.
         /// </summary>
@@ -238,7 +272,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary VS_EditProfile;
-
+        
         /// <summary>
         /// btn_cancel control.
         /// </summary>
@@ -247,7 +281,7 @@ namespace onlineshop.seller
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_cancel;
-
+        
         /// <summary>
         /// lbl_Cancel_Check control.
         /// </summary>

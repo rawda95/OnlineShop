@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/seller/Home.Master" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="onlineshop.seller.profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="onlineshop.Customer.profile" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ph_header" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="header" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="search" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="content" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 
 
 
@@ -110,7 +110,18 @@
                                             <asp:RequiredFieldValidator ID="FR_LName" runat="server" ErrorMessage="Please enter yourlast name" Text="*" ControlToValidate="txt_LNameEdit" ValidationGroup="Edit" ForeColor="Red"></asp:RequiredFieldValidator>
                                         </td>
                                     </tr>
-
+                                    <tr>
+                                        <td style="width: 314px">
+                                            <asp:TextBox ID="txt_locationEdit" placeholder="Location" runat="server"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RF_Location" runat="server" ErrorMessage="Please enter your location" Text="*" ControlToValidate="txt_locationEdit" ValidationGroup="Edit" ForeColor="Red"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 314px">
+                                            <asp:TextBox ID="txt_deliveryEdit" placeholder="Delivery Address" runat="server"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RF_delivery" runat="server" ErrorMessage="Please enter your Delivery Address" Text="*" ControlToValidate="txt_deliveryEdit" ValidationGroup="Edit" ForeColor="Red"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td style="width: 314px">
                                             <asp:TextBox ID="txt_emailEdit" placeholder="E-mail" runat="server"></asp:TextBox>
@@ -146,7 +157,4 @@
 
         </asp:MultiView>
     </div>
-</asp:Content>
-
-<asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 </asp:Content>

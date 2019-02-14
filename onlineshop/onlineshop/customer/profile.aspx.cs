@@ -3,7 +3,8 @@ using System.Data;
 using System.IO;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-namespace onlineshop.seller
+
+namespace onlineshop.Customer
 {
     public partial class profile : System.Web.UI.Page
     {
@@ -17,10 +18,12 @@ namespace onlineshop.seller
                 if (Session["id"] != null)
                 {
                     int id = int.Parse(Session["id"].ToString());
-                    DataTable dt = BL.Seller.getById(id);
+                    DataTable dt = BL.customer.getById(id);
                     lbl_NameShow.Text = dt.Rows[0][2].ToString() + " " + dt.Rows[0][3].ToString();
                     lbl_emailShow.Text = dt.Rows[0][4].ToString();
                     IMG_user.ImageUrl = dt.Rows[0][5].ToString();
+                    lbl_locationShow.Text = dt.Rows[0][6].ToString();
+                    lbl_delivery_show.Text = dt.Rows[0][7].ToString();
                 }
                 else
                 {
@@ -35,12 +38,14 @@ namespace onlineshop.seller
         protected void btn_edit_Click(object sender, EventArgs e)
         {
             int id = int.Parse(Session["id"].ToString());
-            DataTable dt = BL.Seller.getById(id);
+            DataTable dt = BL.customer.getById(id);
             txt_FNameEdit.Text = dt.Rows[0][2].ToString();
             txt_LNameEdit.Text = dt.Rows[0][3].ToString();
             txt_emailEdit.Text = dt.Rows[0][4].ToString();
             // FU_ImgProfile.ur = dt.Rows[0][5].ToString();
             Img_edit.ImageUrl = dt.Rows[0][5].ToString();
+            txt_locationEdit.Text = dt.Rows[0][6].ToString();
+            txt_deliveryEdit.Text = dt.Rows[0][7].ToString();
 
             MV_profileFinal.ActiveViewIndex = 1;
 
@@ -95,7 +100,7 @@ namespace onlineshop.seller
                     //updating customer data to database
 
                     int id = int.Parse(Session["id"].ToString());
-                    BL.Seller.update(id, txt_FNameEdit.Text, txt_LNameEdit.Text, txt_emailEdit.Text, path);
+                    BL.customer.update(id, txt_FNameEdit.Text, txt_LNameEdit.Text, txt_emailEdit.Text, path, txt_locationEdit.Text, txt_deliveryEdit.Text);
 
                     lbl_saveCheck.Text = "your profile updated successfuly";
                     MV_profileFinal.ActiveViewIndex = 0;
@@ -121,7 +126,7 @@ namespace onlineshop.seller
 
         protected void btn_ChangePass_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/ChangePassword.aspx");
+            Response.Redirect("~/customer/ChangePassword.aspx");
         }
     }
 }

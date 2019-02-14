@@ -7,254 +7,207 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace onlineshop.seller
-{
-
-
-    public partial class profile
-    {
-
+namespace SignUpPage {
+    
+    
+    public partial class SignUpCustomer {
+        
         /// <summary>
-        /// MV_profileFinal control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView MV_profileFinal;
-
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
         /// <summary>
-        /// MV_ShowProfile control.
+        /// txt_CustFName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View MV_ShowProfile;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustFName;
+        
         /// <summary>
-        /// IMG_user control.
+        /// RFV_CustFName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image IMG_user;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustFName;
+        
         /// <summary>
-        /// lbl_name control.
+        /// txt_CustLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_name;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustLName;
+        
         /// <summary>
-        /// lbl_NameShow control.
+        /// RFV_CustLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_NameShow;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustLName;
+        
         /// <summary>
-        /// lbl_location control.
+        /// txt_CustUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_location;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustUserName;
+        
         /// <summary>
-        /// lbl_locationShow control.
+        /// RF_CustuserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_locationShow;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_CustuserName;
+        
         /// <summary>
-        /// lbl_delivery control.
+        /// txt_CustpassSignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_delivery;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustpassSignup;
+        
         /// <summary>
-        /// lbl_delivery_show control.
+        /// RFV_CustPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_delivery_show;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustPass;
+        
         /// <summary>
-        /// lbl_emil control.
+        /// txt_CustconfirmPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_emil;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustconfirmPass;
+        
         /// <summary>
-        /// lbl_emailShow control.
+        /// RFV_Custconfirmpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_emailShow;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Custconfirmpass;
+        
         /// <summary>
-        /// btn_edit control.
+        /// CV_Custconfirmpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_edit;
-
+        protected global::System.Web.UI.WebControls.CompareValidator CV_Custconfirmpass;
+        
         /// <summary>
-        /// btn_ChangePass control.
+        /// Txt_CustAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_ChangePass;
-
+        protected global::System.Web.UI.WebControls.TextBox Txt_CustAddress;
+        
         /// <summary>
-        /// V_change control.
+        /// RFV_CustAdress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View V_change;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustAdress;
+        
         /// <summary>
-        /// Img_edit control.
+        /// txt_CustemailSignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Img_edit;
-
+        protected global::System.Web.UI.WebControls.TextBox txt_CustemailSignup;
+        
         /// <summary>
-        /// FU_ImgProfile control.
+        /// RFV_Custemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FU_ImgProfile;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Custemail;
+        
         /// <summary>
-        /// txt_FNameEdit control.
+        /// REV_Custemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_FNameEdit;
-
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_Custemail;
+        
         /// <summary>
-        /// RF_FName control.
+        /// FU_CustomerImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_FName;
-
+        protected global::System.Web.UI.WebControls.FileUpload FU_CustomerImage;
+        
         /// <summary>
-        /// txt_LNameEdit control.
+        /// RF_Custupload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_LNameEdit;
-
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Custupload;
+        
         /// <summary>
-        /// FR_LName control.
+        /// btn_CustomerSignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator FR_LName;
-
+        protected global::System.Web.UI.WebControls.Button btn_CustomerSignup;
+        
         /// <summary>
-        /// txt_emailEdit control.
+        /// VS_Custsignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_emailEdit;
-
+        protected global::System.Web.UI.WebControls.ValidationSummary VS_Custsignup;
+        
         /// <summary>
-        /// RF_emailEdit control.
+        /// lbl_CustSinCheck control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_emailEdit;
-
-        /// <summary>
-        /// btn_save control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_save;
-
-        /// <summary>
-        /// lbl_saveCheck control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_saveCheck;
-
-        /// <summary>
-        /// VS_EditProfile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary VS_EditProfile;
-
-        /// <summary>
-        /// btn_cancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_cancel;
-
-        /// <summary>
-        /// lbl_Cancel_Check control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_Cancel_Check;
+        protected global::System.Web.UI.WebControls.Label lbl_CustSinCheck;
     }
 }

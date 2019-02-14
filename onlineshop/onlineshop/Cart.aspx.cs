@@ -1,10 +1,5 @@
-﻿using onlineshop.Bl;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace onlineshop
 {
@@ -25,7 +20,7 @@ namespace onlineshop
         {
             int customer_id = (int)Session["customer_id"];
 
-            Orders.add(customer_id, DateTime.Now);
+            // Orders.add(customer_id, );
             btn_submit.Text = "done";
             Response.Redirect("~/cart.aspx");
 

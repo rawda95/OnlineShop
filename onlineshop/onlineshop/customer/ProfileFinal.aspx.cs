@@ -1,49 +1,36 @@
-﻿using System;
+﻿using onlineshop.BL;
+using System;
 using System.Data;
 using System.IO;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-namespace onlineshop.seller
+
+namespace SignUpPage
 {
-    public partial class profile : System.Web.UI.Page
+    public partial class ProfileFinal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             if (!IsPostBack)
             {
-                Session["id"] = 1;
-
-                if (Session["id"] != null)
+                if (Session["sessionId"] != null)
                 {
-                    int id = int.Parse(Session["id"].ToString());
-                    DataTable dt = BL.Seller.getById(id);
+                    int id = int.Parse(Session["sessionId"].ToString());
+                    DataTable dt = customer.getById(id);
                     lbl_NameShow.Text = dt.Rows[0][2].ToString() + " " + dt.Rows[0][3].ToString();
                     lbl_emailShow.Text = dt.Rows[0][4].ToString();
                     IMG_user.ImageUrl = dt.Rows[0][5].ToString();
+                    lbl_locationShow.Text = dt.Rows[0][6].ToString();
+                    lbl_delivery_show.Text = dt.Rows[0][7].ToString();
                 }
-                else
-                {
-                    Response.Redirect("~/customer/login.aspx");
-                }
+
             }
         }
 
-
-
-
         protected void btn_edit_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(Session["id"].ToString());
-            DataTable dt = BL.Seller.getById(id);
-            txt_FNameEdit.Text = dt.Rows[0][2].ToString();
-            txt_LNameEdit.Text = dt.Rows[0][3].ToString();
-            txt_emailEdit.Text = dt.Rows[0][4].ToString();
-            // FU_ImgProfile.ur = dt.Rows[0][5].ToString();
-            Img_edit.ImageUrl = dt.Rows[0][5].ToString();
-
             MV_profileFinal.ActiveViewIndex = 1;
-
         }
 
         //clearing textboxes
@@ -94,11 +81,10 @@ namespace onlineshop.seller
 
                     //updating customer data to database
 
-                    int id = int.Parse(Session["id"].ToString());
-                    BL.Seller.update(id, txt_FNameEdit.Text, txt_LNameEdit.Text, txt_emailEdit.Text, path);
+                    int id = int.Parse(Session["sessionId"].ToString());
+                    customer.update(id, txt_FNameEdit.Text, txt_LNameEdit.Text, txt_emailEdit.Text, path, txt_locationEdit.Text, txt_deliveryEdit.Text);
 
                     lbl_saveCheck.Text = "your profile updated successfuly";
-                    MV_profileFinal.ActiveViewIndex = 0;
 
 
                 }
@@ -114,14 +100,13 @@ namespace onlineshop.seller
 
         protected void btn_cancel_Click(object sender, EventArgs e)
         {
-            lbl_Cancel_Check.Text = "yor upadates are canceled";
-
             MV_profileFinal.ActiveViewIndex = 0;
+            lbl_Cancel_Check.Text = "yor upadates are canceled";
         }
 
         protected void btn_ChangePass_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/ChangePassword.aspx");
+            Response.Redirect("~/ChangePassword.aspx");
         }
     }
 }

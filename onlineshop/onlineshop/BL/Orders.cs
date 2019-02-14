@@ -1,5 +1,4 @@
 ﻿using onlineshop.Dl;
-using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -43,7 +42,7 @@ namespace onlineshop.Bl
         }
 
         //dml
-        public static int add(int cust_id, DateTime order_date)
+        public static int add(int cust_id, string order_date)
         {
 
             //insert into  orders //0 status
@@ -61,7 +60,7 @@ namespace onlineshop.Bl
             cust_cmd.Parameters.AddWithValue("@order_date", order_date);
             DataTable cust_datatable = DBLayer.select(cust_cmd);
             // if (cust_datatable.Rows.Count<= 0) { throw new Exception("cant get elemnt"); }
-            int order_id = int.Parse(cust_datatable.Rows[0]["order_id"].ToString());
+            int order_id = int.Parse(cust_datatable.Rows[0]["id"].ToString());
 
 
             // get customer product from cart to add in order

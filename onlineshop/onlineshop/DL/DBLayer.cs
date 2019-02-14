@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace onlineshop.Dl
 {
@@ -31,8 +28,8 @@ namespace onlineshop.Dl
         public static int dml(SqlCommand _cmd)
         {
             SqlConnection con = new SqlConnection();
-            //try
-            //{
+            try
+            {
                 con = new SqlConnection(ConfigurationManager.ConnectionStrings["shop"].ConnectionString);
 
                 SqlCommand cmd = _cmd;
@@ -41,18 +38,18 @@ namespace onlineshop.Dl
                 int roweffect = cmd.ExecuteNonQuery();
                 return roweffect;
 
-            //}
-            //catch (Exception e)
-            //{
+            }
+            catch (Exception e)
+            {
 
-            //}
-            //finally
-            //{
+            }
+            finally
+            {
                 con.Close();
 
 
-            //}
-            //return -1;
+            }
+            return -1;
 
 
         }
