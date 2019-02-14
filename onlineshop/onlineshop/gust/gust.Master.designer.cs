@@ -49,13 +49,13 @@ namespace onlineshop.gust {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
         
         /// <summary>
-        /// btn_Sele_With_Us control.
+        /// btnSaleWithUs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_Sele_With_Us;
+        protected global::System.Web.UI.WebControls.LinkButton btnSaleWithUs;
         
         /// <summary>
         /// btn_login control.

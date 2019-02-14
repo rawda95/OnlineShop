@@ -48,13 +48,8 @@ namespace perfume
         protected void btn_submit_Click1(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btn_Sele_With_Us_Click(object sender, EventArgs e)
-        {
 
         }
-
 
     }
 }

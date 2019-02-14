@@ -35,5 +35,22 @@ namespace onlineshop.gust
         {
             Session["Lang"] = "en";
         }
+
+
+
+        protected void lb_signup_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/signup.aspx");
+        }
+
+        protected void btn_login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/login.aspx");
+        }
+
+        protected void btnSaleWithUs_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/login.aspx");
+        }
     }
 }

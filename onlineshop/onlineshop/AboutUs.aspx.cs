@@ -34,7 +34,9 @@ namespace onlineshop
             Response.Redirect("~/customer/signup.aspx");
         }
 
-        protected void btnSeleWithUs_Click(object sender, EventArgs e)
+
+
+        protected void btnSaleWithUs_Click1(object sender, EventArgs e)
         {
             Response.Redirect("~/seller/login.aspx");
         }

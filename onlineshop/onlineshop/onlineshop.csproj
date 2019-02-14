@@ -70,83 +70,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
-    <Content Include="ContactPage.aspx" />
-    <Content Include="Customer\Cart.aspx" />
-    <Content Include="Customer\login.aspx" />
-    <Content Include="Customer\OrderDetials.aspx" />
-    <Content Include="Customer\products.aspx" />
-    <Content Include="Customer\profile.aspx" />
-    <Content Include="Customer\signup.aspx" />
-    <Content Include="gust\index.aspx" />
-    <Content Include="home\0002.jpg" />
-    <Content Include="home\001.jpg" />
-    <Content Include="home\003.png" />
-    <Content Include="home\1.png" />
-    <Content Include="home\1157ac983234733.jpg" />
-    <Content Include="home\16.jpg" />
-    <Content Include="home\3.png" />
-    <Content Include="home\4.png" />
-    <Content Include="home\5.png" />
-    <Content Include="home\52.jpeg" />
-    <Content Include="home\55.jpg" />
-    <Content Include="home\6.png" />
-    <Content Include="home\7.png" />
-    <Content Include="home\8.png" />
-    <Content Include="home\accessories.jpg" />
-    <Content Include="home\ads1.jpg" />
-    <Content Include="home\ads2.jpg" />
-    <Content Include="home\ads3.jpg" />
-    <Content Include="home\ads4.jpg" />
-    <Content Include="home\asd2.jpeg" />
-    <Content Include="home\asd3.jpg" />
-    <Content Include="home\asd4.jpeg" />
-    <Content Include="home\bag1.jpg" />
-    <Content Include="home\bg_border.png" />
-    <Content Include="home\g.jpg" />
-    <Content Include="home\gallery1.jpg" />
-    <Content Include="home\gallery2.jpg" />
-    <Content Include="home\gallery3.jpg" />
-    <Content Include="home\gallery4.jpg" />
-    <Content Include="home\girl1.jpg" />
-    <Content Include="home\girl2.jpg" />
-    <Content Include="home\girl3.jpeg" />
-    <Content Include="home\girl3.jpg" />
-    <Content Include="home\iframe1.png" />
-    <Content Include="home\iframe2.png" />
-    <Content Include="home\iframe3.png" />
-    <Content Include="home\iframe4 %282%29.png" />
-    <Content Include="home\iframe4.png" />
-    <Content Include="home\kn.jpg" />
-    <Content Include="home\logo.png" />
-    <Content Include="home\map.png" />
-    <Content Include="home\nahar.jpg" />
-    <Content Include="home\new.png" />
-    <Content Include="home\partner1.png" />
-    <Content Include="home\partner2.png" />
-    <Content Include="home\partner3.png" />
-    <Content Include="home\partner4.png" />
-    <Content Include="home\pricing.png" />
-    <Content Include="home\product1.jpg" />
-    <Content Include="home\product2.jpg" />
-    <Content Include="home\product3.jpg" />
-    <Content Include="home\product4.jpg" />
-    <Content Include="home\product5.jpg" />
-    <Content Include="home\product6.jpg" />
-    <Content Include="home\recommend1.jpg" />
-    <Content Include="home\recommend2.jpg" />
-    <Content Include="home\recommend3.jpg" />
-    <Content Include="home\sale.png" />
-    <Content Include="home\searchicon.png" />
-    <Content Include="home\shipping.jpg" />
-    <Content Include="seller\addcategory.aspx" />
-    <Content Include="seller\addproduct.aspx" />
-    <Content Include="seller\addshop.aspx" />
+    <Content Include="adminSite\AdminMangeShop.aspx" />
+    <Content Include="adminSite\AdminRemoveCategory.aspx" />
+    <Content Include="adminSite\AdminSearchProduct.aspx" />
+    <Content Include="adminSite\allcustomers.aspx" />
+    <Content Include="adminSite\allsellers.aspx" />
     <Content Include="adminSite\bootstrap\css\bootstrap.css" />
     <Content Include="adminSite\bootstrap\css\bootstrap.min.css" />
     <Content Include="adminSite\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="adminSite\bootstrap\js\bootstrap.js" />
     <Content Include="adminSite\bootstrap\js\bootstrap.min.js" />
     <Content Include="adminSite\bootstrap\js\npm.js" />
+    <Content Include="adminSite\CanceledOrderReport.aspx" />
     <Content Include="adminSite\css\style.css" />
     <Content Include="adminSite\dist\css\AdminLTE.css" />
     <Content Include="adminSite\dist\css\AdminLTE.min.css" />
@@ -229,6 +164,7 @@
     <Content Include="adminSite\login.aspx" />
     <Content Include="adminSite\login.html" />
     <Content Include="adminSite\main.aspx" />
+    <Content Include="adminSite\manageusers.aspx" />
     <Content Include="adminSite\pages\calendar.html" />
     <Content Include="adminSite\pages\charts\chartjs.html" />
     <Content Include="adminSite\pages\charts\flot.html" />
@@ -980,6 +916,86 @@
     <Content Include="adminSite\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="adminSite\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="adminSite\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="adminSite\Report1.aspx" />
+    <Content Include="adminSite\Report2.aspx" />
+    <Content Include="adminSite\Report3.aspx" />
+    <Content Include="adminSite\Report4.aspx" />
+    <Content Include="adminSite\Report5.aspx" />
+    <Content Include="adminSite\SearchShopWithSpecificProduct_R.aspx" />
+    <Content Include="adminSite\ShopandSellerInfo.aspx" />
+    <Content Include="adminSite\UserOrder.aspx" />
+    <Content Include="adminSite\usersdetails.aspx" />
+    <Content Include="ContactPage.aspx" />
+    <Content Include="Customer\Cart.aspx" />
+    <Content Include="Customer\login.aspx" />
+    <Content Include="Customer\OrderDetials.aspx" />
+    <Content Include="Customer\products.aspx" />
+    <Content Include="Customer\profile.aspx" />
+    <Content Include="Customer\signup.aspx" />
+    <Content Include="gust\index.aspx" />
+    <Content Include="home\0002.jpg" />
+    <Content Include="home\001.jpg" />
+    <Content Include="home\003.png" />
+    <Content Include="home\1.png" />
+    <Content Include="home\1157ac983234733.jpg" />
+    <Content Include="home\16.jpg" />
+    <Content Include="home\3.png" />
+    <Content Include="home\4.png" />
+    <Content Include="home\5.png" />
+    <Content Include="home\52.jpeg" />
+    <Content Include="home\55.jpg" />
+    <Content Include="home\6.png" />
+    <Content Include="home\7.png" />
+    <Content Include="home\8.png" />
+    <Content Include="home\accessories.jpg" />
+    <Content Include="home\ads1.jpg" />
+    <Content Include="home\ads2.jpg" />
+    <Content Include="home\ads3.jpg" />
+    <Content Include="home\ads4.jpg" />
+    <Content Include="home\asd2.jpeg" />
+    <Content Include="home\asd3.jpg" />
+    <Content Include="home\asd4.jpeg" />
+    <Content Include="home\bag1.jpg" />
+    <Content Include="home\bg_border.png" />
+    <Content Include="home\g.jpg" />
+    <Content Include="home\gallery1.jpg" />
+    <Content Include="home\gallery2.jpg" />
+    <Content Include="home\gallery3.jpg" />
+    <Content Include="home\gallery4.jpg" />
+    <Content Include="home\girl1.jpg" />
+    <Content Include="home\girl2.jpg" />
+    <Content Include="home\girl3.jpeg" />
+    <Content Include="home\girl3.jpg" />
+    <Content Include="home\iframe1.png" />
+    <Content Include="home\iframe2.png" />
+    <Content Include="home\iframe3.png" />
+    <Content Include="home\iframe4 %282%29.png" />
+    <Content Include="home\iframe4.png" />
+    <Content Include="home\kn.jpg" />
+    <Content Include="home\logo.png" />
+    <Content Include="home\map.png" />
+    <Content Include="home\nahar.jpg" />
+    <Content Include="home\new.png" />
+    <Content Include="home\partner1.png" />
+    <Content Include="home\partner2.png" />
+    <Content Include="home\partner3.png" />
+    <Content Include="home\partner4.png" />
+    <Content Include="home\pricing.png" />
+    <Content Include="home\product1.jpg" />
+    <Content Include="home\product2.jpg" />
+    <Content Include="home\product3.jpg" />
+    <Content Include="home\product4.jpg" />
+    <Content Include="home\product5.jpg" />
+    <Content Include="home\product6.jpg" />
+    <Content Include="home\recommend1.jpg" />
+    <Content Include="home\recommend2.jpg" />
+    <Content Include="home\recommend3.jpg" />
+    <Content Include="home\sale.png" />
+    <Content Include="home\searchicon.png" />
+    <Content Include="home\shipping.jpg" />
+    <Content Include="seller\addcategory.aspx" />
+    <Content Include="seller\addproduct.aspx" />
+    <Content Include="seller\addshop.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="details.aspx" />
     <Content Include="divtry.aspx" />
@@ -1079,6 +1095,139 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\AdminMangeShop.aspx.cs">
+      <DependentUpon>AdminMangeShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\AdminMangeShop.aspx.designer.cs">
+      <DependentUpon>AdminMangeShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\AdminRemoveCategory.aspx.cs">
+      <DependentUpon>AdminRemoveCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\AdminRemoveCategory.aspx.designer.cs">
+      <DependentUpon>AdminRemoveCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\AdminSearchProduct.aspx.cs">
+      <DependentUpon>AdminSearchProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\AdminSearchProduct.aspx.designer.cs">
+      <DependentUpon>AdminSearchProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\allcustomers.aspx.cs">
+      <DependentUpon>allcustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\allcustomers.aspx.designer.cs">
+      <DependentUpon>allcustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\allsellers.aspx.cs">
+      <DependentUpon>allsellers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\allsellers.aspx.designer.cs">
+      <DependentUpon>allsellers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\CanceledOrderReport.aspx.cs">
+      <DependentUpon>CanceledOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\CanceledOrderReport.aspx.designer.cs">
+      <DependentUpon>CanceledOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\manageusers.aspx.cs">
+      <DependentUpon>manageusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\manageusers.aspx.designer.cs">
+      <DependentUpon>manageusers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\Report1.aspx.cs">
+      <DependentUpon>Report1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\Report1.aspx.designer.cs">
+      <DependentUpon>Report1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\Report2.aspx.cs">
+      <DependentUpon>Report2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\Report2.aspx.designer.cs">
+      <DependentUpon>Report2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\Report3.aspx.cs">
+      <DependentUpon>Report3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\Report3.aspx.designer.cs">
+      <DependentUpon>Report3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\Report4.aspx.cs">
+      <DependentUpon>Report4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\Report4.aspx.designer.cs">
+      <DependentUpon>Report4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\Report5.aspx.cs">
+      <DependentUpon>Report5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\Report5.aspx.designer.cs">
+      <DependentUpon>Report5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\SearchShopWithSpecificProduct_R.aspx.cs">
+      <DependentUpon>SearchShopWithSpecificProduct_R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\SearchShopWithSpecificProduct_R.aspx.designer.cs">
+      <DependentUpon>SearchShopWithSpecificProduct_R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\ShopandSellerInfo.aspx.cs">
+      <DependentUpon>ShopandSellerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\ShopandSellerInfo.aspx.designer.cs">
+      <DependentUpon>ShopandSellerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\UserOrder.aspx.cs">
+      <DependentUpon>UserOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\UserOrder.aspx.designer.cs">
+      <DependentUpon>UserOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSite\usersdetails.aspx.cs">
+      <DependentUpon>usersdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSite\usersdetails.aspx.designer.cs">
+      <DependentUpon>usersdetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\ResHome.ar.designer.cs">
       <DependentUpon>ResHome.ar.resx</DependentUpon>
@@ -1181,27 +1330,6 @@
     </Compile>
     <Compile Include="seller\addshop.aspx.designer.cs">
       <DependentUpon>addshop.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="adminSite\admin.Master.cs">
-      <DependentUpon>admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="adminSite\admin.Master.designer.cs">
-      <DependentUpon>admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="adminSite\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="adminSite\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="adminSite\main.aspx.cs">
-      <DependentUpon>main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="adminSite\main.aspx.designer.cs">
-      <DependentUpon>main.aspx</DependentUpon>
     </Compile>
     <Compile Include="BL\cart.cs" />
     <Compile Include="BL\Category.cs" />
@@ -1351,6 +1479,9 @@
     <Content Include="seller\signup.aspx" />
     <Content Include="SitePoliciesPage.aspx" />
     <Content Include="web.config" />
+    <Content Include="seller\Home.Master" />
+    <Content Include="gust\gust.Master" />
+    <Content Include="Customer\customer.Master" />
     <Content Include="adminSite\admin.Master" />
     <Content Include="adminSite\bootstrap\css\bootstrap.css.map" />
     <Content Include="adminSite\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -1460,9 +1591,6 @@
     <Content Include="adminSite\plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="adminSite\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="adminSite\plugins\input-mask\phone-codes\phone-codes.json" />
-    <Content Include="seller\Home.Master" />
-    <Content Include="gust\gust.Master" />
-    <Content Include="Customer\customer.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

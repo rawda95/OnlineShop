@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="header" runat="server">
     <ul class="nav navbar-nav">
         <li>
-            <asp:LinkButton runat="server" ID="btnSeleWithUs" Text="<%$ Resources: ResHome,btnSaleWithUs %>" OnClick="btnSeleWithUs_Click">
+            <asp:LinkButton runat="server" ID="btnSaleWithUs" Text="<%$ Resources: ResHome,btnSaleWithUs %>" OnClick="btnSaleWithUs_Click1">
                                             <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
 
         <li>

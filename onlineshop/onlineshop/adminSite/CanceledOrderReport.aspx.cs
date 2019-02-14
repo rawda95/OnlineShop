@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using onlineshop.BL;
-using onlineshop.Bl;
 
 namespace onlineshop.adminSite
 {
@@ -13,9 +6,9 @@ namespace onlineshop.adminSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
-                dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
+                //   dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
                 dl_CanceledOrders.DataBind();
             }
         }

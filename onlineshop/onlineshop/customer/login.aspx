@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="onlineshop.Customer.login" %>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
     <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
         <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
@@ -16,12 +16,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <style>
-        .login-form{
-            padding:20px;
-            margin:10px;
+        .login-form {
+            padding: 20px;
+            margin: 10px;
         }
-        .form{
-            margin:20px;
+
+        .form {
+            margin: 20px;
         }
     </style>
     <div class="container">
@@ -54,6 +55,7 @@
                             <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" />
 
                             Keep me signed in
+                       
                        
                        
                        

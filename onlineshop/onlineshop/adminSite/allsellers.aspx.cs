@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using onlineshop.Bl;
-using onlineshop.BL;
-using onlineshop.Dl;
-using System.Data;
 
 
 namespace onlineshop.adminSite
@@ -16,8 +8,8 @@ namespace onlineshop.adminSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = Users.getAllseller();
-            GV_seller.DataSource = dt;
+            //DataTable dt = Users.getAllseller();
+            //  GV_seller.DataSource = dt;
             GV_seller.DataBind();
         }
 
@@ -25,9 +17,9 @@ namespace onlineshop.adminSite
         {
             int id = (int)GV_seller.DataKeys[e.RowIndex].Value;
 
-           // Users.reomveseller(id,);
-            
-            GV_seller.DataSource = Users.getAllseller();
+            // Users.reomveseller(id,);
+
+            //   GV_seller.DataSource = Users.getAllseller();
             GV_seller.DataBind();
         }
 

@@ -71,9 +71,9 @@
                                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                         <li>
-                                            <asp:LinkButton  ID="LB_AR"  runat="server" OnClick="LB_AR_Click"><i class="fa fa-flag"> Arabic</i></asp:LinkButton></li>
+                                            <asp:LinkButton ID="LB_AR" runat="server" OnClick="LB_AR_Click"><i class="fa fa-flag"> Arabic</i></asp:LinkButton></li>
                                         <li>
-                                            <asp:LinkButton  ID="LB_En" runat="server" OnClick="LB_En_Click"><i class="fa fa-flag"> English</i></asp:LinkButton></li>
+                                            <asp:LinkButton ID="LB_En" runat="server" OnClick="LB_En_Click"><i class="fa fa-flag"> English</i></asp:LinkButton></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,19 +90,23 @@
                                 <div class="shop-menu pull-right">
                                     <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
 
-                                     <ul class="nav navbar-nav">
-        <li>
-            <asp:LinkButton runat="server" ID="btn_Sele_With_Us" Text="<%$ Resources: ResHome,btnSign%>" OnClick="btn_Sele_With_Us_Click">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            </li>
+                                        <li>
+                                            </li>
+                                        <li>
+                                            <asp:LinkButton runat="server" ID="btnSaleWithUs" Text="<%$ Resources: ResHome,btnSaleWithUs%>" OnClick="btnSaleWithUs_Click1">
                                             <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
 
-        <li><a href="login.html">
-            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnLog%>" ID="btn_login" OnClick="btn_login_Click">
+                                        <li><a href="login.html">
+                                            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnLog%>" ID="btn_login" OnClick="btn_login_Click">
                                             <i class="fa fa-lock"></i>Login
             </asp:LinkButton>
 
-        </a></li>
-        <li><a href="login.html">
-            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnSaleWithUs%>" ID="lb_signup" OnClick="lb_signup_Click">
+                                        </a></li>
+                                        <li><a href="login.html">
+                                            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnSign%>" ID="lb_signup" OnClick="lb_signup_Click">
             <i class="fa fa-user-md"></i>Sign Up
             </asp:LinkButton></a></li>
 
@@ -110,7 +114,7 @@
 
 
 
-    </ul>
+                                    </ul>
 
                                 </div>
                             </div>
@@ -163,6 +167,10 @@
                 </div>
                 <!--/header-bottom-->
                 4
+           
+           
+           
+           
            
            
             </header>
@@ -258,6 +266,10 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
+                                   
+                                   
+                                   
                                    
                                    
                                    

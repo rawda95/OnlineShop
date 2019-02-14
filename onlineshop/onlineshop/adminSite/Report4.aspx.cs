@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using onlineshop.Bl;
-using onlineshop.BL;
 
 namespace onlineshop.adminSite
 {
@@ -20,7 +13,7 @@ namespace onlineshop.adminSite
         {
             string username = txt_username.Text;
 
-            grd_users.DataSource = Shop.SearchingUser(username);
+            //  grd_users.DataSource = Shop.SearchingUser(username);
 
             grd_users.DataBind();
         }

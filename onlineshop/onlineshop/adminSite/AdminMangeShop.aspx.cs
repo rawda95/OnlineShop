@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
-using onlineshop.Bl;
-using onlineshop.BL;
 
 namespace onlineshop.adminSite
 {
@@ -14,9 +7,9 @@ namespace onlineshop.adminSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
-                grd_shopinfo.DataSource =NewShop.GetShopInfo();
+                // grd_shopinfo.DataSource =NewShop.GetShopInfo();
                 grd_shopinfo.DataBind();
             }
         }
