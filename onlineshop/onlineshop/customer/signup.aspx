@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="onlineshop.Customer.signup" %>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
 
     <ul class="nav navbar-nav">
         <li>

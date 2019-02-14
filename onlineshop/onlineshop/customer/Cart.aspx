@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="onlineshop.Customer.Cart" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="header" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ph_header" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="Content" runat="server">
 
     <asp:ScriptManager runat="server" ID="script"></asp:ScriptManager>
 

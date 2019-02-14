@@ -69,14 +69,74 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="Customer\Cart.aspx" />
     <Content Include="Customer\login.aspx" />
     <Content Include="Customer\OrderDetials.aspx" />
     <Content Include="Customer\products.aspx" />
     <Content Include="Customer\profile.aspx" />
-    <Content Include="Customer\ProfileFinal.aspx" />
     <Content Include="Customer\signup.aspx" />
     <Content Include="gust\index.aspx" />
+    <Content Include="home\0002.jpg" />
+    <Content Include="home\001.jpg" />
+    <Content Include="home\003.png" />
+    <Content Include="home\1.png" />
+    <Content Include="home\1157ac983234733.jpg" />
+    <Content Include="home\16.jpg" />
+    <Content Include="home\3.png" />
+    <Content Include="home\4.png" />
+    <Content Include="home\5.png" />
+    <Content Include="home\52.jpeg" />
+    <Content Include="home\55.jpg" />
+    <Content Include="home\6.png" />
+    <Content Include="home\7.png" />
+    <Content Include="home\8.png" />
+    <Content Include="home\accessories.jpg" />
+    <Content Include="home\ads1.jpg" />
+    <Content Include="home\ads2.jpg" />
+    <Content Include="home\ads3.jpg" />
+    <Content Include="home\ads4.jpg" />
+    <Content Include="home\asd2.jpeg" />
+    <Content Include="home\asd3.jpg" />
+    <Content Include="home\asd4.jpeg" />
+    <Content Include="home\bag1.jpg" />
+    <Content Include="home\bg_border.png" />
+    <Content Include="home\g.jpg" />
+    <Content Include="home\gallery1.jpg" />
+    <Content Include="home\gallery2.jpg" />
+    <Content Include="home\gallery3.jpg" />
+    <Content Include="home\gallery4.jpg" />
+    <Content Include="home\girl1.jpg" />
+    <Content Include="home\girl2.jpg" />
+    <Content Include="home\girl3.jpeg" />
+    <Content Include="home\girl3.jpg" />
+    <Content Include="home\iframe1.png" />
+    <Content Include="home\iframe2.png" />
+    <Content Include="home\iframe3.png" />
+    <Content Include="home\iframe4 %282%29.png" />
+    <Content Include="home\iframe4.png" />
+    <Content Include="home\kn.jpg" />
+    <Content Include="home\logo.png" />
+    <Content Include="home\map.png" />
+    <Content Include="home\nahar.jpg" />
+    <Content Include="home\new.png" />
+    <Content Include="home\partner1.png" />
+    <Content Include="home\partner2.png" />
+    <Content Include="home\partner3.png" />
+    <Content Include="home\partner4.png" />
+    <Content Include="home\pricing.png" />
+    <Content Include="home\product1.jpg" />
+    <Content Include="home\product2.jpg" />
+    <Content Include="home\product3.jpg" />
+    <Content Include="home\product4.jpg" />
+    <Content Include="home\product5.jpg" />
+    <Content Include="home\product6.jpg" />
+    <Content Include="home\recommend1.jpg" />
+    <Content Include="home\recommend2.jpg" />
+    <Content Include="home\recommend3.jpg" />
+    <Content Include="home\sale.png" />
+    <Content Include="home\searchicon.png" />
+    <Content Include="home\shipping.jpg" />
     <Content Include="seller\addcategory.aspx" />
     <Content Include="seller\addproduct.aspx" />
     <Content Include="seller\addshop.aspx" />
@@ -1012,6 +1072,23 @@
     <Content Include="js\price-range.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ResHome.ar.designer.cs">
+      <DependentUpon>ResHome.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ResHome.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResHome.resx</DependentUpon>
+    </Compile>
     <Compile Include="BL\identity.cs" />
     <Compile Include="Customer\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
@@ -1054,13 +1131,6 @@
     </Compile>
     <Compile Include="Customer\profile.aspx.designer.cs">
       <DependentUpon>profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Customer\ProfileFinal.aspx.cs">
-      <DependentUpon>ProfileFinal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Customer\ProfileFinal.aspx.designer.cs">
-      <DependentUpon>ProfileFinal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
@@ -1387,6 +1457,24 @@
   <ItemGroup>
     <Folder Include="ErrorLog\" />
     <Folder Include="Photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\AboutUs.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\AboutUs.aspx.ar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ResHome.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ResHome.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ResHome.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ResHome.ar.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

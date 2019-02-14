@@ -100,5 +100,12 @@ namespace onlineshop.BL
             return DBLayer.select(cmd);
         }
 
+        public static int get_last_inserted_id()
+        {
+            SqlCommand cmd = new SqlCommand("select max(id) from Product.Product");
+            DataTable t = DBLayer.select(cmd);
+            return int.Parse(t.Rows[0][0].ToString());
+
+        }
     }
 }

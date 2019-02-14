@@ -185,7 +185,7 @@
 
             <%--    place to put center content place holder --%>
 
-            <asp:ContentPlaceHolder ID="cs" runat="server">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
             </asp:ContentPlaceHolder>
 
             <footer id="footer">
@@ -198,6 +198,8 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
+                                   
                                    
                                    
                                    

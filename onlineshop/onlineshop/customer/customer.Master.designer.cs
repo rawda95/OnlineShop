@@ -40,12 +40,12 @@ namespace onlineshop.customer {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder search;
         
         /// <summary>
-        /// cs control.
+        /// Content control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cs;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content;
     }
 }

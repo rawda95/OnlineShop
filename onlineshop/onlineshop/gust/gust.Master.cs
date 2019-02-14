@@ -22,7 +22,18 @@ namespace onlineshop.gust
 
         protected void lb_about_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/AboutUs.aspx");
+        }
+
+        protected void LB_AR_Click(object sender, EventArgs e)
+        {
+
+            Session["Lang"] = "ar";
+        }
+
+        protected void LB_En_Click(object sender, EventArgs e)
+        {
+            Session["Lang"] = "en";
         }
     }
 }

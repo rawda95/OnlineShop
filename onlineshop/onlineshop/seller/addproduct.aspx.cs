@@ -50,8 +50,9 @@ namespace onlineshop
                     shop_id = int.Parse((shop.Rows[0][0]).ToString());
                 }
 
-                Stock.add(identity.last_add_item(), shop_id, 1);
+                Stock.add(product.get_last_inserted_id(), shop_id, 1);
                 lbl_msg.Text = " product  added ";
+                Response.Redirect("~/seller/productList.aspx");
 
                 CleartextBoxes(this);
 

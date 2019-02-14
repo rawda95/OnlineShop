@@ -100,6 +100,8 @@ a#scrollUp {
 
 .social-icons ul li {
     display: inline-block;
+    top: 0px;
+    left: 0px;
 }
 
     .social-icons ul li a i {
