@@ -36,8 +36,8 @@ namespace onlineshop
             try
             {
                 //error file upload
-                string path = "~/images/product-details/" + FileUpload1.FileName;
-                FileUpload1.SaveAs(Server.MapPath(path));
+                string path = "~/images/product-details/" + FU_product.FileName;
+                FU_product.SaveAs(Server.MapPath(path));
 
                 product.add(txt_name.Text, int.Parse(txt_price.Text), txt_desc.Text, path, int.Parse(ddl_category.SelectedValue));
 
