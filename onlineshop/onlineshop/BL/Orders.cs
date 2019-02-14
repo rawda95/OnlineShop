@@ -35,8 +35,10 @@ namespace onlineshop.Bl
 
         public static DataTable get_order_products(int order_id)
         {
-            SqlCommand cmd = new SqlCommand("select p.* ,op.Qty from Product.Product p ,[Orders].Order_Products opwhere op.Product_id = p.id and op.order_id =@order_id");
+            SqlCommand cmd = new SqlCommand("");
             cmd.Parameters.AddWithValue("order_id", order_id);
+            cmd.CommandText = "orderProdcut";
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
             return DBLayer.select(cmd);
 
         }

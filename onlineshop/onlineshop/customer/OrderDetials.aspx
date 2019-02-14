@@ -1,6 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="products.aspx.cs" Inherits="onlineshop.Customer.products" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="OrderDetials.aspx.cs" Inherits="onlineshop.Customer.OrderDetials" %>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
     <ul class="nav navbar-nav">
@@ -35,69 +33,12 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
-                        <h2>Category</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--category-productsr-->
-                            <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
-                                <ContentTemplate>
 
-
-                                    <asp:DataList AutoPostBack="false" ID="dl_shop_category" DataKeyField="id" runat="server" CssClass="row" OnItemCommand="dl_shop_category_ItemCommand">
-
-                                        <ItemTemplate>
-
-                                            <div class="panel panel-default col-sm-12 col-4 ">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-
-                                                            <asp:LinkButton ID="link" runat="server" CommandName="AddAction">    <%# DataBinder.Eval(Container.DataItem, "name") %> </asp:LinkButton>
-
-                                                        </a>
-                                                    </h4>
-                                                </div>
-
-                                            </div>
-                                            </div>                                      
-                                       
-                                                                
-                                       
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-
-                                                            <asp:LinkButton ID="link" runat="server">  all </asp:LinkButton>
-
-                                                        </a>
-                                                    </h4>
-                                                </div>
-
-                                            </div>
-                                        </FooterTemplate>
-                                    </asp:DataList>
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
-
-                        </div>
-                        <!--/category-products-->
-                    </div>
-
-                    <div class="shipping text-center">
-                        <!--shipping-->
-                        <img src="images/home/shipping.jpg" alt="" />
-                    </div>
-                    <!--/shipping-->
-
-                </div>
-                <div class="col-sm-9 padding-right">
+                <div class="col-sm-9 padding-left">
                     <div class="features_items">
                         <!--features_items-->
                         <h2 class="title text-center">Features Items</h2>
+
                         <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
                                 <asp:DataList AutoPostBack="false" CellPadding="2" DataKeyField="id" CellSpacing="20" ID="dl_product" runat="server" CssClass="row" RepeatColumns="4" OnItemCommand="dl_product_ItemCommand">
@@ -126,6 +67,33 @@
 
                                         </div>
                                         !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                         <div class="col-sm-4">
                                             <div class="product-image-wrapper">
                                                 <div class="single-products">
@@ -151,12 +119,19 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </ItemTemplate>
                                 </asp:DataList>
+
+
                             </ContentTemplate>
                         </asp:UpdatePanel>
 
                     </div>
+                    <!--features_items-->
+
+
+
 
                 </div>
             </div>

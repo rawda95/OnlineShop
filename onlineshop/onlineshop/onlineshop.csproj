@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="Customer\Cart.aspx" />
     <Content Include="Customer\login.aspx" />
+    <Content Include="Customer\OrderDetials.aspx" />
     <Content Include="Customer\products.aspx" />
     <Content Include="Customer\profile.aspx" />
     <Content Include="Customer\ProfileFinal.aspx" />
@@ -1032,6 +1033,13 @@
     </Compile>
     <Compile Include="Customer\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\OrderDetials.aspx.cs">
+      <DependentUpon>OrderDetials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\OrderDetials.aspx.designer.cs">
+      <DependentUpon>OrderDetials.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer\products.aspx.cs">
       <DependentUpon>products.aspx</DependentUpon>
