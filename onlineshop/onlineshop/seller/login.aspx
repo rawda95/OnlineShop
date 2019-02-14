@@ -63,14 +63,28 @@
             <div class="clearfix">
                 <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" Width="22px" Height="20px" />Keep me signed in
            
+               
+
+               
+
+
+
                 <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
                 <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
                 &nbsp;
+           
+           
            
             </div>
             <p class="text-center text-muted small">
                 Don't have an account?
                
+               
+
+               
+
+
+
                 <asp:Button runat="server" ID="btn_signup" OnClick="btn_signup_Click" Text="signup" Height="24px" Width="88px" />
             </p>
 
@@ -82,5 +96,7 @@
 
 
     </div>
-    <asp:Content ID="Content3" ContentPlaceHolderID="script" runat="server">
-    </asp:Content>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="script" runat="server">
+</asp:Content>

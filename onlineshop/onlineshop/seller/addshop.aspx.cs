@@ -8,6 +8,8 @@ namespace onlineshop
 {
     public partial class addshop : System.Web.UI.Page
     {
+
+        UnobtrusiveValidationMode unobtrusiveValidationMode = new UnobtrusiveValidationMode();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["id"] != null)
@@ -32,7 +34,7 @@ namespace onlineshop
 
             Shop.add(txt_shop_name.Text, txt_shop_locations.Text, txt_shop_desc.Text, path, seller_id);
             lbl_msg.Text = "shop added ";
-            Response.Redirect("~/addcategory.aspx");
+            Response.Redirect("~/seller/addcategory.aspx");
             CleartextBoxes(this);
 
             //foreach (Control c in Parent.Controls)

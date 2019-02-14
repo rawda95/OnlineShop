@@ -52,7 +52,7 @@
                                 <td>
                                     <label class="col-md-4 control-label" for="product_id">shop location</label></td>
                                 <td>
-                                    <asp:TextBox ID="txt_shop_locations" CssClass="form-control" runat="server" Height="29px" Width="347px" OnTextChanged="txt_shop_locations_TextChanged" Rows="80"></asp:TextBox>
+                                    <asp:TextBox ID="txt_shop_locations" CssClass="form-control" runat="server" Height="29px" Width="347px" Rows="80"></asp:TextBox>
                                     <br />
                                 </td>
                                 <td>
