@@ -171,6 +171,17 @@ namespace onlineshop.BL
         }
 
 
+        public static string getName(int id)
+        {
+            SqlCommand cmd = new SqlCommand("select firts_name  from Users.Customers  where id =@id");
+            cmd.Parameters.AddWithValue("@id", id);
+
+            string name = DBLayer.select(cmd).Rows[0][0].ToString();
+            return name;
+
+
+
+        }
 
 
 

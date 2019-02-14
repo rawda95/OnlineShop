@@ -6,22 +6,26 @@
     <ul class="nav navbar-nav">
 
 
-        <asp:LinkButton runat="server" ID="lb_Wishlist">
-                                                   <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_Wishlist">
+                                            <i class="fa fa-user"></i>Wishlist </asp:LinkButton></li>
 
 
-        </asp:LinkButton>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_cart" OnClick="lb_cart_Click">
+                                            <i class="fa fa-user"></i>Cart </asp:LinkButton></li>
 
-        <asp:LinkButton runat="server" ID="lb_cart" OnClick="lb_cart_Click">
-        <li><a><i class="fa fa-shopping-cart"></i>Cart</a></li>
-        </asp:LinkButton>
-        <asp:LinkButton runat="server" ID="lb_logout">
-                  <li><a href="login.html"><i class="fa fa-lock"></i>logout</a></li>
-            </asp:LinkButton>
 
-        <asp:LinkButton runat="server" ID="LinkButton1">
-                  <li><a href="login.html"><i class="fa fa-lock"></i>name</a></li>
-            </asp:LinkButton>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_logout">
+                                            <i class="fa fa-user"></i>logout </asp:LinkButton></li>
+
+
+        <li>
+            <asp:LinkButton runat="server" ID="lb_profile">
+                <i class="fa fa-user"></i>
+                <asp:Label runat="server" ID="lb_name" Text="Name"></asp:Label>
+            </asp:LinkButton></li>
 
     </ul>
 </asp:Content>
@@ -76,6 +80,8 @@
                                             </div>                                      
                                        
                                                                 
+                                       
+                                       
                                        
                                        
                                        

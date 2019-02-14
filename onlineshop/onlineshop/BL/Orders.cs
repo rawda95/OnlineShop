@@ -138,7 +138,7 @@ namespace onlineshop.Bl
         public static string get_order_status(int order_id)
         {
 
-            SqlCommand cmd = new SqlCommand("select os.name from [Orders].[Order] oo , [Orders].Order_Status oswhere  os.id = oo.order_status and oo.id = @order_id");
+            SqlCommand cmd = new SqlCommand("select os.name from [Orders].[Order] oo , [Orders].Order_Status os where  os.id = oo.order_status and oo.id = @order_id");
             cmd.Parameters.AddWithValue("@order_id", order_id);
             DataTable temp = DBLayer.select(cmd);
             string status = temp.Rows[0][0].ToString();

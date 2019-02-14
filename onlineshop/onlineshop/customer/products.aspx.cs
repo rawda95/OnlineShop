@@ -26,6 +26,8 @@ namespace onlineshop.Customer
                 {
                     Bind_Dl_product(product.getAll());
 
+                    int id = int.Parse(Session["id"].ToString());
+                    lb_name.Text = BL.customer.getName(id);
 
                     //int customer = int.Parse(Session["id"].ToString());
 

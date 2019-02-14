@@ -40,13 +40,22 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.LinkButton lb_logout;
         
         /// <summary>
-        /// LinkButton1 control.
+        /// lb_profile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton lb_profile;
+        
+        /// <summary>
+        /// lb_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_name;
         
         /// <summary>
         /// ScriptManager2 control.
