@@ -35,9 +35,13 @@
             <div class="row">
 
                 <div class="col-sm-9 padding-left">
+
+                    <div>
+                        <asp:Label ID="status" runat="server"></asp:Label>
+                    </div>
                     <div class="features_items">
                         <!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center"></h2>
 
                         <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
@@ -126,6 +130,10 @@
 
                             </ContentTemplate>
                         </asp:UpdatePanel>
+
+
+
+                        <asp:Button ID="btn_cansel_order" Visible="false" runat="server" Text="cansel" OnClick="btn_cansel_order_Click" />
 
                     </div>
                     <!--features_items-->

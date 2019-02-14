@@ -23,6 +23,15 @@ namespace onlineshop.Customer
                     int oreder_id = int.Parse(Request.QueryString["id"].ToString());
                     Bind_Dl_product(Bl.Orders.get_order_products(oreder_id));
 
+                    string order_status = Bl.Orders.get_order_status(oreder_id);
+                    status.Text = order_status;
+
+                    if (order_status == "panding")
+                    {
+                        btn_cansel_order.Visible = true;
+
+                    }
+
 
                     //int customer = int.Parse(Session["id"].ToString());
 
@@ -119,10 +128,12 @@ namespace onlineshop.Customer
             return "Put here whatever default value you want";
         }
 
-
-
-
-
+        protected void btn_cansel_order_Click(object sender, EventArgs e)
+        {
+            int oreder_id = int.Parse(Request.QueryString["id"].ToString());
+            Bl.Orders.reomve(oreder_id);
+            Response.Redirect("~/customer/products.aspx");
+        }
     }
 
 

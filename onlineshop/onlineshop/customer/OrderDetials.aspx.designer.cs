@@ -49,6 +49,15 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox search;
         
         /// <summary>
+        /// status control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label status;
+        
+        /// <summary>
         /// UpdatePanel_product control.
         /// </summary>
         /// <remarks>
@@ -65,5 +74,14 @@ namespace onlineshop.Customer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList dl_product;
+        
+        /// <summary>
+        /// btn_cansel_order control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_cansel_order;
     }
 }
