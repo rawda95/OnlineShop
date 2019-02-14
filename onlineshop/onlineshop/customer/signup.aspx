@@ -1,13 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="onlineshop.Customer.signup" %>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
+
     <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
-        <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
-        <li><a href="checkout.html"><i class="fa fa-crosshairs"></i>Checkout</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-        <li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
-        <li><a href="login.html"><i class="fa fa-user-md"></i>Sign Up</a></li>
+        <li>
+            <asp:LinkButton runat="server" ID="btn_Sele_With_Us" OnClick="btn_Sele_With_Us_Click">
+                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
+
+        <li><a href="login.html">
+            <asp:LinkButton runat="server" ID="btn_login" OnClick="btn_login_Click">
+                                            <i class="fa fa-lock"></i>Login
+            </asp:LinkButton>
+
+        </a></li>
+        <li><a href="login.html">
+            <asp:LinkButton runat="server" ID="lb_signup" OnClick="lb_signup_Click">
+            <i class="fa fa-user-md"></i>Sign Up
+            </asp:LinkButton></a></li>
+
+
+
+
+
     </ul>
 </asp:Content>
 

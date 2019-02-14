@@ -22,8 +22,7 @@ namespace onlineshop.Customer
                     Session["id"] = Request.Cookies["mycookie"].Values["cookieId"].ToString();
 
                     // redircet main
-
-                    Response.Redirect("~/customer/productList.aspx");
+                    Response.Redirect("~/customer/products.aspx");
 
                 }
             }
@@ -88,8 +87,7 @@ namespace onlineshop.Customer
                             Response.Cookies.Add(co);
                         }
 
-
-                        Response.Redirect("~/customer/productList.aspx");
+                        Response.Redirect("~/customer/products.aspx");
 
                     }
                     else

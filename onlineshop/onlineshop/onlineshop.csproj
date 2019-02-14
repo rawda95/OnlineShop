@@ -75,7 +75,6 @@
     <Content Include="Customer\profile.aspx" />
     <Content Include="Customer\ProfileFinal.aspx" />
     <Content Include="Customer\signup.aspx" />
-    <Content Include="Customer\SignUpCustomer.aspx" />
     <Content Include="gust\index.aspx" />
     <Content Include="seller\addcategory.aspx" />
     <Content Include="seller\addproduct.aspx" />
@@ -1061,13 +1060,6 @@
     </Compile>
     <Compile Include="Customer\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Customer\SignUpCustomer.aspx.cs">
-      <DependentUpon>SignUpCustomer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Customer\SignUpCustomer.aspx.designer.cs">
-      <DependentUpon>SignUpCustomer.aspx</DependentUpon>
     </Compile>
     <Compile Include="gust\gust.Master.cs">
       <DependentUpon>gust.Master</DependentUpon>

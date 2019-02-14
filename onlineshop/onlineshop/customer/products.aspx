@@ -63,32 +63,6 @@
                                             </div>                                      
                                        
                                        
-                                         
-                                       
-                                       
-                                       
-                                       
-                                       
-                                     
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                        
                                        
@@ -143,12 +117,12 @@
                                 <asp:DataList AutoPostBack="false" CellPadding="2" DataKeyField="id" CellSpacing="20" ID="dl_product" runat="server" CssClass="row" RepeatColumns="4" OnItemCommand="dl_product_ItemCommand">
                                     <ItemTemplate>
 
-                                        <div>
+                                        <%-- <div>
                                             <div class="product-image-wrapper col-12">
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
                                                         <%--<img  src='<%#Eval("image")%>' alt="" />--%>
-                                                        <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
+                                        <!--       <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
                                                         <p><%# SafeEval(Container.DataItem, "name")%> </p>
                                                         <h2><%# SafeEval(Container.DataItem, "description") %> </h2>
 
@@ -158,13 +132,70 @@
 
                                                         <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>Add to cart</asp:LinkButton>
                                                         <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
-                                                    </div>
+                                        <!--   </div>
 
                                                 </div>
                                             </div>
 
 
                                         </div>
+                                        !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-sm-4">
+                                            <div class="product-image-wrapper">
+                                                <div class="single-products">
+                                                    <div class="productinfo text-center">
+                                                        <img src="images/home/product1.jpg" alt="" />
+                                                        <h2>$<%# SafeEval(Container.DataItem, "price")%></h2>
+                                                        <p><%# SafeEval(Container.DataItem, "name")%></p>
+                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                                    </div>
+                                                    <div class="product-overlay">
+                                                        <div class="overlay-content">
+                                                            <h2><%# SafeEval(Container.DataItem, "price")%></h2>
+                                                            <p><%# SafeEval(Container.DataItem, "name")%></p>
+                                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="choose">
+                                                    <ul class="nav nav-pills nav-justified">
+                                                        <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+                                                        <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
 
 
                                     </ItemTemplate>
