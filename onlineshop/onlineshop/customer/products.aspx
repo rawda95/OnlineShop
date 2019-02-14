@@ -4,12 +4,25 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
     <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
-        <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
-        <li><a href="checkout.html"><i class="fa fa-crosshairs"></i>Checkout</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-        <li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
-        <li><a href="login.html"><i class="fa fa-user-md"></i>Sign Up</a></li>
+
+
+        <asp:LinkButton runat="server" ID="lb_Wishlist">
+                                                   <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
+
+
+        </asp:LinkButton>
+
+        <asp:LinkButton runat="server" ID="lb_cart" OnClick="lb_cart_Click">
+        <li><a><i class="fa fa-shopping-cart"></i>Cart</a></li>
+        </asp:LinkButton>
+        <asp:LinkButton runat="server" ID="lb_logout">
+                  <li><a href="login.html"><i class="fa fa-lock"></i>logout</a></li>
+            </asp:LinkButton>
+
+        <asp:LinkButton runat="server" ID="LinkButton1">
+                  <li><a href="login.html"><i class="fa fa-lock"></i>name</a></li>
+            </asp:LinkButton>
+
     </ul>
 </asp:Content>
 
@@ -64,6 +77,17 @@
                                        
                                                                 
                                        
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div class="panel panel-default">
@@ -98,17 +122,18 @@
                     <div class="features_items">
                         <!--features_items-->
                         <h2 class="title text-center">Features Items</h2>
+
                         <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
                                 <asp:DataList AutoPostBack="false" CellPadding="2" DataKeyField="id" CellSpacing="20" ID="dl_product" runat="server" CssClass="row" RepeatColumns="4" OnItemCommand="dl_product_ItemCommand">
                                     <ItemTemplate>
 
-                                        <%-- <div>
+                                        <div>
                                             <div class="product-image-wrapper col-12">
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
                                                         <%--<img  src='<%#Eval("image")%>' alt="" />--%>
-                                        <!--       <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
+                                                        <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
                                                         <p><%# SafeEval(Container.DataItem, "name")%> </p>
                                                         <h2><%# SafeEval(Container.DataItem, "description") %> </h2>
 
@@ -116,43 +141,21 @@
                                                         <br />
 
 
-                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>Add to cart</asp:LinkButton>
+                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>Add To Cart</asp:LinkButton>
                                                         <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
-                                        <!--   </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
 
 
                                         </div>
-                                        !-->
-                                        <div class="col-sm-4">
-                                            <div class="product-image-wrapper">
-                                                <div class="single-products">
-                                                    <div class="productinfo text-center">
-                                                        <img src="images/home/product1.jpg" alt="" />
-                                                        <h2>$<%# SafeEval(Container.DataItem, "price")%></h2>
-                                                        <p><%# SafeEval(Container.DataItem, "name")%></p>
-                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                                    </div>
-                                                    <div class="product-overlay">
-                                                        <div class="overlay-content">
-                                                            <h2><%# SafeEval(Container.DataItem, "price")%></h2>
-                                                            <p><%# SafeEval(Container.DataItem, "name")%></p>
-                                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="choose">
-                                                    <ul class="nav nav-pills nav-justified">
-                                                        <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                                                        <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+
+
                                     </ItemTemplate>
                                 </asp:DataList>
+
+
                             </ContentTemplate>
                         </asp:UpdatePanel>
 

@@ -35,7 +35,7 @@ namespace onlineshop.Bl
 
         public static DataTable get_order_products(int order_id)
         {
-            SqlCommand cmd = new SqlCommand("");
+            SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("order_id", order_id);
             cmd.CommandText = "orderProdcut";
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -96,7 +96,7 @@ namespace onlineshop.Bl
             }
 
             // try catch 
-            return -1;
+            return order_id;
         }
 
 

@@ -10,25 +10,25 @@ namespace onlineshop.Customer
             if (!IsPostBack)
             {
 
-                //  if (Session["id"] != null)
-                // {
-                Session["id"] = 1;
-                int customer_id = int.Parse(Session["id"].ToString());
-                dlcart.DataSource = onlineshop.BL.cart.get_Cart_Products(customer_id);
-                dlcart.DataBind();
-                // }
-                //else
-                // {
-                //  Response.Redirect("~/customer/login.aspx");
+                if (Session["id"] != null)
+                {
 
-                // }
+                    int customer_id = int.Parse(Session["id"].ToString());
+                    dlcart.DataSource = onlineshop.BL.cart.get_Cart_Products(customer_id);
+                    dlcart.DataBind();
+                }
+                else
+                {
+                    Response.Redirect("~/customer/login.aspx");
+
+                }
             }
         }
 
         protected void dlcart_DeleteCommand(object source, DataListCommandEventArgs e)
         {
             int product_id = int.Parse(dlcart.DataKeys[(int)e.Item.ItemIndex].ToString());
-            Session["id"] = 1;
+            // Session["id"] = 1;
             int cust_id = int.Parse(Session["id"].ToString());
             onlineshop.BL.cart.remove_product(cust_id, product_id);
             BindCart();
@@ -48,12 +48,12 @@ namespace onlineshop.Customer
 
         protected void btn_checkout_Click(object sender, EventArgs e)
         {
-            Session["id"] = 1;
+            // Session["id"] = 1;
             int cust_id = int.Parse(Session["id"].ToString());
-            onlineshop.Bl.Orders.add(cust_id, string.Format("{0:HH:mm:ss tt}", DateTime.Now));
+            int order_id = onlineshop.Bl.Orders.add(cust_id, string.Format("{0:HH:mm:ss tt}", DateTime.Now));
             BindCart();
             btn_checkout.Text = "done";
-
+            Response.Redirect(string.Format("~/customer/orderDetials.aspx?id={0}", order_id));
         }
 
         protected void dlcart_ItemCommand(object source, DataListCommandEventArgs e)

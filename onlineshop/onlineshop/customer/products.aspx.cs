@@ -153,5 +153,10 @@ namespace onlineshop.Customer
         {
 
         }
+
+        protected void lb_cart_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/cart.aspx");
+        }
     }
 }

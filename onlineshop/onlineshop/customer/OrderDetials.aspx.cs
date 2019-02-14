@@ -17,10 +17,11 @@ namespace onlineshop.Customer
 
             if (!Page.IsPostBack)
             {
-                Session["id"] = 1;
+                //  Session["id"] = 1;
                 if (Session["id"] != null)
                 {
-                    Bind_Dl_product(product.getAll());
+                    int oreder_id = int.Parse(Request.QueryString["id"].ToString());
+                    Bind_Dl_product(Bl.Orders.get_order_products(oreder_id));
 
 
                     //int customer = int.Parse(Session["id"].ToString());
@@ -29,7 +30,7 @@ namespace onlineshop.Customer
                 }
                 else
                 {
-                    Response.Redirect("~/gust/index.aspx");
+                    Response.Redirect("~/customer/login.aspx");
                 }
 
 
