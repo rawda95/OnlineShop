@@ -1,27 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/gust/gust.Master" AutoEventWireup="true" CodeBehind="ContactPage.aspx.cs" Inherits="perfume.ContactPage" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <ul class="nav navbar-nav">
-        <li>
-            <asp:LinkButton runat="server" ID="btn_Sele_With_Us" Text="<%$ Resources: ResHome,btnSign%>" OnClick="btn_Sele_With_Us_Click">
-                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
-
-        <li>
-            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnLog%>" ID="btn_login" OnClick="btn_login_Click">
-                                            <i class="fa fa-lock"></i>Login
-            </asp:LinkButton>
-
-        </li>
-        <li>
-            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnSaleWithUs%>" ID="lb_signup" OnClick="lb_signup_Click">
-            <i class="fa fa-user-md"></i>Sign Up
-            </asp:LinkButton></li>
-
-
-
-
-
-    </ul>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
@@ -69,7 +48,7 @@
                             <div class="form-group col-md-12">
                                 <br />
                                 <asp:Label ID="lbl_finish" runat="server"></asp:Label>
-                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary pull-right" OnClick="btn_submit_Click1" />
+                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary pull-right" OnClick="btn_submit_Click" />
 
                             </div>
                         </form>

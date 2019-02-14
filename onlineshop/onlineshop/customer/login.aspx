@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="onlineshop.Customer.login" %>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="header" runat="server">
     <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
         <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
@@ -15,6 +15,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    <style>
+        .login-form{
+            padding:20px;
+            margin:10px;
+        }
+        .form{
+            margin:20px;
+        }
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4 ">
@@ -22,12 +31,14 @@
                     <!--login form-->
                     <h2>Login to your account</h2>
                     <div class="form">
+                        <%--<input type="text" placeholder="Name" />--%>
                         <div class="row form-inline" style="display: -webkit-box">
 
                             <asp:TextBox ID="txt_NameLoginSeller" runat="server" classs="col-sm-8 form-control " MaxLength="50" ValidationGroup="LogInSeller" placeholder="Name"></asp:TextBox>
 
                             <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-4 form-control " runat="server" ControlToValidate="txt_NameLoginSeller" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
                         </div>
+                        <%--<input type="email" placeholder="Email Address" />--%>
                         <div class="row form-inline" style="display: -webkit-box">
 
                             <asp:TextBox ID="txt_LoginPassSeller" runat="server" Class=" col-sm-8 form-control" TextMode="Password" placeholder="Password" MaxLength="20" ValidationGroup="LogInSeller"></asp:TextBox>
@@ -43,6 +54,12 @@
                             <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" />
 
                             Keep me signed in
+                       
+                       
+                       
+                       
+                       
+                       
                        
                        
                        
