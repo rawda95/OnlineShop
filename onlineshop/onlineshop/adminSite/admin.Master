@@ -323,6 +323,8 @@
         </section>
 
               <asp:ContentPlaceHolder ID="main" runat="server">
+                  <asp:GridView ID="grd_shopinfo" runat="server">
+                  </asp:GridView>
             </asp:ContentPlaceHolder>
       </div><!-- /.content-wrapper -->
 

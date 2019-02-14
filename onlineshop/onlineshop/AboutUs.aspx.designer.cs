@@ -13,13 +13,13 @@ namespace onlineshop {
     public partial class AboutUs {
         
         /// <summary>
-        /// btn_Sele_With_Us control.
+        /// btnSeleWithUs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_Sele_With_Us;
+        protected global::System.Web.UI.WebControls.LinkButton btnSeleWithUs;
         
         /// <summary>
         /// btn_login control.
