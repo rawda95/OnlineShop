@@ -69,7 +69,7 @@
                             <div class="form-group col-md-12">
                                 <br />
                                 <asp:Label ID="lbl_finish" runat="server"></asp:Label>
-                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary pull-right" OnClick="btn_submit_Click" />
+                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary pull-right" OnClick="btn_submit_Click1" />
 
                             </div>
                         </form>

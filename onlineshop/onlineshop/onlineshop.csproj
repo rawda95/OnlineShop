@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="ContactPage.aspx" />
     <Content Include="Customer\Cart.aspx" />
     <Content Include="Customer\login.aspx" />
     <Content Include="Customer\OrderDetials.aspx" />
@@ -1090,6 +1091,13 @@
       <DependentUpon>ResHome.resx</DependentUpon>
     </Compile>
     <Compile Include="BL\identity.cs" />
+    <Compile Include="ContactPage.aspx.cs">
+      <DependentUpon>ContactPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactPage.aspx.designer.cs">
+      <DependentUpon>ContactPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customer\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1326,6 +1334,13 @@
     <Compile Include="seller\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SitePoliciesPage.aspx.cs">
+      <DependentUpon>SitePoliciesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitePoliciesPage.aspx.designer.cs">
+      <DependentUpon>SitePoliciesPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="seller\login.aspx" />
@@ -1334,6 +1349,7 @@
     <Content Include="seller\profile.aspx" />
     <Content Include="seller\promotionlist.aspx" />
     <Content Include="seller\signup.aspx" />
+    <Content Include="SitePoliciesPage.aspx" />
     <Content Include="web.config" />
     <Content Include="adminSite\admin.Master" />
     <Content Include="adminSite\bootstrap\css\bootstrap.css.map" />
