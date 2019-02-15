@@ -14,6 +14,13 @@ namespace onlineshop.Bl
 
         }
 
+
+
+        public static DataTable GetAllCategory()
+        {
+            return DBLayer.SelectStored(new SqlCommand("GetallCategory"));
+        }
+
         public static int reomve(int id)
         {
             SqlCommand cmd = new SqlCommand("delete product.category where id=@id)");

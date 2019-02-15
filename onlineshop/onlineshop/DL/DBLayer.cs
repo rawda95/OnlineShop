@@ -8,6 +8,20 @@ namespace onlineshop.Dl
     public class DBLayer
     {
 
+        public static DataTable SelectStored(SqlCommand _cmd)
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["shop"].ConnectionString);
+            SqlCommand cmd = _cmd;
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adpt.Fill(dt);
+            return dt;
+
+        }
+
+
 
         //select
         public static DataTable select(SqlCommand _cmd)

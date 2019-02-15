@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿using onlineshop.BL;
+using System;
 namespace onlineshop.adminSite
 {
     public partial class UserOrder : System.Web.UI.Page
@@ -8,7 +8,7 @@ namespace onlineshop.adminSite
         {
             if (!IsPostBack)
             {
-                //  grd_customerorders.DataSource = Order_Products.GetCustomerOrder(3);
+                grd_customerorders.DataSource = Order_Products.GetCustomerOrder(3);
                 grd_customerorders.DataBind();
             }
         }

@@ -40,8 +40,22 @@ namespace onlineshop.Bl
             cmd.CommandText = "orderProdcut";
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             return DBLayer.select(cmd);
-
         }
+
+        public static DataTable GetCanceledOrders() //islam
+        {
+            return DBLayer.SelectStored(new SqlCommand("CanceledOrders"));
+        }
+
+
+
+        public static DataTable GetOrders()  //islam
+        {
+            return DBLayer.SelectStored(new SqlCommand("getCustomerOrders"));
+        }
+
+
+
 
         //dml
         public static int add(int cust_id, string order_date)

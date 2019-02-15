@@ -1,4 +1,5 @@
-﻿using System;
+﻿using onlineshop.Bl;
+using System;
 using System.Web.UI.WebControls;
 
 namespace onlineshop.adminSite
@@ -9,7 +10,7 @@ namespace onlineshop.adminSite
         {
             if (!IsPostBack)
             {
-                // grd_shopinfo.DataSource =NewShop.GetShopInfo();
+                grd_shopinfo.DataSource = NewShop.GetShopInfo();
                 grd_shopinfo.DataBind();
             }
         }

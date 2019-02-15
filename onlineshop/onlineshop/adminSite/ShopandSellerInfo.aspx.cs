@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿using onlineshop.BL;
+using System;
 namespace onlineshop.adminSite
 {
     public partial class ShopandSellerInfo : System.Web.UI.Page
@@ -8,7 +8,7 @@ namespace onlineshop.adminSite
         {
             if (!IsPostBack)
             {
-                //   grd_shopsellerinfo.DataSource = Shop.getShopinfoSellerinfo();
+                grd_shopsellerinfo.DataSource = Shop.getShopinfoSellerinfo();
                 grd_shopsellerinfo.DataBind();
             }
         }

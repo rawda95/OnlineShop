@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using onlineshop.Dl;
 using System.Data;
 using System.Data.SqlClient;
-using onlineshop.Dl;
 
 
 namespace onlineshop.Bl
@@ -23,9 +19,21 @@ namespace onlineshop.Bl
         }
 
 
+
+        public static DataTable GetShopInfo()
+        {
+            return DBLayer.select(new SqlCommand(
+
+                "select Shop.id,Shop.name,Shop.location,Shop.description,Shop.logo,User_state.Name as ShopStatus,s.frist_name,s.last_name,s.email from[Shop].[Shop] inner join[Users].[User_state] on Users.User_state.Id = Shop.shop_state inner join[Users].[Seller] s on s.id = Shop.shop_owner"
+
+                ));
+
+        }
+
+
         //add new seller 
         // imgae type !!
-        public static int Add(string shop_name, string location, string description,int shop_owner)
+        public static int Add(string shop_name, string location, string description, int shop_owner)
         {
             SqlCommand cmd = new SqlCommand("insert into NewShop(shop_name,location,description,shop_owner) values(@shop_name,@location,@description,@shop_owner)");
             cmd.Parameters.AddWithValue("@shop_name", shop_name);

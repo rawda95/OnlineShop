@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿using onlineshop.Bl;
+using System;
 namespace onlineshop.adminSite
 {
     public partial class Report2 : System.Web.UI.Page
@@ -8,7 +8,7 @@ namespace onlineshop.adminSite
         {
             if (!IsPostBack)
             {
-                // dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
+                dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
                 dl_CanceledOrders.DataBind();
             }
         }

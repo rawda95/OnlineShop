@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿using onlineshop.BL;
+using System;
 namespace onlineshop.adminSite
 {
     public partial class Report4 : System.Web.UI.Page
@@ -13,7 +13,7 @@ namespace onlineshop.adminSite
         {
             string username = txt_username.Text;
 
-            //  grd_users.DataSource = Shop.SearchingUser(username);
+            grd_users.DataSource = Shop.SearchingUser(username);
 
             grd_users.DataBind();
         }

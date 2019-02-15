@@ -1,4 +1,5 @@
-﻿using System;
+﻿using onlineshop.Bl;
+using System;
 
 namespace onlineshop.adminSite
 {
@@ -8,7 +9,7 @@ namespace onlineshop.adminSite
         {
             if (!IsPostBack)
             {
-                //   dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
+                dl_CanceledOrders.DataSource = Orders.GetCanceledOrders();
                 dl_CanceledOrders.DataBind();
             }
         }

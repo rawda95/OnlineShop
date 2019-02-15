@@ -14,6 +14,33 @@ namespace onlineshop.BL
 
         }
 
+        public static DataTable SearchingUser(string username) //islam
+        {
+            SqlCommand cmd = new SqlCommand("searchuser");
+            cmd.Parameters.AddWithValue("@name", username);
+            return DBLayer.SelectStored(cmd);
+        }
+        public static DataTable viewshopspecificproduct(string productname) //islam
+        {
+            SqlCommand cmd = new SqlCommand("getspecificproductShopInfo");
+            cmd.Parameters.AddWithValue("@pname", productname);
+            return DBLayer.SelectStored(cmd);
+
+
+        }
+        public static DataTable Getshopinfo() //islam
+        {
+            return DBLayer.select(new SqlCommand(
+                "select sh.id, sh.name, sh.location, sh.description, sh.logo, s.Name from[Shop].[Shop] sh inner join[Users].[User_state] s on s.Id = sh.shop_state"
+
+                ));
+
+        }
+        public static DataTable getShopinfoSellerinfo() //islam
+        {
+
+            return DBLayer.SelectStored(new SqlCommand("getsellershopinfo"));
+        }
 
         public static DataTable get_active_shops()
         {
