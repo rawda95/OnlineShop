@@ -40,13 +40,13 @@ namespace onlineshop.gust {
         protected global::System.Web.UI.WebControls.LinkButton LB_En;
         
         /// <summary>
-        /// header control.
+        /// ph_header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ph_header;
         
         /// <summary>
         /// btnSaleWithUs control.

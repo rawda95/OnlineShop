@@ -88,13 +88,11 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="shop-menu pull-right">
-                                    <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+                                    <asp:ContentPlaceHolder ID="ph_header" runat="server"></asp:ContentPlaceHolder>
 
                                     <ul class="nav navbar-nav">
-                                        <li>
-                                            </li>
-                                        <li>
-                                            </li>
+                                        <li></li>
+                                        <li></li>
                                         <li>
                                             <asp:LinkButton runat="server" ID="btnSaleWithUs" Text="<%$ Resources: ResHome,btnSaleWithUs%>" OnClick="btnSaleWithUs_Click1">
                                             <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
@@ -167,6 +165,8 @@
                 </div>
                 <!--/header-bottom-->
                 4
+           
+           
            
            
            
@@ -266,6 +266,8 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
+                                   
                                    
                                    
                                    

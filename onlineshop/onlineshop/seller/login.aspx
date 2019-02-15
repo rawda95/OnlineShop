@@ -2,11 +2,11 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
     <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
-        <li><a href="login.aspx"><i class="fa fa-lock"></i>
-            <asp:Label ID="lbl_welcome" runat="server" Text="Login"></asp:Label></a></li>
         <li>
-            <asp:LinkButton runat="server" ID="signup" OnClick="logout_Click"><i class="fa fa-user-md"></i>signup</asp:LinkButton></li>
+            <asp:LinkButton runat="server" ID="lb_seller" OnClick="lb_seller_Click"> <i class="fa fa-user"></i>Sale With Us</asp:LinkButton></li>
+
+        <li>
+            <asp:LinkButton runat="server" ID="signup" OnClick="signup_Click"><i class="fa fa-user-md"></i>signup</asp:LinkButton></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
@@ -69,26 +69,89 @@
 
 
 
+               
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
                 <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
-                &nbsp;
-           
-           
-           
+
+
+
+                <asp:Button runat="server" ID="btn_signup" class="btn btn-primary login-btn btn-block" OnClick="btn_signup_Click" Text="signup" />
+
+
+
+
+
             </div>
             <p class="text-center text-muted small">
                 Don't have an account?
-               
-               
 
-               
-
-
-
-                <asp:Button runat="server" ID="btn_signup" OnClick="btn_signup_Click" Text="signup" Height="24px" Width="88px" />
+           
+           
+           
+           
+           
+           
             </p>
 
-            <p class="text-center text-muted small"><a href="../recoverpassword.aspx">Forget password? </a></p>
+
+            <p class="text-center text-muted small">
+                <asp:LinkButton runat="server" ID="lb_forget_pass" OnClick="lb_forget_pass_Click"> Forget password?</asp:LinkButton>
+            </p>
 
             <asp:ValidationSummary ID="VS_loginSeller" ValidationGroup="LogInSeller" runat="server" Height="55px" />
 

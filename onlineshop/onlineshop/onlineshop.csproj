@@ -1455,6 +1455,13 @@
     <Compile Include="seller\promotionlist.aspx.designer.cs">
       <DependentUpon>promotionlist.aspx</DependentUpon>
     </Compile>
+    <Compile Include="seller\reoveryPassword.aspx.cs">
+      <DependentUpon>reoveryPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="seller\reoveryPassword.aspx.designer.cs">
+      <DependentUpon>reoveryPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="seller\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1476,6 +1483,7 @@
     <Content Include="seller\productList.aspx" />
     <Content Include="seller\profile.aspx" />
     <Content Include="seller\promotionlist.aspx" />
+    <Content Include="seller\reoveryPassword.aspx" />
     <Content Include="seller\signup.aspx" />
     <Content Include="SitePoliciesPage.aspx" />
     <Content Include="web.config" />

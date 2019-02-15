@@ -128,8 +128,22 @@ namespace onlineshop.seller
 
         }
 
-        protected void logout_Click(object sender, EventArgs e)
+
+
+        protected void lb_forget_pass_Click(object sender, EventArgs e)
         {
+            Response.Redirect("reoveryPassword.aspx");
+        }
+
+        protected void lb_seller_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/login.aspx");
+
+        }
+
+        protected void signup_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/signup.aspx");
 
         }
     }
