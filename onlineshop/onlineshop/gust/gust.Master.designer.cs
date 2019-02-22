@@ -49,33 +49,6 @@ namespace onlineshop.gust {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ph_header;
         
         /// <summary>
-        /// btnSaleWithUs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnSaleWithUs;
-        
-        /// <summary>
-        /// btn_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_login;
-        
-        /// <summary>
-        /// lb_signup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lb_signup;
-        
-        /// <summary>
         /// lb_home control.
         /// </summary>
         /// <remarks>

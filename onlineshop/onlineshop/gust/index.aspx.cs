@@ -3,6 +3,8 @@ using onlineshop.BL;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
+using System.Threading;
 using System.Web;
 using System.Web.Services;
 using System.Web.UI;
@@ -12,6 +14,17 @@ namespace onlineshop.gust
 {
     public partial class index : System.Web.UI.Page
     {
+
+
+        protected override void InitializeCulture()
+        {
+            if (Session["Lang"] != null)
+            {
+                Thread.CurrentThread.CurrentCulture = new CultureInfo(Session["Lang"].ToString());
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(Session["Lang"].ToString());
+            }
+            base.InitializeCulture();
+        }
 
         protected void btn_Sele_With_Us_Click(object sender, EventArgs e)
         {

@@ -7,17 +7,17 @@
     <ul class="nav navbar-nav">
         <li>
             <asp:LinkButton runat="server" ID="btn_Sele_With_Us" OnClick="btn_Sele_With_Us_Click">
-                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
+                                            <i class="fa fa-lock"></i> <asp:Label runat="server"  Text="<%$ Resources: ResHome,btnSaleWithUs%>"></asp:Label></asp:LinkButton></li>
 
         <li><a href="login.html">
             <asp:LinkButton runat="server" ID="btn_login" OnClick="btn_login_Click">
-                                            <i class="fa fa-lock"></i>Login
+                                            <i class="fa fa-lock"></i><asp:Label runat="server"  Text="<%$ Resources: ResHome,btnLog%>"></asp:Label>
             </asp:LinkButton>
 
         </a></li>
         <li><a href="login.html">
             <asp:LinkButton runat="server" ID="lb_signup" OnClick="lb_signup_Click">
-            <i class="fa fa-user-md"></i>Sign Up
+            <i class="fa fa-lock"></i><asp:Label runat="server"  Text="<%$ Resources: ResHome,btnSign%>"></asp:Label>
             </asp:LinkButton></a></li>
 
 
@@ -95,6 +95,20 @@
                                        
                                        
                                      
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                        
                                        
                                        

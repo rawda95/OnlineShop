@@ -90,30 +90,6 @@
                                 <div class="shop-menu pull-right">
                                     <asp:ContentPlaceHolder ID="ph_header" runat="server"></asp:ContentPlaceHolder>
 
-                                    <ul class="nav navbar-nav">
-                                        <li></li>
-                                        <li></li>
-                                        <li>
-                                            <asp:LinkButton runat="server" ID="btnSaleWithUs" Text="<%$ Resources: ResHome,btnSaleWithUs%>" OnClick="btnSaleWithUs_Click1">
-                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
-
-                                        <li><a href="login.html">
-                                            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnLog%>" ID="btn_login" OnClick="btn_login_Click">
-                                            <i class="fa fa-lock"></i>Login
-                                            </asp:LinkButton>
-
-                                        </a></li>
-                                        <li><a href="login.html">
-                                            <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnSign%>" ID="lb_signup" OnClick="lb_signup_Click">
-            <i class="fa fa-user-md"></i>Sign Up
-                                            </asp:LinkButton></a></li>
-
-
-
-
-
-                                    </ul>
-
                                 </div>
                             </div>
                         </div>
@@ -165,6 +141,10 @@
                 </div>
                 <!--/header-bottom-->
                 4
+           
+           
+           
+           
            
            
            
@@ -267,6 +247,10 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
+                                   
+                                   
+                                   
                                    
                                    
                                    

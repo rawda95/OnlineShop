@@ -4,6 +4,8 @@ namespace onlineshop.gust
 {
     public partial class gust : System.Web.UI.MasterPage
     {
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,12 +30,12 @@ namespace onlineshop.gust
         protected void LB_AR_Click(object sender, EventArgs e)
         {
 
-            Session["Lang"] = "ar";
+            Session["Lang"] = "en";
         }
 
         protected void LB_En_Click(object sender, EventArgs e)
         {
-            Session["Lang"] = "en";
+            Session["Lang"] = "ar";
         }
 
 
