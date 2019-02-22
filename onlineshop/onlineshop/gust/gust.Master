@@ -100,13 +100,13 @@
                                         <li><a href="login.html">
                                             <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnLog%>" ID="btn_login" OnClick="btn_login_Click">
                                             <i class="fa fa-lock"></i>Login
-            </asp:LinkButton>
+                                            </asp:LinkButton>
 
                                         </a></li>
                                         <li><a href="login.html">
                                             <asp:LinkButton runat="server" Text="<%$ Resources: ResHome,btnSign%>" ID="lb_signup" OnClick="lb_signup_Click">
             <i class="fa fa-user-md"></i>Sign Up
-            </asp:LinkButton></a></li>
+                                            </asp:LinkButton></a></li>
 
 
 
@@ -165,6 +165,7 @@
                 </div>
                 <!--/header-bottom-->
                 4
+           
            
            
            
@@ -266,6 +267,7 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
                                    
                                    
                                    

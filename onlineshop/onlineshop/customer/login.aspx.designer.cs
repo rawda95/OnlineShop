@@ -13,6 +13,24 @@ namespace onlineshop.Customer {
     public partial class login {
         
         /// <summary>
+        /// LinkButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        
+        /// <summary>
+        /// LinkButton2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        
+        /// <summary>
         /// txt_NameLoginSeller control.
         /// </summary>
         /// <remarks>
@@ -58,15 +76,6 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.CheckBox CB_rememberMeSeller;
         
         /// <summary>
-        /// btn_signup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_signup;
-        
-        /// <summary>
         /// btn_LogInSeller control.
         /// </summary>
         /// <remarks>
@@ -85,12 +94,30 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.Label lbl_checkSeller;
         
         /// <summary>
-        /// VS_loginSeller control.
+        /// btn_signup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary VS_loginSeller;
+        protected global::System.Web.UI.WebControls.Button btn_signup;
+        
+        /// <summary>
+        /// lb_forget_pass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_forget_pass;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }

@@ -3,10 +3,19 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
     <ul class="nav navbar-nav">
         <li>
-            <asp:LinkButton runat="server" ID="lb_seller" OnClick="lb_seller_Click"> <i class="fa fa-user"></i>Sale With Us</asp:LinkButton></li>
+            <asp:LinkButton runat="server" ID="btn_Sele_With_Us" OnClick="btn_Sele_With_Us_Click">
+                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
 
-        <li>
-            <asp:LinkButton runat="server" ID="signup" OnClick="signup_Click"><i class="fa fa-user-md"></i>signup</asp:LinkButton></li>
+
+        <li><a href="login.html">
+            <asp:LinkButton runat="server" ID="lb_signup" OnClick="lb_signup_Click">
+            <i class="fa fa-user-md"></i>Sign Up
+            </asp:LinkButton></a></li>
+
+
+
+
+
     </ul>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
@@ -125,6 +134,198 @@
 
 
 
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
                 <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
 
@@ -140,6 +341,8 @@
             <p class="text-center text-muted small">
                 Don't have an account?
 
+           
+           
            
            
            

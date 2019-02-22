@@ -1,13 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Customer/customer.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="onlineshop.Customer.login" %>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
+
     <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
-        <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
-        <li><a href="checkout.html"><i class="fa fa-crosshairs"></i>Checkout</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-        <li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
-        <li><a href="login.html"><i class="fa fa-user-md"></i>Sign Up</a></li>
+        <li>
+            <asp:LinkButton runat="server" ID="LinkButton1" OnClick="btn_Sele_With_Us_Click">
+                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
+
+        <li><a href="login.html">
+            <asp:LinkButton runat="server" ID="LinkButton2" OnClick="lb_signup_Click1">
+            <i class="fa fa-user-md"></i>Sign Up
+            </asp:LinkButton></a></li>
+
     </ul>
 
 
@@ -28,70 +32,86 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4 ">
-                <div class="login-form">
-                    <!--login form-->
-                    <h2>Login to your account</h2>
-                    <div class="form">
-                        <%--<input type="text" placeholder="Name" />--%>
-                        <div class="row form-inline" style="display: -webkit-box">
 
-                            <asp:TextBox ID="txt_NameLoginSeller" runat="server" classs="col-sm-8 form-control " MaxLength="50" ValidationGroup="LogInSeller" placeholder="Name"></asp:TextBox>
-
-                            <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-4 form-control " runat="server" ControlToValidate="txt_NameLoginSeller" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
+                <div class="login-form" style="width: 414px">
+                    <h2 class="text-center">Sign in</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <asp:TextBox ID="txt_NameLoginSeller" runat="server" MaxLength="50" ValidationGroup="LogInSeller" class="col-sm-6 form-control" placeholder=" Enter Your Name"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-6 form-control" runat="server" ControlToValidate="txt_NameLoginSeller" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
                         </div>
-                        <%--<input type="email" placeholder="Email Address" />--%>
-                        <div class="row form-inline" style="display: -webkit-box">
-
-                            <asp:TextBox ID="txt_LoginPassSeller" runat="server" Class=" col-sm-8 form-control" TextMode="Password" placeholder="Password" MaxLength="20" ValidationGroup="LogInSeller"></asp:TextBox>
-
-                            <%--  <asp:TextBox ID="Txt_passLogin" runat="server" classs="col-sm-8 form-control " TextMode="Password"  MaxLength="20" placeholder="Password" ValidationGroup="LogIn"></asp:TextBox>--%>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <asp:TextBox ID="txt_LoginPassSeller" runat="server" class="form-control" TextMode="Password" placeholder="Password" MaxLength="20" ValidationGroup="LogInSeller"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RF_passLoginSeller" Style="flex: auto" runat="server" classs="col-sm-4 form-control " ErrorMessage="please enter  your password" ForeColor="Red" ControlToValidate="txt_LoginPassSeller" ValidationGroup="LogInsSeller">*</asp:RequiredFieldValidator>
                         </div>
-                        <%--<span>--%>
-                        <%--<input type="checkbox" class="checkbox"/>--%>
-                        <div class="row form-inline" style="display: -webkit-box">
-                            <%--<asp:CheckBox ID="CB_rememberMe" runat="server" Class="checkbox" ValidationGroup="LogIn"  />--%>
-
-                            <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" />
-
-                            Keep me signed in
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                        </div>
-                        <asp:Button runat="server" ID="btn_signup" OnClick="btn_signup_Click" Text="signup" />
-
-                        <%--</span>--%>
-                        <div style="display: -webkit-box">
-
-                            <%-- <asp:Button ID="btn_login" Class="btn btn-primary  "  runat="server" Text="Login" Height="32px" Width="83px"   ValidationGroup="LogIn" OnClick="btn_login_Click" />--%>
-                            <asp:Button ID="btn_LogInSeller" Class="btn btn-primary" runat="server" Text="Login" Height="32px" Width="83px" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
-                            <%-- <asp:Label ID="Lbl_check" runat="server" ValidationGroup="LogIn"></asp:Label>--%>
-                            <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
-                            <asp:ValidationSummary ID="VS_loginSeller" ValidationGroup="LogInSeller" runat="server" />
-                        </div>
-                        <%--<button type="submit" class="btn btn-default" >Login</button>--%>
                     </div>
+                    <div class="form-group">
+                    </div>
+                    <div class="clearfix">
+                        <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" Width="22px" Height="20px" />Keep me signed in
+           
+               
+
+           
+
+
+
+                       
+
+
+
+
+
+
+
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
+                        <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
+
+
+
+                        <asp:Button runat="server" ID="btn_signup" class="btn btn-primary login-btn btn-block" OnClick="lb_signup_Click1" Text="signup" />
+
+                    </div>
+
+                    <p class="text-center text-muted small">
+                        Don't have an account?
+
+           
+        
+                   
+                   
+                   
+                    </p>
+
+
+                    <p class="text-center text-muted small">
+                        <asp:LinkButton runat="server" ID="lb_forget_pass" OnClick="lb_forget_pass_Click"> Forget password?</asp:LinkButton>
+                    </p>
+
+                    <asp:ValidationSummary ID="ValidationSummary1" ValidationGroup="LogInSeller" runat="server" Height="55px" />
+
                 </div>
-                <!--/login form-->
             </div>
-
-
-
         </div>
     </div>
-
 </asp:Content>

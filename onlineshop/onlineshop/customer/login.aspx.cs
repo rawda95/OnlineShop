@@ -104,11 +104,23 @@ namespace onlineshop.Customer
             }
         }
 
-        protected void btn_signup_Click(object sender, EventArgs e)
+
+        protected void lb_forget_pass_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/customer/signup.aspx");
+            Response.Redirect("reoveryPassword.aspx");
         }
 
 
+        protected void btn_Sele_With_Us_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/signup.aspx");
+
+        }
+
+        protected void lb_signup_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/signup.aspx");
+
+        }
     }
 }

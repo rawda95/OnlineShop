@@ -13,22 +13,22 @@ namespace onlineshop.seller {
     public partial class login {
         
         /// <summary>
-        /// lb_seller control.
+        /// btn_Sele_With_Us control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lb_seller;
+        protected global::System.Web.UI.WebControls.LinkButton btn_Sele_With_Us;
         
         /// <summary>
-        /// signup control.
+        /// lb_signup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton signup;
+        protected global::System.Web.UI.WebControls.LinkButton lb_signup;
         
         /// <summary>
         /// txt_NameLoginSeller control.
