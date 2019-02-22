@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Bree Serif', serif;
-    background:;
     position: relative;
     font-weight: 400px;
 }
@@ -268,7 +267,6 @@ a#scrollUp {
     outline: medium none;
     padding-left: 10px;
     width: 155px;
-    background-image: url(../images/home/searchicon.png);
     background-repeat: no-repeat;
     background-position: 130px;
 }

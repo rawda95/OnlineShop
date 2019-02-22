@@ -1,13 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="gust.master.cs" Inherits="onlineshop.gust.gust" %>
 
-
-
-
-
-
-
-<!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta charset="utf-8">
@@ -19,21 +11,96 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/prettyPhoto.css" rel="stylesheet">
     <link href="../css/price-range.css" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+    <%--    <link href="../css/newcss.css" rel="stylesheet" />--%>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="../images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <style>
+        .login-form {
+            /*   width: 385px;
+            margin: 30px auto;
+             */
+        }
+
+            .login-form form {
+                margin-bottom: 15px;
+                background: #f7f7f7;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+            }
+
+            .login-form h2 {
+                margin: 0 0 15px;
+            }
+
+        .form-control, .login-btn {
+            min-height: 38px;
+            border-radius: 2px;
+        }
+
+        .input-group-addon .fa {
+            font-size: 15px;
+        }
+
+        .login-btn {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .social-btn .btn {
+            border: none;
+            margin: 10px 3px 0;
+            opacity: 1;
+        }
+
+            .social-btn .btn:hover {
+                opacity: 0.9;
+            }
+
+        .social-btn .btn-primary {
+            background: #507cc0;
+        }
+
+        .social-btn .btn-info {
+            background: #64ccf1;
+        }
+
+        .social-btn .btn-danger {
+            background: #df4930;
+        }
+
+        .or-seperator {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+            .or-seperator i {
+                padding: 0 10px;
+                background: #f7f7f7;
+                position: relative;
+                top: -11px;
+                z-index: 1;
+            }
+
         productList {
             border: 1px solid #6c757d;
             margin-bottom: 10px;
@@ -82,13 +149,16 @@
                 </div>
                 <!--/header_top-->
 
+
+
                 <div class="header-middle">
                     <!--header-middle-->
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="shop-menu pull-right">
-                                    <asp:ContentPlaceHolder ID="ph_header" runat="server"></asp:ContentPlaceHolder>
+                                    <asp:ContentPlaceHolder ID="ph_header" runat="server">
+                                    </asp:ContentPlaceHolder>
 
                                 </div>
                             </div>
@@ -112,49 +182,29 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">
-                                            <asp:LinkButton runat="server" ID="lb_home" OnClick="lb_home_Click">
-                                            Home
-                                            </asp:LinkButton>
-                                        </a></li>
+                                        <li><a href="index.html" class="active">Home</a></li>
+                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
 
-                                        <li><a href="contact-us.html">
-                                            <asp:LinkButton runat="server" ID="contact" OnClick="contact_Click">
-                                            Contact
-                                            </asp:LinkButton>
-                                        </a></li>
-                                        <li><a href="about-us.html">
-                                            <asp:LinkButton runat="server" ID="lb_about" OnClick="lb_about_Click">
-                                            About Us
-                                            </asp:LinkButton>
-
-                                        </a></li>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-3  searchform  search_box ">
-                                <asp:ContentPlaceHolder ID="search" runat="server">
-                                </asp:ContentPlaceHolder>
+
+                            <div class="col-sm-3">
+                                <div class="search_box pull-right">
+                                    <asp:ContentPlaceHolder ID="search" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--/header-bottom-->
-                4
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
             </header>
+
             <!--/header-->
             <section id="slider">
                 <!--slider-->
@@ -178,7 +228,7 @@
                                             <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="../images/home/001.jpg" class="girl img-responsive" alt="" />
+                                            <img src="../home/001.jpg" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
                                     <div class="item">
@@ -189,8 +239,8 @@
                                             <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="../images/home/0002.jpg" class="girl img-responsive" alt="" />
-                                            <img src="images/home/pricing.png" class="pricing" alt="" />
+                                            <img src="../home/0002.jpg" class="girl img-responsive" alt="" />
+                                            <img src="../home/pricing.png" class="pricing" alt="" />
 
                                         </div>
                                     </div>
@@ -203,7 +253,7 @@
                                             <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="../images/home/003.png" class="girl img-responsive" alt="" />
+                                            <img src="../home/003.png" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
                                     <div class="item">
@@ -214,7 +264,7 @@
                                             <%--                                    <button type="button" class="btn btn-default get">Get it now</button>--%>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="../images/home/0002.jpg" class="girl img-responsive" alt="" />
+                                            <img src="../home/0002.jpg" class="girl img-responsive" alt="" />
                                         </div>
                                     </div>
 
@@ -234,10 +284,12 @@
             </section>
             <!--/slider-->
 
-            <%--    place to put content place holder --%>
-            <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+            <%--    place to put center content place holder --%>
 
-            <footer id="footer">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer id="footer" class="row">
                 <!--Footer-->
                 <div class="footer-top">
                     <div class="container">
@@ -246,29 +298,7 @@
                                 <div class="companyinfo">
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
-                                        The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
+                                        The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
                                    
                                    
                                    
@@ -284,7 +314,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="/images/home/asd4.jpeg" alt="" />
+                                                <img src="../home/asd4.jpeg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -298,7 +328,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="/images/home/asd3.jpg" alt="" />
+                                                <img src="../home/asd3.jpg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -312,7 +342,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="/images/home/asd2.jpeg" alt="" />
+                                                <img src="../home/asd2.jpeg" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -325,7 +355,7 @@
                                     <div class="video-gallery text-center">
                                         <a href="#">
                                             <div class="iframe-img">
-                                                <img src="/images/home/iframe4.png" alt="" />
+                                                <img src="../home/iframe4.png" alt="" />
                                             </div>
                                             <div class="overlay-icon">
                                                 <i class="fa fa-play-circle-o"></i>
@@ -346,8 +376,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="single-widget">
-                                    <ul class="nav nav-pills nav-stacked fa-list-ul
-                                        ">
+                                    <ul class="nav nav-pills nav-stacked">
                                         <li><a href="#">Policies</a></li>
                                         <li><a href="#">Terms of Use</a></li>
                                         <li><a href="#">Privecy Policy</a></li>
@@ -367,22 +396,23 @@
                 <div class="footer-bottom">
                     <div class="container">
                         <div class="row">
-                            <p class="pull-left">Copyright © 2019  E-PERFUME Inc. All rights reserved.</p>
+                            <p class="pull-left">Copyright © 2019 E-PERFUME Inc. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
 
             </footer>
             <!--/Footer-->
-            <asp:ContentPlaceHolder ID="script" runat="server"></asp:ContentPlaceHolder>
 
-
-            <script src="../js/jquery.js"></script>
+            <asp:ContentPlaceHolder ID="script" runat="server">
+            </asp:ContentPlaceHolder>
             <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/jquery.scrollUp.min.js"></script>
-            <script src="../js/price-range.js"></script>
+            <!--   <script src="../js/jquery.scrollUp.min.js"></script> 
+             <script src="../js/price-range.js"></script> !-->
             <script src="../js/jquery.prettyPhoto.js"></script>
+            <script src="../Scripts/popper.js"></script>
             <script src="../js/main.js"></script>
+
         </div>
     </form>
 </body>

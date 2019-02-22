@@ -89,13 +89,13 @@
                         SearchText();
                     });
                     function SearchText() {
-                        $("#ContentPlaceHolder1_search").autocomplete({
+                        $("#search").autocomplete({
                             source: function (request, response) {
                                 $.ajax({
                                     type: "POST",
                                     contentType: "application/json; charset=utf-8",
                                     url: "divtry.aspx/GetProductName",
-                                    data: "{'ProductName':'" + document.getElementById('ContentPlaceHolder1_search').value + "'}",
+                                    data: "{'ProductName':'" + document.getElementById('search').value + "'}",
                                     dataType: "json",
                                     success: function (data) {
                                         response(data.d);

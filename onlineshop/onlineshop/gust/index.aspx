@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/gust/gust.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="onlineshop.gust.index" %>
 
 
-
 <asp:Content ID="Content3" ContentPlaceHolderID="ph_header" runat="server">
 
     <ul class="nav navbar-nav">
@@ -27,23 +26,20 @@
     </ul>
 </asp:Content>
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
-
-
-
 
     <asp:ScriptManager ID="ScriptManager2" runat="server">
     </asp:ScriptManager>
-
 
     <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
 
         <ContentTemplate>
 
             <asp:Label ID="error" runat="server"></asp:Label>
-            <asp:TextBox ID="search" class="search_box searchform active" runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged" MaxLength="50" BorderColor="#FFFF99"></asp:TextBox>
+
+            <asp:TextBox ID="search" class="search_input" placeholder="Search..." runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged" MaxLength="50" BorderColor="#FFFF99">
+            </asp:TextBox>
+            <i class="fa   fa-search"></i>
 
         </ContentTemplate>
 
@@ -51,11 +47,6 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
-
-
-
-
 
     <section>
         <div class="container">
@@ -88,39 +79,6 @@
                                             </div>                                      
                                        
                                        
-                                         
-                                       
-                                       
-                                       
-                                       
-                                       
-                                     
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                        
                                        
@@ -151,20 +109,13 @@
                                 </ContentTemplate>
                             </asp:UpdatePanel>
 
-
-
-
-
-
-
-
                         </div>
                         <!--/category-products-->
                     </div>
 
                     <div class="shipping text-center">
                         <!--shipping-->
-                        <img src="images/home/shipping.jpg" alt="" />
+                        <img src="../home/shipping.jpg" alt="" />
                     </div>
                     <!--/shipping-->
 
@@ -172,7 +123,7 @@
                 <div class="col-sm-9 padding-right">
                     <div class="features_items">
                         <!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center">Items</h2>
 
                         <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
@@ -191,22 +142,14 @@
                                                         <h7> <%#SafeEval(Container.DataItem, "price")%> </h7>
                                                         <br />
 
-
                                                         <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>detials</asp:LinkButton>
                                                         <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
                                                     </div>
-
                                                 </div>
                                             </div>
-
-
                                         </div>
-
-
                                     </ItemTemplate>
                                 </asp:DataList>
-
-
                             </ContentTemplate>
                         </asp:UpdatePanel>
 
@@ -223,29 +166,25 @@
         </div>
     </section>
 
-
-
-
-
-
-
 </asp:Content>
 <asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
+
     <!-- Content script    for master!-->
-    <script type="text/javascript">  
+    <script>  
         $(function () {
             console.log("aaa");
             SearchText();
         });
         function SearchText() {
 
-            $("#search_search").autocomplete({
+            a = $("#search_search");
+            a.autocomplete({
 
                 source: function (request, response) {
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
-                        url: "gest/index.aspx/GetProductName",
+                        url: "/gust/index.aspx/GetProductName",
                         data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
                         dataType: "json",
                         success: function (data) {

@@ -42,11 +42,23 @@
     <div>
         Time at Load Time <%= DateTime.Now.ToLongTimeString() %>.
    
+       
+
+       
+
+
+
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
 
             <ContentTemplate>
                 Latest Time by refresh <%= DateTime.Now.ToLongTimeString() %>.
        
+               
+
+               
+
+
+
                 <asp:Label ID="error" runat="server"></asp:Label>
                 <asp:TextBox ID="search" class="search" runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged"></asp:TextBox>
 
