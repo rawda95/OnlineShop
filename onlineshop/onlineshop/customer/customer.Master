@@ -29,6 +29,72 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <style>
+        .login-form {
+            width: 385px;
+            margin: 30px auto;
+        }
+
+            .login-form form {
+                margin-bottom: 15px;
+                background: #f7f7f7;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+            }
+
+            .login-form h2 {
+                margin: 0 0 15px;
+            }
+
+        .form-control, .login-btn {
+            min-height: 38px;
+            border-radius: 2px;
+        }
+
+        .input-group-addon .fa {
+            font-size: 15px;
+        }
+
+        .login-btn {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .social-btn .btn {
+            border: none;
+            margin: 10px 3px 0;
+            opacity: 1;
+        }
+
+            .social-btn .btn:hover {
+                opacity: 0.9;
+            }
+
+        .social-btn .btn-primary {
+            background: #507cc0;
+        }
+
+        .social-btn .btn-info {
+            background: #64ccf1;
+        }
+
+        .social-btn .btn-danger {
+            background: #df4930;
+        }
+
+        .or-seperator {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+            .or-seperator i {
+                padding: 0 10px;
+                background: #f7f7f7;
+                position: relative;
+                top: -11px;
+                z-index: 1;
+            }
+
         productList {
             border: 1px solid #6c757d;
             margin-bottom: 10px;
@@ -108,18 +174,24 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">Home</a></li>
-                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                            <ul role="menu" class="sub-menu">
-                                                <li><a href="shop.html">Products</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                            </ul>
+                                        <li>
+                                            <asp:LinkButton runat="server" OnClick="lb_home_Click">
+                                            Home </asp:LinkButton></li>
+                                        <li class="dropdown"><a href="#">Shops<i class="fa fa-angle-down"></i></a>
+
                                         </li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li>
+                                            <asp:LinkButton runat="server" OnClick="contact_Click">
+                                            Contact
+                                                
+                                            </asp:LinkButton>
+
+                                        </li>
+                                        <li>
+                                            <asp:LinkButton runat="server" OnClick="lb_about_Click">
+                                            About Us
+                                            </asp:LinkButton>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -203,6 +275,11 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.
+                                   
+                                   
+                                   
+                                   
+                                   
                                    
                                    
                                    

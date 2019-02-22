@@ -17,7 +17,7 @@
 
 
         <li>
-            <asp:LinkButton runat="server" ID="lb_logout">
+            <asp:LinkButton runat="server" ID="lb_logout" OnClick="lb_logout_Click">
                                             <i class="fa fa-user"></i>logout </asp:LinkButton></li>
 
 
@@ -80,6 +80,8 @@
                                             </div>                                      
                                        
                                                                 
+                                       
+                                       
                                        
                                        
                                        
