@@ -853,6 +853,7 @@ h2.title {
     border: 1px solid #F7F7F5;
     overflow: hidden;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .single-products {
@@ -1446,7 +1447,7 @@ h2.title {
 .signup-form {
 }
 
-    .login-form h2, .signup-form h2 {
+    .login-form h2, .signup-form h2, .login-form h1 {
         color: #696763;
         font-family: 'Bree Serif', serif;
         font-size: 20px;

@@ -24,6 +24,9 @@ namespace onlineshop
                 {
                     Response.Redirect("~/seller/addcategory.aspx");
                 }
+                int seller_id = int.Parse(Session["id"].ToString());
+                lb_name.Text = BL.Seller.getName(seller_id);
+
                 ddl_category.DataSource = Category.getAll();
                 ddl_category.DataTextField = "name";
                 ddl_category.DataValueField = "id";
@@ -95,6 +98,28 @@ namespace onlineshop
                 writer.WriteLine(msg);
                 writer.Close();
             }
+        }
+
+
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            if (Session["id"] != null)
+            {
+                Session.Clear();
+
+            }
+            if (Request.Cookies["mycookie"] != null)
+            {
+                Response.Cookies["mycookie"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Redirect("~/seller/login.aspx");
+
+        }
+
+        protected void lb_profile_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

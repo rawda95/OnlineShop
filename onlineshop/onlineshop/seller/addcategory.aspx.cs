@@ -17,10 +17,19 @@ namespace onlineshop
             else
             {
                 int seller_id = int.Parse(Session["id"].ToString());
+                lb_name.Text = BL.Seller.getName(seller_id);
+
                 DataTable shop = Seller.get_shop_ID(seller_id);
                 if (shop.Rows.Count < 0)
                 {
                     Response.Redirect("~/seller/addshop.aspx");
+                }
+                else
+                {
+                    ddl_category.DataSource = Category.getAll();
+                    ddl_category.DataTextField = "name";
+                    ddl_category.DataValueField = "id";
+                    ddl_category.DataBind();
                 }
             }
         }
@@ -50,6 +59,32 @@ namespace onlineshop
             //{
 
             //}
+        }
+
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            if (Session["id"] != null)
+            {
+                Session.Clear();
+
+            }
+            if (Request.Cookies["mycookie"] != null)
+            {
+                Response.Cookies["mycookie"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Redirect("~/seller/login.aspx");
+
+        }
+
+        protected void lb_profile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_select_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

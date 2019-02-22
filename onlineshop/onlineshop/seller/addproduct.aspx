@@ -1,5 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/seller/Home.Master" AutoEventWireup="true" CodeBehind="addproduct.aspx.cs" Inherits="onlineshop.addproduct" %>
 
+
+
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
+    <ul class="nav navbar-nav">
+
+
+        <li>
+            <asp:LinkButton runat="server" ID="lb_logout" OnClick="lb_logout_Click">
+                                            <i class="fa fa-user"></i>logout </asp:LinkButton></li>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_profile" OnClick="lb_profile_Click">
+                <i class="fa fa-user"></i>
+                <asp:Label runat="server" ID="lb_name" Text="Name"></asp:Label>
+            </asp:LinkButton></li>
+
+    </ul>
+
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
 
@@ -14,7 +34,7 @@
                 <div class="col-sm-9 padding-right">
                     <div class="features_items">
                         <!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center">add Product</h2>
 
 
                     </div>
@@ -32,6 +52,20 @@
                                 </td>
                                 <td style="width: 40px">&nbsp;&nbsp;&nbsp;
                                
+                                   
+
+                                   
+
+
+
+                                   
+
+
+
+
+
+
+
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_name" ErrorMessage="name Requiard" ForeColor="#CC0000" ValidationGroup="product">*</asp:RequiredFieldValidator>
                                     &nbsp; &nbsp;</td>
                                 <td>&nbsp;</td>
@@ -43,7 +77,7 @@
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td rowspan="8"><a href="https://www.egyptianfoodbank.com/">
-                                    <img src="../images/home/55.jpg " width="140" height="500" /></a></td>
+                                    <img src="../home/55.jpg " width="140" height="500" /></a></td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>

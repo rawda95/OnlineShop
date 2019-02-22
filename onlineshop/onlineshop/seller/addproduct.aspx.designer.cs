@@ -13,6 +13,33 @@ namespace onlineshop {
     public partial class addproduct {
         
         /// <summary>
+        /// lb_logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_logout;
+        
+        /// <summary>
+        /// lb_profile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_profile;
+        
+        /// <summary>
+        /// lb_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_name;
+        
+        /// <summary>
         /// txt_name control.
         /// </summary>
         /// <remarks>

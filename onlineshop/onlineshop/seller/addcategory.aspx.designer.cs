@@ -13,6 +13,51 @@ namespace onlineshop {
     public partial class addcategory {
         
         /// <summary>
+        /// lb_logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_logout;
+        
+        /// <summary>
+        /// lb_profile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_profile;
+        
+        /// <summary>
+        /// lb_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lb_name;
+        
+        /// <summary>
+        /// ddl_category control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_category;
+        
+        /// <summary>
+        /// btn_select control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_select;
+        
+        /// <summary>
         /// txt_category_name control.
         /// </summary>
         /// <remarks>
@@ -22,13 +67,13 @@ namespace onlineshop {
         protected global::System.Web.UI.WebControls.TextBox txt_category_name;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RV_NameLoginSeller control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RV_NameLoginSeller;
         
         /// <summary>
         /// btn_add_category control.
@@ -47,5 +92,14 @@ namespace onlineshop {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_msg;
+        
+        /// <summary>
+        /// VS_loginSeller control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary VS_loginSeller;
     }
 }

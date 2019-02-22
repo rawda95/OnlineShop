@@ -84,6 +84,8 @@
                                        
                                        
                                        
+                                       
+                                       
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div class="panel panel-default">
@@ -124,7 +126,7 @@
                 <div class="col-sm-9 padding-right">
                     <div class="features_items">
                         <!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center">Items</h2>
 
                         <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
@@ -139,15 +141,11 @@
                                                         <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
                                                         <p><%# SafeEval(Container.DataItem, "name")%> </p>
                                                         <h2><%# SafeEval(Container.DataItem, "description") %> </h2>
-
                                                         <h7> <%#SafeEval(Container.DataItem, "price")%> </h7>
                                                         <br />
-
-
                                                         <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>detials</asp:LinkButton>
                                                         <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
                                                     </div>
-
                                                 </div>
                                             </div>
 
@@ -160,7 +158,7 @@
                                         <div>
                                             <div class="product-image-wrapper col-8">
                                                 <div class="single-products">
-                                                    <div class="productinfo text-center">
+                                                    <div class="text-center">
                                                         <asp:Button runat="server" ID="btn_add_prodcut" Text="add product" OnClick="btn_add_prodcut_Click" CssClass="btn  btn-default text-center " />
                                                     </div>
                                                 </div>

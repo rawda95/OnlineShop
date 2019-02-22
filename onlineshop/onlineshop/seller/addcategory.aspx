@@ -1,86 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/seller/Home.Master" AutoEventWireup="true" CodeBehind="addcategory.aspx.cs" Inherits="onlineshop.addcategory" %>
 
+
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
+    <ul class="nav navbar-nav">
+
+
+        <li>
+            <asp:LinkButton runat="server" ID="lb_logout" OnClick="lb_logout_Click">
+                                            <i class="fa fa-user"></i>logout </asp:LinkButton></li>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_profile" OnClick="lb_profile_Click">
+                <i class="fa fa-user"></i>
+                <asp:Label runat="server" ID="lb_name" Text="Name"></asp:Label>
+            </asp:LinkButton></li>
+
+    </ul>
+
+</asp:Content>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content" runat="server">
-    <section class="table">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="login-form">
+                    <h1 class="text-center">Add Category</h1>
+                    <div class="form-group">
+                        <h2>choses from category 
+                               </h2>
 
-                <div class="col-sm-9 padding-right" style="left: 0px; top: 0px; height: 473px">
-                    <div class="features_items">
-                        <!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
-                        <div class="form" style="width: 59%; height: 242px;">
-                            <table class="table-responsive " style="background-color: aliceblue; height: 298px;">
-                                <tr class="form-group ">
-                                    <td class="label-info text-center " style="width: 224px; padding: 10px; margin: 10px;">Category Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                                    <td class="form" style="width: 376px">
-                                        <asp:TextBox ID="txt_category_name" CssClass="form-control" runat="server" Width="321px" Height="44px" MaxLength="25"></asp:TextBox>
-                                    </td>
-                                    <td>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_category_name" ErrorMessage="category name is requierd" ForeColor="#CC0000" ValidationGroup="cat">*</asp:RequiredFieldValidator>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 224px">&nbsp;</td>
-                                    <td style="width: 376px">&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <br />
-                                        <asp:Button ID="btn_add_category" runat="server" CssClass="btn btn-success" OnClick="btn_add_category_Click" Text="ADD" Width="506px" ValidationGroup="cat" />
-                                        <br />
-                                    </td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 224px">&nbsp;</td>
-                                    <td style="width: 376px">&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 224px">
-                                        <asp:Label ID="lbl_msg" runat="server" Font-Size="30pt" ForeColor="Red"></asp:Label>
-                                    </td>
-                                    <td style="width: 376px">&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </table>
 
-                        </div>
+                        <asp:DropDownList runat="server" ID="ddl_category" DataValueField="id"></asp:DropDownList>
 
                     </div>
-                    <!--features_items-->
 
 
+                    <div class="clearfix form-group">
+                        <asp:Button ID="btn_select" class="btn   btn-default login-btn btn-block" runat="server" Text="select" ValidationGroup="select" OnClick="btn_select_Click" />
+                    </div>
 
+                    <div class="form-group">
+                        <h2>or add new one 
+                        </h2>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa  fa-shopping-cart"></i></span>
+                            <asp:TextBox ID="txt_category_name" runat="server" MaxLength="50" ValidationGroup="LogInSeller" class="col-sm-6 form-control" placeholder=" Enter Category Name"></asp:TextBox>
+                        </div>
+                        <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-6 form-control" runat="server" ControlToValidate="txt_category_name" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
+
+                    </div>
+
+                    <div class="clearfix form-group">
+                        <asp:Button ID="btn_add_category" class="btn  btn-default login-btn btn-block" runat="server" Text="add category" ValidationGroup="LogInSeller" OnClick="btn_add_category_Click" />
+                        <asp:Label ID="lbl_msg" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
+                    </div>
+
+
+                    <asp:ValidationSummary ID="VS_loginSeller" ValidationGroup="LogInSeller" runat="server" Height="55px" />
 
                 </div>
             </div>
-
-
         </div>
-    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 </asp:Content>
