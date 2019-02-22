@@ -16,6 +16,15 @@
     <link href="../css/prettyPhoto.css" rel="stylesheet">
     <link href="../css/price-range.css" rel="stylesheet">
 
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+
     <%--    <link href="../css/newcss.css" rel="stylesheet" />--%>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
@@ -177,12 +186,23 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">Home</a></li>
-                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                        <li><a class="active">
+                                            <asp:LinkButton runat="server" OnClick="lb_home_Click">
+                                            Home 
+                                            </asp:LinkButton>
 
-                                        </li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        </a></li>
+
+                                        <li><a>
+                                            <asp:LinkButton runat="server" OnClick="contact_Click">
+                                            Contact
+                                            </asp:LinkButton>
+                                        </a></li>
+                                        <li><a>
+                                            <asp:LinkButton runat="server" OnClick="lb_about_Click">
+                                            About Us
+                                            </asp:LinkButton>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -310,6 +330,12 @@
                                    
                                    
                                    
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +435,7 @@
             <!--/Footer-->
 
 
-            <script src="../js/jquery.js"></script>
+            <!--      <script src="../js/jquery.js"></script> !-->
             <script src="../js/bootstrap.min.js"></script>
             <script src="../js/jquery.scrollUp.min.js"></script>
             <script src="../js/price-range.js"></script>

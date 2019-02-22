@@ -10,18 +10,18 @@ namespace onlineshop.customer
         }
         protected void lb_home_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/Customer/products.aspx");
         }
 
         protected void contact_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/ContactPage.aspx");
 
         }
 
         protected void lb_about_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/AboutUs.aspx");
         }
     }
 }

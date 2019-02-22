@@ -9,13 +9,13 @@
 
         <li><a href="login.html">
             <asp:LinkButton runat="server" ID="btn_login" OnClick="btn_login_Click">
-                                            <i class="fa fa-lock"></i>Login
+                                            <i class="fa fa-unlock"></i>Login
             </asp:LinkButton>
 
         </a></li>
         <li><a href="login.html">
             <asp:LinkButton runat="server" ID="lb_signup" OnClick="lb_signup_Click">
-            <i class="fa fa-user-md"></i>Sign Up
+            <i class="fa fa-user"></i>Sign Up
             </asp:LinkButton></a></li>
 
 
@@ -28,31 +28,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="form">
         <!--form-->
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-                    <div class="signup-form">
+                    <div class="signup-form ">
                         <!--sign up form-->
                         <h2>New User Signup!</h2>
-                        <div class="form-group " style="background-color: beige;">
+                        <div class="form-group col-sm-12">
                             <%--<input type="text" placeholder="Name"/>--%>
                             <div class="row form-inline">
                                 &nbsp;<asp:TextBox ID="txt_CustLName" runat="server" class="col-sm-8 form-control" placeholder="FirstName" ValidationGroup="SignUpSeller" MaxLength="50"></asp:TextBox>
@@ -92,7 +76,7 @@
                                 <br />
                             </div>
                             <br />
-                            <div style="display: -webkit-box">
+                            <div style="display: -webkit-box" class="row">
 
                                 <asp:FileUpload ID="FU_CustomerImage" runat="server" class="col-sm-8 form-control" ValidationGroup="SignUpSeller" />
                                 <asp:RequiredFieldValidator Style="flex: auto" ID="RF_uploadImg" runat="server" classs="col-sm-8 form-control " ControlToValidate="FU_CustomerImage" ErrorMessage="please enter your ID Image name" ForeColor="Red" ValidationGroup="SignUpSeller">*</asp:RequiredFieldValidator>
@@ -100,33 +84,22 @@
                             </div>
                             <br>
 
-                            <div style="display: -webkit-box">
-                                <table class="nav-justified">
-                                    <tr>
-                                        <td>
-                                            <asp:Button ID="btn_CustomerSignup" Class="btn btn-success login-btn" runat="server" Text="SignUp" ValidationGroup="SignUpSeller" OnClick="btn_signup_Click" Style="margin-bottom: 1" Width="190px" />
-                                        </td>
-                                        <td>
-                                            <asp:Button ID="btn_login_form" OnClick="btn_login_Click" runat="server" class="form-control>
-                                     btn-danger"
-                                                Text="login" Height="30px" Width="190px" />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:ValidationSummary ID="VS_signupSeller" ValidationGroup="SignUpSeller" runat="server" Width="204px" />
-                                        </td>
-                                        <td>
-                                            <asp:Label ID="lbl_CustSinCheck" runat="server" Text="" ValidationGroup="SignUpSeller"></asp:Label>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br />
-                                &nbsp;
-                           
-                           
-                           
-                           
+                            <div class="row nav-justified">
+
+
+                                <div class=" col-sm-12 col-md-6">
+                                    <asp:Button ID="btn_CustomerSignup" Class="btn btn-success login-btn" runat="server" Text="SignUp" ValidationGroup="SignUpSeller" OnClick="btn_signup_Click" Style="margin-bottom: 3px" Width="100%" />
+
+                                </div>
+                                <div class=" col-sm-12 col-md-6">
+                                    <asp:Button ID="btn_login_form" OnClick="btn_login_Click" runat="server" class="form-control btn-danger"
+                                        Text="login" Height="30px" Width="100%" />
+
+                                </div>
+                                <asp:ValidationSummary ID="VS_signupSeller" ValidationGroup="SignUpSeller" runat="server" Width="204px" />
+                                <asp:Label ID="lbl_CustSinCheck" runat="server" Text="" ValidationGroup="SignUpSeller"></asp:Label>
+
+
                             </div>
                             <%--<button type="submit" class="btn btn-default">Signup</button>--%>
 

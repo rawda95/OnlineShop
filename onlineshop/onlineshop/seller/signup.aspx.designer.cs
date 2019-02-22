@@ -13,6 +13,24 @@ namespace onlineshop.seller {
     public partial class signup {
         
         /// <summary>
+        /// btn_customer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_customer;
+        
+        /// <summary>
+        /// lb_login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_login;
+        
+        /// <summary>
         /// txt_FirstName control.
         /// </summary>
         /// <remarks>
@@ -184,13 +202,13 @@ namespace onlineshop.seller {
         protected global::System.Web.UI.WebControls.Button btn_login;
         
         /// <summary>
-        /// VS_signupSeller control.
+        /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary VS_signupSeller;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
         /// lbl_SinCheckSeller control.

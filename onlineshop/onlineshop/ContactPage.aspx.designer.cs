@@ -85,13 +85,13 @@ namespace perfume {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator v4;
         
         /// <summary>
-        /// s1 control.
+        /// btn_submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary s1;
+        protected global::System.Web.UI.WebControls.Button btn_submit;
         
         /// <summary>
         /// lbl_finish control.
@@ -103,12 +103,12 @@ namespace perfume {
         protected global::System.Web.UI.WebControls.Label lbl_finish;
         
         /// <summary>
-        /// btn_submit control.
+        /// s1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_submit;
+        protected global::System.Web.UI.WebControls.ValidationSummary s1;
     }
 }

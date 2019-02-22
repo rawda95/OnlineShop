@@ -4,7 +4,7 @@
     <ul class="nav navbar-nav">
         <li>
             <asp:LinkButton runat="server" ID="btn_Sele_With_Us" OnClick="lb_seller_Click">
-                                            <i class="fa fa-user"></i>Sale With Us </asp:LinkButton></li>
+                                            <i class="fa fa-user"></i>customer </asp:LinkButton></li>
 
 
         <li><a href="login.html">
@@ -22,7 +22,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="container">
-        <%-- <div class="row">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <%-- <div class="row">
             <div class="col-sm-4 col-sm-offset-4 ">                
                 <div class="login-form  form-control-static">
                     <h1>Login to your account</h1>
@@ -51,60 +53,47 @@
         </div>
     </div>--%>
 
-        <div class="login-form">
-            <h2 class="text-center">Sign in</h2>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <asp:TextBox ID="txt_NameLoginSeller" runat="server" MaxLength="50" ValidationGroup="LogInSeller" class="col-sm-6 form-control" placeholder=" Enter Your Name"></asp:TextBox>
+                <div class="login-form">
+                    <h2 class="text-center">Sign in</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <asp:TextBox ID="txt_NameLoginSeller" runat="server" MaxLength="50" ValidationGroup="LogInSeller" class="col-sm-6 form-control" placeholder=" Enter Your Name"></asp:TextBox>
+                        </div>
+                        <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-6 form-control" runat="server" ControlToValidate="txt_NameLoginSeller" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <asp:TextBox ID="txt_LoginPassSeller" runat="server" class="form-control" TextMode="Password" placeholder="Password" MaxLength="20" ValidationGroup="LogInSeller"></asp:TextBox>
+                        </div>
+                        <asp:RequiredFieldValidator ID="RF_passLoginSeller" Style="flex: auto" runat="server" classs="col-sm-4 form-control " ErrorMessage="please enter  your password" ForeColor="Red" ControlToValidate="txt_LoginPassSeller" ValidationGroup="LogInsSeller">*</asp:RequiredFieldValidator>
+
+                    </div>
+                    <div class="form-group">
+                        <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" Width="22px" Height="20px" />Keep me signed in
+                   
+                   
+                   
+                   
+                    </div>
+                    <div class="clearfix form-group">
+                        <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
+                        <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center text-muted small">
+                            <asp:LinkButton runat="server" ID="lb_forget_pass" OnClick="lb_forget_pass_Click"> Forget password?</asp:LinkButton>
+                        </p>
+
+                    </div>
+
+                    <asp:ValidationSummary ID="VS_loginSeller" ValidationGroup="LogInSeller" runat="server" Height="55px" />
+
                 </div>
-                <asp:RequiredFieldValidator ID="RV_NameLoginSeller" Style="flex: auto" classs="col-sm-6 form-control" runat="server" ControlToValidate="txt_NameLoginSeller" ErrorMessage="please enter your name" ForeColor="Red" ValidationGroup="LogInSeller">*</asp:RequiredFieldValidator>
-
             </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <asp:TextBox ID="txt_LoginPassSeller" runat="server" class="form-control" TextMode="Password" placeholder="Password" MaxLength="20" ValidationGroup="LogInSeller"></asp:TextBox>
-                </div>
-                <asp:RequiredFieldValidator ID="RF_passLoginSeller" Style="flex: auto" runat="server" classs="col-sm-4 form-control " ErrorMessage="please enter  your password" ForeColor="Red" ControlToValidate="txt_LoginPassSeller" ValidationGroup="LogInsSeller">*</asp:RequiredFieldValidator>
-
-            </div>
-            <div class="form-group">
-            </div>
-            <div class="clearfix">
-                <asp:CheckBox ID="CB_rememberMeSeller" runat="server" Class="checkbox" ValidationGroup="LogInSeller" Width="22px" Height="20px" />Keep me signed in
-               
-               
-
-               
-
-
-
-                <asp:Button ID="btn_LogInSeller" class="btn btn-primary login-btn btn-block" runat="server" Text="Login" ValidationGroup="LogInSeller" OnClick="btn_LogInSeller_Click" />
-                <asp:Label ID="lbl_checkSeller" runat="server" Text="" ValidationGroup="LogInSeller"></asp:Label>
-
-                <p class="text-center text-muted small">
-                    Don't have an account?
-
-               
-               
-                </p>
-
-
-                <asp:Button runat="server" ID="btn_signup" class="btn btn-primary login-btn btn-block" OnClick="btn_signup_Click" Text="signup" />
-
-
-            </div>
-
-
-            <p class="text-center text-muted small">
-                <asp:LinkButton runat="server" ID="lb_forget_pass" OnClick="lb_forget_pass_Click"> Forget password?</asp:LinkButton>
-            </p>
-
-            <asp:ValidationSummary ID="VS_loginSeller" ValidationGroup="LogInSeller" runat="server" Height="55px" />
-
         </div>
-
 
     </div>
 </asp:Content>

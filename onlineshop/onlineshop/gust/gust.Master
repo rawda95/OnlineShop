@@ -138,9 +138,9 @@
                                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                         <li>
-                                            <asp:LinkButton ID="LB_AR" runat="server" OnClick="LB_AR_Click"><i class="fa fa-flag"> Arabic</i></asp:LinkButton></li>
+                                            <asp:LinkButton ID="LB_AR" runat="server" OnClick="LB_AR_Click" ValidationGroup="novalid"><i class="fa fa-flag"> Arabic</i></asp:LinkButton></li>
                                         <li>
-                                            <asp:LinkButton ID="LB_En" runat="server" OnClick="LB_En_Click"><i class="fa fa-flag"> English</i></asp:LinkButton></li>
+                                            <asp:LinkButton ID="LB_En" runat="server" OnClick="LB_En_Click" ValidationGroup="novalid"><i class="fa fa-flag"> English</i></asp:LinkButton></li>
                                     </ul>
                                 </div>
                             </div>
@@ -182,13 +182,25 @@
                                 </div>
                                 <div class="mainmenu pull-left">
                                     <ul class="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" class="active">Home</a></li>
-                                        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                        <li><a class="active">
+                                            <asp:LinkButton runat="server" OnClick="lb_home_Click" ValidationGroup="novalid">
+                                            Home 
+                                            </asp:LinkButton>
 
-                                        </li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        </a></li>
+
+                                        <li><a>
+                                            <asp:LinkButton runat="server" OnClick="contact_Click" ValidationGroup="novalid">
+                                            Contact
+                                            </asp:LinkButton>
+                                        </a></li>
+                                        <li><a>
+                                            <asp:LinkButton runat="server" OnClick="lb_about_Click" ValidationGroup="novalid">
+                                            About Us
+                                            </asp:LinkButton>
+                                        </a></li>
                                     </ul>
+
                                 </div>
                             </div>
 
@@ -299,6 +311,8 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
+                                   
+                                   
                                    
                                    
                                    

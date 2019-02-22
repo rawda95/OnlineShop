@@ -125,7 +125,17 @@ namespace onlineshop.seller
 
         protected void btn_login_Click(object sender, EventArgs e)
         {
-            // Response.Redirect("~/seller/login.aspx");
+            Response.Redirect("~/seller/login.aspx");
+        }
+
+        protected void lb_login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_customer_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/login.aspx");
         }
     }
 

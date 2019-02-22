@@ -13,12 +13,12 @@ namespace onlineshop.gust
 
         protected void lb_home_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/gust/index.aspx");
         }
 
         protected void contact_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Customer/all.aspx");
+            Response.Redirect("~/ContactPage.aspx");
 
         }
 

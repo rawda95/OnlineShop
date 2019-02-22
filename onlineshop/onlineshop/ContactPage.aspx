@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/gust/gust.Master" AutoEventWireup="true" CodeBehind="ContactPage.aspx.cs" Inherits="perfume.ContactPage" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ph_header" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
@@ -8,13 +8,7 @@
 
     <div id="contact-page" class="container">
         <div class="bg">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="title text-center">Contact <strong>Us</strong></h2>
-                    <div id="gmap" class="contact-map">
-                    </div>
-                </div>
-            </div>
+
             <div class="row">
                 <div class="col-sm-8">
                     <div class="contact-form">
@@ -39,16 +33,17 @@
                             </div>
                             <div class="form-group col-md-12">
                                 <asp:TextBox runat="server" class="form-control" placeholder="Your Message Here" ID="txt_msg" Rows="5" TextMode="MultiLine"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="v4" runat="server" ControlToValidate="txt_msg" ErrorMessage="Enter Ur Message" ForeColor="Red">*</asp:RequiredFieldValidator>
 
                             </div>
-                            <asp:RequiredFieldValidator ID="v4" runat="server" ControlToValidate="txt_msg" ErrorMessage="Enter Ur Message" ForeColor="Red">*</asp:RequiredFieldValidator>
-                            <br />
-                            <br />
-                            <asp:ValidationSummary ID="s1" runat="server" ForeColor="Red" HeaderText="Please fix the following errors" />
+
                             <div class="form-group col-md-12">
-                                <br />
+                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary " Width="100%" OnClick="btn_submit_Click" />
+                            </div>
+                            <div class="form-group col-md-12">
                                 <asp:Label ID="lbl_finish" runat="server"></asp:Label>
-                                <asp:Button runat="server" Text="Submit" ID="btn_submit" class="btn btn-primary pull-right" OnClick="btn_submit_Click" />
+                                <asp:ValidationSummary ID="s1" runat="server" ForeColor="Red" HeaderText="Please fix the following errors" />
+
 
                             </div>
                         </form>

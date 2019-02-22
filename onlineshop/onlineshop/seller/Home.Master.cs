@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AspProject
 {
@@ -13,5 +8,21 @@ namespace AspProject
         {
 
         }
+        protected void lb_home_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Customer/products.aspx");
+        }
+
+        protected void contact_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ContactPage.aspx");
+
+        }
+
+        protected void lb_about_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/AboutUs.aspx");
+        }
     }
+
 }

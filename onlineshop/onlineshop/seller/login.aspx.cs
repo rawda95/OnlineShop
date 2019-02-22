@@ -137,13 +137,13 @@ namespace onlineshop.seller
 
         protected void lb_seller_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/login.aspx");
+            Response.Redirect("~/customer/login.aspx");
 
         }
 
         protected void signup_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/customer/signup.aspx");
+            Response.Redirect("~/seller/signup.aspx");
 
         }
     }
