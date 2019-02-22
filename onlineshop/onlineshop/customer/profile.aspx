@@ -5,10 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="search" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content" runat="server">
-
-
-
-
     <div>
         <asp:MultiView ID="MV_profileFinal" runat="server" ActiveViewIndex="0">
             <asp:View ID="MV_ShowProfile" runat="server">
@@ -157,4 +153,9 @@
 
         </asp:MultiView>
     </div>
+</asp:Content>
+
+
+
+<asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
 </asp:Content>

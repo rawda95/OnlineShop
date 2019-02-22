@@ -316,26 +316,6 @@
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
                                    
                                    
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
                                     </p>
                                 </div>
                             </div>
@@ -435,14 +415,15 @@
             <!--/Footer-->
 
 
-            <!--      <script src="../js/jquery.js"></script> !-->
+
+            <asp:ContentPlaceHolder ID="script" runat="server">
+            </asp:ContentPlaceHolder>
             <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/jquery.scrollUp.min.js"></script>
-            <script src="../js/price-range.js"></script>
+            <!--   <script src="../js/jquery.scrollUp.min.js"></script> 
+             <script src="../js/price-range.js"></script> !-->
             <script src="../js/jquery.prettyPhoto.js"></script>
             <script src="../Scripts/popper.js"></script>
             <script src="../js/main.js"></script>
-            <script src="../Scripts/jquery-3.0.0.slim.min.js"></script>
         </div>
     </form>
 </body>

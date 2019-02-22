@@ -39,7 +39,6 @@
 
             <asp:TextBox ID="search" class="search_input" placeholder="Search..." runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged" MaxLength="50" BorderColor="#FFFF99">
             </asp:TextBox>
-            <i class="fa   fa-search"></i>
 
         </ContentTemplate>
 
@@ -77,14 +76,6 @@
 
                                             </div>
                                             </div>                                      
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                        
                                        

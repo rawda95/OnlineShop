@@ -34,13 +34,14 @@
     <asp:ScriptManager ID="ScriptManager2" runat="server">
     </asp:ScriptManager>
 
-
     <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
 
         <ContentTemplate>
 
             <asp:Label ID="error" runat="server"></asp:Label>
-            <asp:TextBox ID="search" class="search" runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged"></asp:TextBox>
+
+            <asp:TextBox ID="search" class="search_input" placeholder="Search..." runat="server" AutoPostBack="True" autocomplete="on" OnTextChanged="search_TextChanged" MaxLength="50" BorderColor="#FFFF99">
+            </asp:TextBox>
 
         </ContentTemplate>
 
@@ -79,24 +80,6 @@
                                             </div>
                                             </div>                                      
                                        
-                                                                
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                         </ItemTemplate>
                                         <FooterTemplate>
@@ -123,7 +106,7 @@
 
                     <div class="shipping text-center">
                         <!--shipping-->
-                        <img src="images/home/shipping.jpg" alt="" />
+                        <img src="../home/shipping.jpg" alt="" />
                     </div>
                     <!--/shipping-->
 
@@ -180,19 +163,27 @@
     </section>
 
     <!-- Content script    for master!-->
-    <script type="text/javascript">  
+
+</asp:Content>
+<asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
+
+    <!-- Content script    for master!-->
+    <script>  
         $(function () {
             console.log("aaa");
             SearchText();
         });
         function SearchText() {
-            $("#ContentPlaceHolder1_search").autocomplete({
+
+            a = $("#search_search");
+            a.autocomplete({
+
                 source: function (request, response) {
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
-                        url: "divtry.aspx/GetProductName",
-                        data: "{'ProductName':'" + document.getElementById('ContentPlaceHolder1_search').value + "'}",
+                        url: "/cutomer/products.aspx/GetProductName",
+                        data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
                         dataType: "json",
                         success: function (data) {
                             response(data.d);
@@ -206,8 +197,5 @@
         };
 
     </script>
-
-
-
 
 </asp:Content>

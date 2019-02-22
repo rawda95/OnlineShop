@@ -26,11 +26,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-                    <div class="signup-form">
-                        <!--sign up form-->
-                        <h2>New User Signup!</h2>
-                        <div class="form-group ">
-                            <%--<input type="text" placeholder="Name"/>--%>
+                    <div class="signup-form ">
+                        <%--<input type="text" placeholder="Name"/>--%>
+                        <div class="form-group col-sm-12">
                             <div class="row form-inline">
                                 &nbsp;<asp:TextBox ID="txt_FirstName" runat="server" class="col-sm-8 form-control" placeholder="FirstName" ValidationGroup="SignUpSeller" MaxLength="50"></asp:TextBox>
                                 <asp:RequiredFieldValidator Style="flex: auto" ID="RFV_FirstName" runat="server" classs="col-sm-1 form-control " ControlToValidate="txt_FirstName" ErrorMessage="please enter your first name" ForeColor="Red" ValidationGroup="SignUpSeller">*</asp:RequiredFieldValidator>
@@ -100,14 +98,14 @@
 
                         </div>
                         <%--<button type="submit" class="btn btn-default">Signup</button>--%>
-
-                        <div class="input-group">
-                        </div>
                     </div>
                 </div>
                 <!--/sign up form-->
             </div>
+
+
         </div>
+
 
 
 

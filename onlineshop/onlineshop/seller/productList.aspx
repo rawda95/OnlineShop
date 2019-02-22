@@ -3,13 +3,19 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ph_header" runat="server">
     <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-user"></i>Sale With Us</a></li>
-        <li><a href="#"><i class="fa fa-star"></i>Wishlist</a></li>
-        <li><a href="checkout.html"><i class="fa fa-crosshairs"></i>Checkout</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-        <li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
-        <li><a href="login.html"><i class="fa fa-user-md"></i>Sign Up</a></li>
+
+
+        <li>
+            <asp:LinkButton runat="server" ID="lb_logout" OnClick="lb_logout_Click">
+                                            <i class="fa fa-user"></i>logout </asp:LinkButton></li>
+        <li>
+            <asp:LinkButton runat="server" ID="lb_profile" OnClick="lb_profile_Click">
+                <i class="fa fa-user"></i>
+                <asp:Label runat="server" ID="lb_name" Text="Name"></asp:Label>
+            </asp:LinkButton></li>
+
     </ul>
+
 </asp:Content>
 
 <asp:Content ID="content3" runat="server" ContentPlaceHolderID="search">
@@ -75,20 +81,6 @@
                                        
                                        
                                        
-                                     
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
                                        
                                        
                                        
@@ -124,7 +116,7 @@
 
                     <div class="shipping text-center">
                         <!--shipping-->
-                        <img src="images/home/shipping.jpg" alt="" />
+                        <img src="../home/shipping.jpg" alt="" />
                     </div>
                     <!--/shipping-->
 
@@ -169,7 +161,7 @@
                                             <div class="product-image-wrapper col-8">
                                                 <div class="single-products">
                                                     <div class="productinfo text-center">
-                                                        <asp:Button runat="server" ID="btn_add_prodcut" Text="add product" OnClick="btn_add_prodcut_Click" CssClass="btn btn-danger text-center " />
+                                                        <asp:Button runat="server" ID="btn_add_prodcut" Text="add product" OnClick="btn_add_prodcut_Click" CssClass="btn  btn-default text-center " />
                                                     </div>
                                                 </div>
                                             </div>

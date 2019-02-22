@@ -66,7 +66,7 @@
                                                         <td class="cart_delete">
                                                             <asp:LinkButton CommandName="Delete" runat="server"><i class="fa fa-times"></i></asp:LinkButton>
                                                             <%--    <asp:LinkButton class="cart_quantity_delete" href=""  runat="server"><i class="fa fa-times"></i></asp:LinkButton>--%>
-                                </td>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </ItemTemplate>
@@ -87,4 +87,7 @@
 
     </section>
     <!--/#cart_items-->
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
 </asp:Content>

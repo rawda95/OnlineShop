@@ -148,21 +148,30 @@
         </div>
 
     </section>
+</asp:Content>
+
+
+
+
+<asp:Content ContentPlaceHolderID="script" ID="conteant2" runat="server">
 
     <!-- Content script    for master!-->
-    <script type="text/javascript">  
+    <script>  
         $(function () {
             console.log("aaa");
             SearchText();
         });
         function SearchText() {
-            $("#ContentPlaceHolder1_search").autocomplete({
+
+            a = $("#search_search");
+            a.autocomplete({
+
                 source: function (request, response) {
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
-                        url: "divtry.aspx/GetProductName",
-                        data: "{'ProductName':'" + document.getElementById('ContentPlaceHolder1_search').value + "'}",
+                        url: "/gust/index.aspx/GetProductName",
+                        data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
                         dataType: "json",
                         success: function (data) {
                             response(data.d);
@@ -176,8 +185,5 @@
         };
 
     </script>
-
-
-
 
 </asp:Content>

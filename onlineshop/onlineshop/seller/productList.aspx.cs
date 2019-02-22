@@ -17,33 +17,47 @@ namespace onlineshop.seller
             if (!IsPostBack)
             {
 
-                // Session["shop_id"] = 1002;
 
-                // int shop_id = int.Parse(Session["shop_id"].ToString());
-                // Session["seller_id"] = 1;
-                int seller_id = int.Parse(Session["id"].ToString());
-
-                DataTable shop = Seller.get_shop_ID(seller_id);
-                if (shop.Rows.Count > 0)
+                if (Session["id"] != null)
                 {
-                    // or 
-                    int shop_id = int.Parse((shop.Rows[0][0]).ToString());
-                    //  dl_product.DataSource = Stock.get_shop_product(shop_id);
-                    // dl_product.DataBind();
-                    Bind_Dl_product(Stock.get_shop_product(shop_id));
-                    dl_shop_category.DataSource = shop_category.get_shop_category(shop_id);
-                    dl_shop_category.DataBind();
+
+                    int id = int.Parse(Session["id"].ToString());
+                    lb_name.Text = BL.Seller.getName(id);
+
+                    // Session["shop_id"] = 1002;
+
+                    // int shop_id = int.Parse(Session["shop_id"].ToString());
+                    // Session["seller_id"] = 1;
+                    int seller_id = int.Parse(Session["id"].ToString());
+
+                    DataTable shop = Seller.get_shop_ID(seller_id);
+                    if (shop.Rows.Count > 0)
+                    {
+                        // or 
+                        int shop_id = int.Parse((shop.Rows[0][0]).ToString());
+                        //  dl_product.DataSource = Stock.get_shop_product(shop_id);
+                        // dl_product.DataBind();
+                        Bind_Dl_product(Stock.get_shop_product(shop_id));
+                        dl_shop_category.DataSource = shop_category.get_shop_category(shop_id);
+                        dl_shop_category.DataBind();
+                    }
+
+                    else
+                    {
+                        Bind_Dl_product(new DataTable());
+                        // error.Text = "u dont hanve shop ";
+
+
+                    }
+
+
+                    // DataTable d = (DataTable)dl_product.DataSource;
                 }
                 else
                 {
-                    Bind_Dl_product(new DataTable());
-                    // error.Text = "u dont hanve shop ";
-
+                    Response.Redirect("~/gust/index.aspx");
 
                 }
-
-
-                // DataTable d = (DataTable)dl_product.DataSource;
             }
         }
 
@@ -140,6 +154,27 @@ namespace onlineshop.seller
         protected void btn_add_prodcut_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/seller/addproduct.aspx");
+        }
+
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            if (Session["id"] != null)
+            {
+                Session.Clear();
+
+            }
+            if (Request.Cookies["mycookie"] != null)
+            {
+                Response.Cookies["mycookie"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Redirect("~/seller/login.aspx");
+
+        }
+
+        protected void lb_profile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

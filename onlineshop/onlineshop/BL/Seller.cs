@@ -7,6 +7,17 @@ namespace onlineshop.BL
     public class Seller
     {
 
+        public static string getName(int id)
+        {
+            SqlCommand cmd = new SqlCommand("select frist_name  from users.Seller  where id =@id");
+            cmd.Parameters.AddWithValue("@id", id);
+
+            string name = DBLayer.select(cmd).Rows[0][0].ToString();
+            return name;
+
+
+
+        }
         //select
         public static DataTable getAll()
         {
