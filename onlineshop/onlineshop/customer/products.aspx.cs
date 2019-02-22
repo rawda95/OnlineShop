@@ -160,5 +160,20 @@ namespace onlineshop.Customer
         {
             Response.Redirect("~/customer/cart.aspx");
         }
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            if (Session["id"] != null)
+            {
+                Session.Clear();
+
+            }
+            if (Request.Cookies["mycookie"] != null)
+            {
+                Response.Cookies["mycookie"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Redirect("~/customer/login.aspx");
+
+        }
     }
 }

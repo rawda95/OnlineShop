@@ -40,24 +40,6 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.LinkButton lb_signup;
         
         /// <summary>
-        /// txt_CustFName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_CustFName;
-        
-        /// <summary>
-        /// RFV_CustFName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustFName;
-        
-        /// <summary>
         /// txt_CustLName control.
         /// </summary>
         /// <remarks>
@@ -67,13 +49,13 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox txt_CustLName;
         
         /// <summary>
-        /// RFV_CustLName control.
+        /// RFV_FirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustLName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_FirstName;
         
         /// <summary>
         /// txt_CustUserName control.
@@ -85,13 +67,13 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox txt_CustUserName;
         
         /// <summary>
-        /// RF_CustuserName control.
+        /// RF_userSellerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_CustuserName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_userSellerName;
         
         /// <summary>
         /// txt_CustpassSignup control.
@@ -103,13 +85,13 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox txt_CustpassSignup;
         
         /// <summary>
-        /// RFV_CustPass control.
+        /// RFV_Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustPass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Password;
         
         /// <summary>
         /// txt_CustconfirmPass control.
@@ -121,22 +103,13 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox txt_CustconfirmPass;
         
         /// <summary>
-        /// RFV_Custconfirmpass control.
+        /// RFV_confirmpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Custconfirmpass;
-        
-        /// <summary>
-        /// CV_Custconfirmpass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CV_Custconfirmpass;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_confirmpassword;
         
         /// <summary>
         /// Txt_CustAddress control.
@@ -148,13 +121,13 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox Txt_CustAddress;
         
         /// <summary>
-        /// RFV_CustAdress control.
+        /// RFV_AdressSeller control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_CustAdress;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_AdressSeller;
         
         /// <summary>
         /// txt_CustemailSignup control.
@@ -166,22 +139,22 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.TextBox txt_CustemailSignup;
         
         /// <summary>
-        /// RFV_Custemail control.
+        /// RFV_emailSeller control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Custemail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_emailSeller;
         
         /// <summary>
-        /// REV_Custemail control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_Custemail;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// FU_CustomerImage control.
@@ -193,13 +166,22 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.FileUpload FU_CustomerImage;
         
         /// <summary>
-        /// RF_Custupload control.
+        /// RF_uploadImg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Custupload;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_uploadImg;
+        
+        /// <summary>
+        /// lbl_fileCheckSeller control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_fileCheckSeller;
         
         /// <summary>
         /// btn_CustomerSignup control.
@@ -211,13 +193,22 @@ namespace onlineshop.Customer {
         protected global::System.Web.UI.WebControls.Button btn_CustomerSignup;
         
         /// <summary>
-        /// VS_Custsignup control.
+        /// btn_login_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary VS_Custsignup;
+        protected global::System.Web.UI.WebControls.Button btn_login_form;
+        
+        /// <summary>
+        /// VS_signupSeller control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary VS_signupSeller;
         
         /// <summary>
         /// lbl_CustSinCheck control.

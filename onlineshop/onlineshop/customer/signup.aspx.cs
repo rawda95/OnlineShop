@@ -83,7 +83,7 @@ namespace onlineshop.Customer
                         {
                             //adding customer data to database
 
-                            BL.customer.add(txt_CustUserName.Text, txt_CustFName.Text, txt_CustLName.Text, txt_CustemailSignup.Text, path, Txt_CustAddress.Text, Txt_CustAddress.Text, txt_CustpassSignup.Text);
+                            BL.customer.add(txt_CustUserName.Text, txt_CustLName.Text, txt_CustLName.Text, txt_CustemailSignup.Text, path, Txt_CustAddress.Text, Txt_CustAddress.Text, txt_CustpassSignup.Text);
                             Session["id"] = BL.customer.getByEmail(txt_CustemailSignup.Text);
                             Response.Redirect("~/customer/products.aspx");
                         }
