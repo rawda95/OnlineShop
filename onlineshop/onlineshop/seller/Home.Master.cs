@@ -46,6 +46,12 @@ namespace AspProject
             Response.Redirect("~/seller/addproduct.aspx");
 
         }
+
+        protected void lb_promotion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/promotionlist.aspx");
+
+        }
     }
 
 }

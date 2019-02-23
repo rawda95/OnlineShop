@@ -67,17 +67,6 @@
 
                                         </div>
                                         </div>                                      
-                                      
-                                       
-                                       
-                                       
-                                       
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
                                    
                                    
                                     </ItemTemplate>
@@ -135,35 +124,12 @@
                                                                  
                                                         </i>
                                                             details
-
-                                                        </asp:LinkButton>
-
-                                                </div>
-                                                <div class="product-overlay">
-                                                    <div class="overlay-content">
-                                                        <h2><%#SafeEval(Container.DataItem, "price")%>$</h2>
-                                                        <p><%# SafeEval(Container.DataItem, "name")%></p>
-
-                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction">
-
-                                                        <i class="fa fa-shopping-cart">
-                                                                 
-                                                        </i>
-                                                            details
-
-                                                        </asp:LinkButton>
-
-                                                    </div>
+                                                    </asp:LinkButton>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
-
                                 </ItemTemplate>
-
-
-
                             </asp:ListView>
                         </ContentTemplate>
                     </asp:UpdatePanel>

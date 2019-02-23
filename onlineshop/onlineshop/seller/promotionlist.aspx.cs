@@ -1,8 +1,10 @@
 ﻿using onlineshop.Bl;
 using onlineshop.BL;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,15 +18,13 @@ namespace onlineshop.seller
 
             if (!IsPostBack)
             {
+                int id = int.Parse(Session["id"].ToString());
+                lb_name.Text = BL.Seller.getName(id);
 
-                Session["shop_id"] = 1002;
-
-                int shop_id = int.Parse(Session["shop_id"].ToString());
-                Session["seller_id"] = 1;
-                int seller_id = int.Parse(Session["seller_id"].ToString());
 
                 // or 
-                shop_id = int.Parse((Seller.get_shop_ID(seller_id).Rows[0][0]).ToString());
+                int shop_id = int.Parse((Seller.get_shop_ID(id).Rows[0][0]).ToString());
+                Session["shop_id"] = shop_id;
                 //  dl_product.DataSource = Stock.get_shop_product(shop_id);
                 // dl_product.DataBind();
                 Bind_Dl_product(Promotions.get_Shop_promotions(shop_id));
@@ -39,9 +39,9 @@ namespace onlineshop.seller
 
         private void Bind_Dl_product(DataTable data)
         {
-            dl_product.DataSource = data;
+            r_product.DataSource = data;
             ViewState["products"] = data;
-            dl_product.DataBind();
+            r_product.DataBind();
 
             UpdatePanel_product.Update();
         }
@@ -74,7 +74,7 @@ namespace onlineshop.seller
             }
             else
             {
-                int seller_id = int.Parse(Session["seller_id"].ToString());
+                int seller_id = int.Parse(Session["id"].ToString());
 
                 int shop_id = int.Parse((Seller.get_shop_ID(seller_id).Rows[0][0]).ToString());
                 Bind_Dl_product(Promotions.get_Shop_promotions(shop_id));
@@ -88,7 +88,7 @@ namespace onlineshop.seller
 
         protected void search_TextChanged(object sender, EventArgs e)
         {
-            int seller_id = int.Parse(Session["seller_id"].ToString());
+            int seller_id = int.Parse(Session["id"].ToString());
             int shop_id = int.Parse((Seller.get_shop_ID(seller_id).Rows[0][0]).ToString());
 
 
@@ -113,9 +113,9 @@ namespace onlineshop.seller
 
         }
 
-        protected void dl_product_ItemCommand(object source, System.Web.UI.WebControls.DataListCommandEventArgs e)
+        protected void dl_product_ItemCommand(object source, ListViewCommandEventArgs e)
         {
-            int product_id = int.Parse(dl_product.DataKeys[(int)e.Item.ItemIndex].ToString());
+            int product_id = int.Parse(r_product.DataKeys[(int)e.Item.DataItemIndex].Value.ToString());
             Response.Redirect(string.Format("~/seller/promotionDetials.aspx?id={0}", product_id));
 
         }
@@ -124,5 +124,48 @@ namespace onlineshop.seller
         {
 
         }
+
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            if (Session["id"] != null)
+            {
+                Session.Clear();
+
+            }
+            if (Request.Cookies["mycookie"] != null)
+            {
+                Response.Cookies["mycookie"].Expires = DateTime.Now.AddDays(-1);
+            }
+            Response.Redirect("~/seller/login.aspx");
+
+        }
+
+        protected void lb_profile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        [WebMethod]
+        public List<string> GetProductName(string ProductName)
+        {
+            DataTable product_list;
+            product_list = (DataTable)ViewState["products"];
+            product_list.DefaultView.RowFilter = "name like '%" + ProductName + "%'";
+            Bind_Dl_product(product_list);
+
+
+            //DataTable dt = product.getNamesByName(ProductName);
+
+            List<string> result = new List<string>();
+            foreach (DataRow row in product_list.Rows)
+            {
+                result.Add(row["name"].ToString());
+            }
+            return result;
+
+
+        }
+
     }
 }

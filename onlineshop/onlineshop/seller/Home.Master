@@ -213,6 +213,12 @@
                                             Add product
                                             </asp:LinkButton>
                                         </a></li>
+
+                                        <li><a>
+                                            <asp:LinkButton runat="server" ID="lb_promotion" OnClick="lb_promotion_Click">
+                                            promotion List
+                                            </asp:LinkButton>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -324,6 +330,7 @@
                                     <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
+                                   
                                    
                                    
                                    
