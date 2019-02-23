@@ -30,6 +30,22 @@ namespace AspProject
             Response.Redirect("~/seller/addcategory.aspx");
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void LinkButton1_Click1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lb_addProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/addproduct.aspx");
+
+        }
     }
 
 }

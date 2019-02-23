@@ -1,7 +1,9 @@
 ﻿using onlineshop.BL;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -35,6 +37,7 @@ namespace onlineshop.seller
                     {
                         // or 
                         int shop_id = int.Parse((shop.Rows[0][0]).ToString());
+                        Session["shop_id"] = shop_id;
                         //  dl_product.DataSource = Stock.get_shop_product(shop_id);
                         // dl_product.DataBind();
                         Bind_Dl_product(Stock.get_shop_product(shop_id));
@@ -65,9 +68,9 @@ namespace onlineshop.seller
 
         private void Bind_Dl_product(DataTable data)
         {
-            dl_product.DataSource = data;
+            r_product.DataSource = data;
             ViewState["products"] = data;
-            dl_product.DataBind();
+            r_product.DataBind();
 
             UpdatePanel_product.Update();
         }
@@ -139,9 +142,9 @@ namespace onlineshop.seller
 
         }
 
-        protected void dl_product_ItemCommand(object source, System.Web.UI.WebControls.DataListCommandEventArgs e)
+        protected void dl_product_ItemCommand(object source, ListViewCommandEventArgs e)
         {
-            int product_id = int.Parse(dl_product.DataKeys[(int)e.Item.ItemIndex].ToString());
+            int product_id = int.Parse(r_product.DataKeys[(int)e.Item.DataItemIndex].Value.ToString());
             Response.Redirect(string.Format("~/seller/productDetials.aspx?id={0}", product_id));
 
         }
@@ -153,7 +156,6 @@ namespace onlineshop.seller
 
         protected void btn_add_prodcut_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/seller/addproduct.aspx");
         }
 
 
@@ -176,5 +178,27 @@ namespace onlineshop.seller
         {
 
         }
+
+        [WebMethod]
+        public List<string> GetProductName(string ProductName)
+        {
+            DataTable product_list;
+            product_list = (DataTable)ViewState["products"];
+            product_list.DefaultView.RowFilter = "name like '%" + ProductName + "%'";
+            Bind_Dl_product(product_list);
+
+
+            //DataTable dt = product.getNamesByName(ProductName);
+
+            List<string> result = new List<string>();
+            foreach (DataRow row in product_list.Rows)
+            {
+                result.Add(row["name"].ToString());
+            }
+            return result;
+
+
+        }
+
     }
 }

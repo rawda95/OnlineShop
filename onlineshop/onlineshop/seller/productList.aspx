@@ -38,158 +38,180 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-    <!--/slider-->
 
-
-
-
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
-                        <h2>Category</h2>
-                        <div class="panel-group category-products" id="accordian">
-                            <!--category-productsr-->
-                            <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
-                                <ContentTemplate>
-
-
-                                    <asp:DataList AutoPostBack="false" ID="dl_shop_category" DataKeyField="id" runat="server" CssClass="row" OnItemCommand="dl_shop_category_ItemCommand">
-
-                                        <ItemTemplate>
-
-                                            <div class="panel panel-default col-sm-12 col-4 ">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-
-                                                            <asp:LinkButton ID="link" runat="server" CommandName="AddAction">    <%# DataBinder.Eval(Container.DataItem, "name") %> </asp:LinkButton>
-
-                                                        </a>
-                                                    </h4>
-                                                </div>
-
-                                            </div>
-                                            </div>                                      
-                                       
-                                       
-                                         
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-
-                                                            <asp:LinkButton ID="link" runat="server" OnClick="link_Click">  all </asp:LinkButton>
-
-                                                        </a>
-                                                    </h4>
-                                                </div>
-
-                                            </div>
-                                        </FooterTemplate>
-                                    </asp:DataList>
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
-
-
-
-
-
-
-
-
-                        </div>
-                        <!--/category-products-->
-                    </div>
-
-                    <div class="shipping text-center">
-                        <!--shipping-->
-                        <img src="../home/shipping.jpg" alt="" />
-                    </div>
-                    <!--/shipping-->
-
-                </div>
-                <div class="col-sm-9 padding-right">
-                    <div class="features_items">
-                        <!--features_items-->
-                        <h2 class="title text-center">Items</h2>
-
-                        <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+                    <h2>Category</h2>
+                    <div class="panel-group category-products" id="accordian">
+                        <!--category-productsr-->
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
                             <ContentTemplate>
-                                <asp:DataList AutoPostBack="false" CellPadding="2" DataKeyField="id" CellSpacing="20" ID="dl_product" runat="server" CssClass="row" RepeatColumns="4" OnItemCommand="dl_product_ItemCommand">
+
+
+                                <asp:DataList AutoPostBack="false" ID="dl_shop_category" DataKeyField="id" runat="server" CssClass="row" OnItemCommand="dl_shop_category_ItemCommand">
+
                                     <ItemTemplate>
 
-                                        <div>
-                                            <div class="product-image-wrapper col-12">
-                                                <div class="single-products">
-                                                    <div class="productinfo text-center">
-                                                        <%--<img  src='<%#Eval("image")%>' alt="" />--%>
-                                                        <img alt="" width="250" height="100" src='<%# SafeEval(Container.DataItem, "photo")%>' />
-                                                        <p><%# SafeEval(Container.DataItem, "name")%> </p>
-                                                        <h2><%# SafeEval(Container.DataItem, "description") %> </h2>
-                                                        <h7> <%#SafeEval(Container.DataItem, "price")%> </h7>
-                                                        <br />
-                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction"><i class="fa fa-shopping-cart" ></i>detials</asp:LinkButton>
-                                                        <!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Add to cart</a>!-->
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="panel panel-de fault col-sm-12 col-4 ">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
 
+                                                        <asp:LinkButton ID="link" runat="server" CommandName="AddAction">    <%# DataBinder.Eval(Container.DataItem, "name") %> </asp:LinkButton>
+
+                                                    </a>
+                                                </h4>
+                                            </div>
 
                                         </div>
-
-
+                                        </div>                                      
+                                      
+                                       
+                                       
+                                       
+                                       
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     </ItemTemplate>
                                     <FooterTemplate>
-                                        <div>
-                                            <div class="product-image-wrapper col-8">
-                                                <div class="single-products">
-                                                    <div class="text-center">
-                                                        <asp:Button runat="server" ID="btn_add_prodcut" Text="add product" OnClick="btn_add_prodcut_Click" CssClass="btn  btn-default text-center " />
-                                                    </div>
-                                                </div>
+                                        <div class="panel panel-de fault col-sm-12 col-4 ">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+
+                                                        <asp:LinkButton ID="link" runat="server" OnClick="link_Click">  all </asp:LinkButton>
+
+                                                    </a>
+                                                </h4>
                                             </div>
+
                                         </div>
                                     </FooterTemplate>
                                 </asp:DataList>
-
-
                             </ContentTemplate>
                         </asp:UpdatePanel>
 
                     </div>
+                    <!--/category-products-->
+                </div>
+
+                <div class="shipping text-center">
+                    <!--shipping-->
+                    <img src="../home/shipping.jpg" alt="" />
+                </div>
+                <!--/shipping-->
+
+            </div>
+            <div class="col-sm-9 padding-right">
+                <div class="features_items">
                     <!--features_items-->
+                    <h2 class="title text-center">Items</h2>
+
+                    <asp:UpdatePanel ID="UpdatePanel_product" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:ListView runat="server" ID="r_product" DataKeyNames="id" OnItemCommand="dl_product_ItemCommand">
+
+                                <ItemTemplate>
+
+                                    <div class="col-sm-4 ">
+                                        <div class="product-image-wrapper">
+                                            <div class="single-products">
+                                                <div class="productinfo text-center">
+                                                    <img src="../Images/pics/<%# SafeEval(Container.DataItem, "photo")%>" alt="" />
+                                                    <h2><%#SafeEval(Container.DataItem, "price")%>$</h2>
+                                                    <p><%# SafeEval(Container.DataItem, "name")%></p>
+
+                                                    <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction">
+
+                                                        <i class="fa fa-shopping-cart">
+                                                                 
+                                                        </i>
+                                                            details
+
+                                                        </asp:LinkButton>
+
+                                                </div>
+                                                <div class="product-overlay">
+                                                    <div class="overlay-content">
+                                                        <h2><%#SafeEval(Container.DataItem, "price")%>$</h2>
+                                                        <p><%# SafeEval(Container.DataItem, "name")%></p>
+
+                                                        <asp:LinkButton runat="server" class="btn btn-default add-to-cart" CommandName="AddAction">
+
+                                                        <i class="fa fa-shopping-cart">
+                                                                 
+                                                        </i>
+                                                            details
+
+                                                        </asp:LinkButton>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </ItemTemplate>
 
 
 
+                            </asp:ListView>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
 
                 </div>
+                <!--features_items-->
+
+
+
+
             </div>
-
-
         </div>
-    </section>
 
 
-
+    </div>
 
 </asp:Content>
 
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="script" runat="server">
+
+    <!-- Content script    for master!-->
+    <script>  
+        $(function () {
+            console.log("aaa");
+            $("#search_search").autocomplete({
+
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "/productList.aspx/GetProductName",
+                        data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            // response(data.d);
+                            //  alert(data.d);
+                        },
+                        error: function (result) {
+                            //   alert("No Match");
+                        }
+                    });
+                }
+            });
+        });
+
+
+    </script>
+
 </asp:Content>

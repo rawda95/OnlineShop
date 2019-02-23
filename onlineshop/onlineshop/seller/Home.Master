@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="AspProject.Home" %>
 
+
 <!DOCTYPE html>
 
 <html>
@@ -16,9 +17,11 @@
 
 
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
 
 
     <%--    <link href="../css/newcss.css" rel="stylesheet" />--%>
@@ -37,9 +40,9 @@
     <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
     <style>
         .login-form {
-            /*   width: 385px;
+            /*  width: 385px;
             margin: 30px auto;
-             */
+              */
         }
 
             .login-form form {
@@ -50,10 +53,6 @@
             }
 
             .login-form h2 {
-                margin: 0 0 13px;
-            }
-
-            .login-form h1 {
                 margin: 0 0 15px;
             }
 
@@ -208,6 +207,12 @@
                                             Add Category
                                             </asp:LinkButton>
                                         </a></li>
+
+                                        <li><a>
+                                            <asp:LinkButton runat="server" ID="lb_addProduct" OnClick="lb_addProduct_Click">
+                                            Add product
+                                            </asp:LinkButton>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -309,22 +314,16 @@
             <asp:ContentPlaceHolder ID="Content" runat="server">
             </asp:ContentPlaceHolder>
 
-            <footer id="footer" class="row">
+            <footer id="footer">
                 <!--Footer-->
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-2">
                                 <div class="companyinfo">
-                                    <h2><span>INSPIRE</span>-S  hopper</h2>
+                                    <h2><span>INSPIRE</span>-Shopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
                                    
                                    
                                    
@@ -428,16 +427,15 @@
             <!--/Footer-->
 
 
+
             <asp:ContentPlaceHolder ID="script" runat="server">
             </asp:ContentPlaceHolder>
-            <!--   <script src="../js/jquery.js"></script> !-->
             <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/jquery.scrollUp.min.js"></script>
-            <script src="../js/price-range.js"></script>
+            <!--   <script src="../js/jquery.scrollUp.min.js"></script> 
+             <script src="../js/price-range.js"></script> !-->
             <script src="../js/jquery.prettyPhoto.js"></script>
             <script src="../Scripts/popper.js"></script>
             <script src="../js/main.js"></script>
-            <script src="../Scripts/jquery-3.0.0.slim.min.js"></script>
         </div>
     </form>
 </body>
