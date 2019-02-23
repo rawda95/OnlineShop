@@ -9,31 +9,33 @@ namespace onlineshop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //check for user access
-            if (Session["id"] == null)
+            if (!IsPostBack)
             {
-                Response.Redirect("~/seller/login.aspx");
-            }
-            else
-            {
-                int seller_id = int.Parse(Session["id"].ToString());
-                lb_name.Text = BL.Seller.getName(seller_id);
-
-                DataTable shop = Seller.get_shop_ID(seller_id);
-                if (shop.Rows.Count < 0)
+                //check for user access
+                if (Session["id"] == null)
                 {
-                    Response.Redirect("~/seller/addshop.aspx");
+                    Response.Redirect("~/seller/login.aspx");
                 }
                 else
                 {
-                    ddl_category.DataSource = Category.getAll();
-                    ddl_category.DataTextField = "name";
-                    ddl_category.DataValueField = "id";
-                    ddl_category.DataBind();
+                    int seller_id = int.Parse(Session["id"].ToString());
+                    lb_name.Text = BL.Seller.getName(seller_id);
+
+                    DataTable shop = Seller.get_shop_ID(seller_id);
+                    if (shop.Rows.Count < 0)
+                    {
+                        Response.Redirect("~/seller/addshop.aspx");
+                    }
+                    else
+                    {
+                        ddl_category.DataSource = Category.getAll();
+                        ddl_category.DataTextField = "name";
+                        ddl_category.DataValueField = "id";
+                        ddl_category.DataBind();
+                    }
                 }
             }
         }
-
         protected void btn_add_category_Click(object sender, EventArgs e)
         {
             //try

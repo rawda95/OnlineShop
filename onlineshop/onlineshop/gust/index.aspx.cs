@@ -67,9 +67,9 @@ namespace onlineshop.gust
 
         private void Bind_Dl_product(DataTable data)
         {
-            dl_product.DataSource = data;
+            r_product.DataSource = data;
             ViewState["products"] = data;
-            dl_product.DataBind();
+            r_product.DataBind();
 
             UpdatePanel_product.Update();
         }
@@ -114,7 +114,7 @@ namespace onlineshop.gust
 
         protected void dl_product_ItemCommand(object source, DataListCommandEventArgs e)
         {
-            int peoduct_id = int.Parse(dl_product.DataKeys[(int)e.Item.ItemIndex].ToString());
+            int peoduct_id = int.Parse(r_product.DataKeys[(int)e.Item.ItemIndex].ToString());
             // Session["cust_id"] = 1;
             int customer_id = int.Parse(Session["id"].ToString());
 
@@ -167,6 +167,15 @@ namespace onlineshop.gust
         }
         protected void link_Click(object sender, EventArgs e)
         {
+
+        }
+
+        protected void r_product_ItemCommand(object sender, ListViewCommandEventArgs e)
+        {
+            int product_id = int.Parse(r_product.DataKeys[(int)e.Item.DataItemIndex].Value.ToString());
+            // Session["cust_id"] = 1;
+            int customer_id = int.Parse(Session["id"].ToString());
+            Response.Redirect(string.Format("~/details.aspx?id={0})", product_id));
 
         }
     }

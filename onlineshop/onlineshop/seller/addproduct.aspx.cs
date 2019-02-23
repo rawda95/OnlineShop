@@ -1,5 +1,4 @@
-﻿using onlineshop.Bl;
-using onlineshop.BL;
+﻿using onlineshop.BL;
 using System;
 using System.Data;
 using System.IO;
@@ -27,7 +26,7 @@ namespace onlineshop
                 int seller_id = int.Parse(Session["id"].ToString());
                 lb_name.Text = BL.Seller.getName(seller_id);
 
-                ddl_category.DataSource = Category.getAll();
+                ddl_category.DataSource = shop_category.get_shop_category(shop_id);
                 ddl_category.DataTextField = "name";
                 ddl_category.DataValueField = "id";
                 ddl_category.DataBind();

@@ -203,6 +203,11 @@
                                             About Us
                                             </asp:LinkButton>
                                         </a></li>
+                                        <li><a>
+                                            <asp:LinkButton runat="server" ID="lb_addCategory" OnClick="lb_addCategory_Click">
+                                            Add Category
+                                            </asp:LinkButton>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -314,6 +319,7 @@
                                     <h2><span>INSPIRE</span>-S  hopper</h2>
                                     <p>
                                         The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
+                                   
                                    
                                    
                                    

@@ -23,6 +23,13 @@ namespace AspProject
         {
             Response.Redirect("~/AboutUs.aspx");
         }
+
+
+        protected void lb_addCategory_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/seller/addcategory.aspx");
+
+        }
     }
 
 }

@@ -103,12 +103,12 @@ namespace onlineshop.gust {
         protected global::System.Web.UI.UpdatePanel UpdatePanel_product;
         
         /// <summary>
-        /// dl_product control.
+        /// r_product control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dl_product;
+        protected global::System.Web.UI.WebControls.ListView r_product;
     }
 }
