@@ -49,6 +49,15 @@ namespace onlineshop {
         protected global::System.Web.UI.WebControls.DropDownList ddl_category;
         
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// btn_select control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace onlineshop {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_select;
+        
+        /// <summary>
+        /// VS_loginSeller control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary VS_loginSeller;
         
         /// <summary>
         /// txt_category_name control.
@@ -92,14 +110,5 @@ namespace onlineshop {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_msg;
-        
-        /// <summary>
-        /// VS_loginSeller control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary VS_loginSeller;
     }
 }

@@ -84,6 +84,11 @@ namespace onlineshop
 
         protected void btn_select_Click(object sender, EventArgs e)
         {
+            int seller_id = int.Parse(Session["id"].ToString());
+            int shop_id = int.Parse((Seller.get_shop_ID(seller_id).Rows[0][0]).ToString());
+            shop_category.add(shop_id, int.Parse(ddl_category.SelectedValue.ToString()));
+
+            Response.Redirect("~/seller/addproduct.aspx");
 
         }
     }
