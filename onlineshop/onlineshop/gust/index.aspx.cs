@@ -99,11 +99,18 @@ namespace onlineshop.gust
         }
 
         [WebMethod]
-        public static List<string> GetProductName(string ProductName)
+        public List<string> GetProductName(string ProductName)
         {
-            DataTable dt = product.getNamesByName(ProductName);
+            DataTable product_list;
+            product_list = (DataTable)ViewState["products"];
+            product_list.DefaultView.RowFilter = "name like '%" + ProductName + "%'";
+            Bind_Dl_product(product_list);
+
+
+            //DataTable dt = product.getNamesByName(ProductName);
+
             List<string> result = new List<string>();
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in product_list.Rows)
             {
                 result.Add(row["name"].ToString());
             }

@@ -74,12 +74,6 @@
 
                                         </div>
                                         </div>                                      
-                                      
-                                       
-                                       
-                                       
-                                       
-                                   
                                    
                                    
                                     </ItemTemplate>
@@ -186,30 +180,27 @@
     <script>  
         $(function () {
             console.log("aaa");
-            SearchText();
-        });
-        function SearchText() {
-
-            a = $("#search_search");
-            a.autocomplete({
+            $("#search_search").autocomplete({
 
                 source: function (request, response) {
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
-                        url: "/gust/index.aspx/GetProductName",
+                        url: "index.aspx/GetProductName",
                         data: "{'ProductName':'" + document.getElementById('search_search').value + "'}",
                         dataType: "json",
                         success: function (data) {
-                            response(data.d);
+                            // response(data.d);
+                            //  alert(data.d);
                         },
                         error: function (result) {
-                            alert("No Match");
+                            //   alert("No Match");
                         }
                     });
                 }
             });
-        };
+        });
+
 
     </script>
 

@@ -185,19 +185,19 @@
                                     <li><a class="active">
                                         <asp:LinkButton runat="server" OnClick="lb_home_Click" ValidationGroup="novalid">
                                             Home 
-                                            </asp:LinkButton>
+                                        </asp:LinkButton>
 
                                     </a></li>
 
                                     <li><a>
                                         <asp:LinkButton runat="server" OnClick="contact_Click" ValidationGroup="novalid">
                                             Contact
-                                            </asp:LinkButton>
+                                        </asp:LinkButton>
                                     </a></li>
                                     <li><a>
                                         <asp:LinkButton runat="server" OnClick="lb_about_Click" ValidationGroup="novalid">
                                             About Us
-                                            </asp:LinkButton>
+                                        </asp:LinkButton>
                                     </a></li>
                                 </ul>
 
@@ -311,18 +311,6 @@
                                 <h2><span>INSPIRE</span>-Shopper</h2>
                                 <p>
                                     The Language of the Heart spoken in silence through the mesmerizing medium of fragrance.                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                               
                                    
                                
                                 </p>

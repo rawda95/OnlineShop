@@ -49,9 +49,9 @@ namespace onlineshop.Customer
 
         private void Bind_Dl_product(DataTable data)
         {
-            dl_product.DataSource = data;
+            r_product.DataSource = data;
             ViewState["products"] = data;
-            dl_product.DataBind();
+            r_product.DataBind();
 
             UpdatePanel_product.Update();
         }
@@ -80,12 +80,20 @@ namespace onlineshop.Customer
             }
         }
 
+
         [WebMethod]
-        public static List<string> GetProductName(string ProductName)
+        public List<string> GetProductName(string ProductName)
         {
-            DataTable dt = product.getNamesByName(ProductName);
+            DataTable product_list;
+            product_list = (DataTable)ViewState["products"];
+            product_list.DefaultView.RowFilter = "name like '%" + ProductName + "%'";
+            Bind_Dl_product(product_list);
+
+
+            //DataTable dt = product.getNamesByName(ProductName);
+
             List<string> result = new List<string>();
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in product_list.Rows)
             {
                 result.Add(row["name"].ToString());
             }
@@ -94,17 +102,17 @@ namespace onlineshop.Customer
 
         }
 
-        protected void dl_product_ItemCommand(object source, DataListCommandEventArgs e)
+        protected void dl_product_ItemCommand(object source, ListViewCommandEventArgs e)
         {
             // Session["id"] = 1;
-            int peoduct_id = int.Parse(dl_product.DataKeys[(int)e.Item.ItemIndex].ToString());
+            int product_id = int.Parse(r_product.DataKeys[(int)e.Item.DataItemIndex].Value.ToString());
             // Session["cust_id"] = 1;
             int customer_id = int.Parse(Session["id"].ToString());
 
             //String item = ((Label)e.Item.FindControl("id")).Text;
 
             //product.remove(int.Parse(item));
-            cart.add(customer_id, peoduct_id, 1);
+            cart.add(customer_id, product_id, 1);
 
             Bind_Dl_product(product.getAll());
         }
