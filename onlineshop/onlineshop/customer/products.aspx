@@ -22,8 +22,8 @@
 
 
         <li>
-            <asp:LinkButton runat="server" ID="lb_profile">
-                <i class="fa fa-user"></i>
+            <asp:LinkButton runat="server" ID="lb_profile" OnClick="lb_profile_Click">
+                <i class="fa fa-user">profile</i>
                 <asp:Label runat="server" ID="lb_name" Text="Name"></asp:Label>
             </asp:LinkButton></li>
 
@@ -100,6 +100,12 @@
                                    
                                    
                                    
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     </ItemTemplate>
                                     <FooterTemplate>
                                         <div class="panel panel-de fault col-sm-12 col-4 ">
@@ -156,7 +162,7 @@
                                                         </i>
                                                             add to cart
 
-                                                        </asp:LinkButton>
+                                                    </asp:LinkButton>
 
                                                 </div>
                                                 <div class="product-overlay">

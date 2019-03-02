@@ -13,5 +13,15 @@ namespace onlineshop.adminSite
                 grd_customerorders.DataBind();
             }
         }
+
+        protected void grd_customerorders_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

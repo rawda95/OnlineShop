@@ -11,6 +11,7 @@
         </asp:GridView>
     </p>
     <p>
+        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/adminSite/reports.aspx">Back To Admin Reports</asp:LinkButton>
     </p>
     <p>
     </p>

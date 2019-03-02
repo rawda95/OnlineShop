@@ -67,9 +67,12 @@ namespace onlineshop.BL
 
 
         //get by price rnge 
+
+
+        //get by price rnge  by islam 27/2/2019
         public static DataTable ge_by_price(int start, int end)
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Product.Product WHERE (price BETWEEN @Start AND @End) OR (@Start = 0 AND @End = 0)");
+            SqlCommand cmd = new SqlCommand("SELECT id,name,price,description,photo FROM Product.Product WHERE (price BETWEEN @Start AND @End) OR (@Start = 0 AND @End = 0)");
             cmd.Parameters.AddWithValue("@Start", start);
             cmd.Parameters.AddWithValue("@end", end);
             return DBLayer.select(cmd);
@@ -91,11 +94,13 @@ namespace onlineshop.BL
         }
 
 
-        // for autocomplete 
+
+
+        // for autocomplete //islam 27/2/2019
         public static DataTable getNamesByName(string name)
         {
 
-            SqlCommand cmd = new SqlCommand("select name from Product.Product where name like @name");
+            SqlCommand cmd = new SqlCommand("select name,price,photo from Product.Product where name like @name");
             cmd.Parameters.AddWithValue("@name", "%" + name + "%");
             return DBLayer.select(cmd);
         }

@@ -5,11 +5,11 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="main" runat="server">
     <p>
-        <asp:GridView ID="grd_customerorders" runat="server" BackColor="#FF33CC" BorderColor="#000066">
+        <asp:GridView ID="grd_customerorders" runat="server" BackColor="#FF33CC" BorderColor="#000066" OnSelectedIndexChanged="grd_customerorders_SelectedIndexChanged">
         </asp:GridView>
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" PostBackUrl="~/adminSite/reports.aspx">Back To Admin Reports</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
-        <asp:Label ID="Label1" runat="server" BackColor="#CCCCFF" Text="Customer Orders"></asp:Label>
     </p>
     <p>
     </p>

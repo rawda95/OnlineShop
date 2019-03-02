@@ -23,7 +23,7 @@ namespace onlineshop.Bl
 
         public static int reomve(int id)
         {
-            SqlCommand cmd = new SqlCommand("delete product.category where id=@id)");
+            SqlCommand cmd = new SqlCommand("delete product.category where id=@id");
             cmd.Parameters.AddWithValue("@id", id);
             return DBLayer.dml(cmd);
         }

@@ -27,7 +27,7 @@ namespace onlineshop.adminSite
             {
                 Session["user_id"] = result.Rows[0][0];
                 lab_error.Text = Session["user_id"].ToString();
-                Response.Redirect("~/adminSite/main.aspx");
+                Response.Redirect("~/adminSite/AdminMangement.aspx");
 
             }
             else

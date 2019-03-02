@@ -183,5 +183,10 @@ namespace onlineshop.Customer
             Response.Redirect("~/customer/login.aspx");
 
         }
+
+        protected void lb_profile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/profile.aspx");
+        }
     }
 }

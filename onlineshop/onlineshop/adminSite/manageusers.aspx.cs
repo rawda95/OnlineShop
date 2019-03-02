@@ -14,19 +14,16 @@ namespace onlineshop.adminSite
 
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/adminSite/allsellers.aspx");
-        }
-
-        protected void LinkButton2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/adminSite/ allcustomers.aspx");
-           
-        }
-
+        
         protected void LinkButton1_Click1(object sender, EventArgs e)
         {
+            Response.Redirect("~/adminSite/allsellers.aspx");
+
+        }
+
+        protected void LinkButton2_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/adminSite/allcustomers.aspx");
 
         }
     }

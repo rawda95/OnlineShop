@@ -350,3 +350,43 @@ Time : 2/23/2019 10:01:12 PM
 Thread was being aborted.
 Source : mscorlib 
 
+Time : 2/26/2019 6:11:57 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/26/2019 6:13:30 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/26/2019 6:16:01 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\'.
+Source : mscorlib 
+
+Time : 2/26/2019 6:16:56 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\'.
+Source : mscorlib 
+
+Time : 2/26/2019 6:27:49 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\'.
+Source : mscorlib 
+
+Time : 2/26/2019 6:30:30 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\'.
+Source : mscorlib 
+
+Time : 2/27/2019 12:53:37 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/27/2019 1:09:14 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/27/2019 1:10:19 PM
+Thread was being aborted.
+Source : mscorlib 
+
+Time : 2/27/2019 1:14:49 PM
+Could not find a part of the path 'E:\ITI\ASP\project\integration\onlineshop\onlineshop\onlineshop\Photos\'.
+Source : mscorlib 
+

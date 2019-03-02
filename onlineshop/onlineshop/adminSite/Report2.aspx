@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="aside" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="main" runat="server">
-                          <asp:DataList ID="dl_CanceledOrders" runat="server">
+                          <asp:DataList ID="dl_CanceledOrders" runat="server" Height="83px" Width="501px">
                               
      <HeaderTemplate>
 
